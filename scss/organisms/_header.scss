@@ -1,0 +1,144 @@
+.container{
+    padding: 0 0;
+}
+.header{
+    &__live{
+        align-items: center;
+        background-color: #F06D6D;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        p{
+            color: white;
+            display: flex;
+            font-family: $font-primary;
+            font-size: 12px;
+            margin-left: -12px;
+        }
+        p:before{
+            content: "•";
+            font-size: 28px;
+            margin: 0 12px;
+        }
+    }
+    &__site{
+        position: relative;
+        background-color: #20334E;
+        &--logo{
+            align-items: center;
+            display: flex;
+            height: 56px;
+            justify-content: center;
+        }
+        &--logo:before{
+            color: white;
+            content: "\e904";
+            font-family: $font-icon;
+            font-size: 25px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+    }
+    &__links{
+        display: flex;
+        flex-direction: row;
+        height: 32px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        &--list{
+            display: flex;
+            li{
+                align-items: center;
+                display: flex;
+                font-size: 20px;
+                list-style: none;
+                padding-bottom: 0;
+                a{    
+                    color: #20334E;
+                    font-size: 12px;
+                }
+            }
+            li:first-child{
+                font-weight: 600;
+            }
+            li:not(:first-child)::before{
+                align-items: center;
+                content: "•";
+                margin: 0 10px;
+            }
+            li:nth-child(2)::before{
+                content:"|";
+                font-weight: 200;
+            }
+        }
+        &--social{
+            display: flex;
+        }
+        &--icons{
+            align-items: center;
+            color: #FF742B;
+            display: flex;
+            font-family: $font-icon;
+            font-size: 15px;
+            margin: 2px 10px;
+        }
+        &--insta::before{
+            content: "\e903";
+        }
+        &--face::before{
+            content: "\e902";
+        }
+        &--twitter::before{
+            content: "\e901";
+        }
+        &--youtube::before{
+            content: "\e900";
+        }
+        &--date{
+            align-items: center;
+            display: flex;
+            font-size: 12px;
+            padding: 0 20px;
+        }
+    }
+}
+@include mq-min(md){
+    .header{
+        position: relative;
+        &__live{
+            border-radius: 4px;
+            height: 23px;
+            left: 60px;
+            position: absolute;
+            top: 16px;
+            width: 107px;
+            z-index: 2;
+        }
+        &__links{
+            height: 40px;
+            &--list{
+                li{
+                    a{    
+                        color: #20334E;
+                        font-size: 14px;
+                    }
+                }
+            }
+            &--date{
+                font-size: 11px;
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .container{
+        max-width: 100%;
+    }
+    .header{
+        &__links{
+            justify-content: space-between;
+        }
+    }
+}
