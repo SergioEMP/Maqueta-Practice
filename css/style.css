@@ -2694,10 +2694,13 @@ table th,
   background-color: #FF9D00;
   border-radius: 4px;
   color: white;
+  font-size: 12px;
+  line-height: 15px;
   padding: 3px 9px;
   text-align: center;
 }
 .recent__principal--date {
+  font-size: 11px;
   margin-left: 8px;
 }
 .recent__principal--content {
@@ -2728,6 +2731,105 @@ table th,
   margin: 8px 0;
 }
 
+@media (min-width: 720px) {
+  .recent {
+    margin-top: 60px;
+  }
+  .recent__tag {
+    height: 40px;
+    left: 48px;
+    width: 242px;
+  }
+  .recent__tag p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .recent__principal {
+    margin-top: 50px;
+  }
+  .recent__principal--tagdate {
+    margin-left: 16px;
+  }
+  .recent__principal--date {
+    font-size: 14px;
+  }
+  .recent__principal--content {
+    margin-left: 16px;
+  }
+  .recent__principal--content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .recent__principal--content p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 18px;
+  }
+  .recent__plus {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+  }
+  .recent__plus--tagdate {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .recent__plus--tagdate p:nth-child(2) {
+    margin-left: 0;
+  }
+  .recent__plus--item {
+    padding-right: 20px;
+  }
+  .recent__plus--item h4 {
+    margin-left: 16px;
+  }
+}
+@media (min-width: 1140px) {
+  .recent {
+    flex-direction: row;
+    padding: 0 47px;
+    align-items: flex-start;
+  }
+  .recent__tag {
+    height: 40px;
+    left: 48px;
+    width: 242px;
+  }
+  .recent__tag p {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .recent__principal {
+    margin-top: 50px;
+  }
+  .recent__principal--tagdate {
+    margin-left: 8px;
+  }
+  .recent__principal--content {
+    margin-left: 8px;
+  }
+  .recent__principal--content h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .recent__plus--tagdate {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .recent__plus--tagdate p:nth-child(2) {
+    font-size: 11px;
+    margin-left: 0;
+  }
+  .recent__plus--item {
+    padding-right: 20px;
+  }
+  .recent__plus--item h4 {
+    margin-left: 8px;
+  }
+}
 .guide {
   font-family: "Poppins";
   margin-top: 20px;
@@ -2789,6 +2891,110 @@ table th,
 .guide__programs--item:last-child {
   border-bottom: none;
   padding-bottom: 26px;
+}
+
+@media (min-width: 720px) {
+  .guide {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12px;
+    padding-bottom: 24px;
+    position: relative;
+  }
+  .guide__container {
+    width: 64%;
+  }
+  .guide__head p {
+    font-size: 14px;
+  }
+  .guide__head p:last-child {
+    font-weight: 700;
+  }
+  .guide__image {
+    box-shadow: none;
+    padding: 17px 29px 17px;
+  }
+  .guide__image img {
+    height: auto;
+    left: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 40px;
+    width: 30%;
+  }
+  .guide__image p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: -8px;
+    position: relative;
+  }
+  .guide__image p:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 13px solid #F06D6D;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 2;
+    left: -28px;
+    top: 4px;
+  }
+  .guide__programs {
+    background-color: #FFFFFF;
+  }
+  .guide__programs--item:first-child {
+    display: none;
+  }
+  .guide__programs--item:last-child {
+    border-bottom: dashed 1px #FFD8B1;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 1140px) {
+  .guide {
+    width: 68%;
+    display: flex;
+    margin: 50px 0 0;
+  }
+  .guide__container {
+    background-color: #F4F4F4;
+    padding-bottom: 24px;
+    width: 92%;
+  }
+  .guide__image {
+    box-shadow: none;
+    padding: 17px 21px 17px;
+  }
+  .guide__image img {
+    position: relative;
+    height: 70px;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .guide__image p {
+    margin-left: 40px;
+  }
+  .guide__image p:before {
+    top: 11px;
+  }
+  .guide__programs {
+    background-color: #F4F4F4;
+  }
+  .guide__programs--item {
+    padding: 6px 0;
+  }
+  .guide__programs--item:first-child {
+    display: flex;
+    padding-top: 6px;
+  }
+  .guide__programs--item:last-child {
+    border-bottom: dashed 1px #FFD8B1;
+    padding-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

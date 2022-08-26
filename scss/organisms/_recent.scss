@@ -40,10 +40,13 @@
             background-color: #FF9D00;
             border-radius: 4px;
             color: white;
+            font-size: 12px;
+            line-height: 15px;
             padding: 3px 9px;
             text-align: center;
         }
         &--date{
+            font-size: 11px;
             margin-left: 8px;
         }
         &--content{
@@ -71,6 +74,107 @@
                 font-size: 14px;
                 line-height: 18px;
                 margin: 8px 0;
+            }
+        }
+    }
+}
+@include mq-min(md){
+    .recent{
+        margin-top: 60px;
+        &__tag{
+            height: 40px;
+            left: 48px;
+            width: 242px;
+            p{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        &__principal{
+            margin-top: 50px;
+            &--tagdate{
+                margin-left: 16px;
+            }
+            &--date{
+                font-size: 14px;
+            }
+            &--content{
+                margin-left: 16px;
+                h4{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-right: 18px;
+                }
+            }
+        }
+        &__plus{
+            display: flex;
+            flex-direction: row;
+            padding-right: 10px;
+            &--tagdate{
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                p:nth-child(2){
+                    margin-left: 0;
+                }
+            }
+            &--item{
+                padding-right: 20px;
+                h4{
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .recent{
+        flex-direction: row;
+        padding: 0 47px;
+        align-items: flex-start;
+        &__tag{
+            height: 40px;
+            left: 48px;
+            width: 242px;
+            p{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        &__principal{
+            margin-top: 50px;
+            &--tagdate{
+                margin-left: 8px;
+            }
+            &--content{
+                margin-left: 8px;
+                h4{
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+        }
+        &__plus{
+            &--tagdate{
+                align-items: flex-start;
+                display: flex;
+                flex-direction: column;
+                p:nth-child(2){
+                    font-size: 11px;
+                    margin-left: 0;
+                }
+            }
+            &--item{
+                padding-right: 20px;
+                h4{
+                    margin-left: 8px;
+                }
             }
         }
     }
