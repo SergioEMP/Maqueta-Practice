@@ -1,0 +1,225 @@
+.cityguide{
+    &__image{
+        &--mobile{
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        &--tablet{
+            display: none;
+        }
+        &--desktop{
+            display: none;
+        }
+    }
+    h2{
+        color: #20334E;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+    }
+    &__item{
+        border-bottom: 1px solid #94949466;
+        padding: 13px 28px;
+        &--tag{
+           background-color: #609FEE ;
+           font-family: 'Poppins';
+        }
+        &--info{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            margin: 10px 0;
+        }
+        &--plus{
+            font-family: 'Poppins';
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            p{
+                align-items: center;
+                font-size: 14px;
+            }
+            p:first-child::before{
+                color: #20334E;
+                content: "\e907";
+                font-family: "iconFont";
+                align-items: center;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+            p:nth-child(2):before{
+                color: #20334E;
+                content: "\e906";
+                font-family: "iconFont";
+                align-items: center;
+                font-size: 15px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__item:nth-child(2){
+        display: none;
+        p:nth-child(2):before{
+            color: #20334E;
+            content: "\e90b";
+            font-family: "iconFont";
+            align-items: center;
+            font-size: 28px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+        div{
+            p:before{
+                display: none;
+            }
+        }
+    }
+    &__item:nth-child(3){
+        p:nth-child(2):before{
+            color: #20334E;
+            content: "\e908";
+            font-family: "iconFont";
+            align-items: center;
+            font-size: 40px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+        div{
+            p:before{
+                display: none;
+            }
+        }
+    }
+    &__item:nth-child(4){
+        p:nth-child(2){
+            font-size: 14px;
+        }
+        p:nth-child(2):before{
+            color: #20334E;
+            content: "\e909";
+            font-family: "iconFont";
+            align-items: center;
+            font-size: 30px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+    }
+    &__item:nth-child(5){
+        p:nth-child(2){
+            font-size: 14px;
+        }
+        p:nth-child(2):before{
+            color: #20334E;
+            content: "\e90a";
+            font-family: "iconFont";
+            align-items: center;
+            font-size: 30px;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+    }
+}
+@include mq-min(md){
+    .cityguide{
+        &__image{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            &--mobile{
+                display: none;
+            }
+            &--tablet{
+                display: block;
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            &--desktop{
+                display: none;
+            }
+        }
+        h2{
+            font-size: 32px;
+            line-height: 40px;
+            margin-left: 40px;
+        }
+        &__itemcont{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item{
+            width: 33%;
+            padding: 13px 17px;
+            &--tag{
+               font-weight: 500;
+            }
+            &--info{
+                margin-bottom: 0;
+            }
+            &--plus{
+                p{
+                    align-items: center;
+                    font-size: 11px;
+                    font-weight: 600;
+                }
+                p:first-child::before{
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-right: 4px;
+                }
+                p:nth-child(2):before{
+                    font-size: 10px;
+                    font-weight: 400;
+                    margin: 0 4px;
+                }
+            }
+        }
+        &__item:nth-child(2){
+            border-left: 1px solid #94949466;
+            display: block;
+            div{
+                p{
+                    margin-left: 28px;
+                }
+            }
+        }
+        &__item:nth-child(3){
+            border-left: 1px solid #94949466;
+            p:nth-child(2):before{
+                font-size: 30px;
+            }
+            div{
+                p{
+                    margin-left: 40px;
+                }
+            }
+        }
+        &__item:nth-child(4){
+            p:nth-child(2){
+                font-size: 12px;
+            }
+            p:nth-child(2):before{
+                font-size: 24px;
+            }
+        }
+        &__item:nth-child(5){
+            p:nth-child(2){
+                font-size: 14px;
+            }
+            p:nth-child(2):before{
+                color: #20334E;
+                content: "\e90a";
+                font-family: "iconFont";
+                align-items: center;
+                font-size: 30px;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+        }
+    }
+}
