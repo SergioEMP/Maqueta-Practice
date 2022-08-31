@@ -6,20 +6,20 @@
     padding: 0 16px;
     position: relative;
     &__tag{
-        align-items: center;
-        border: 1px solid #FF742B;
-        border-radius: 40px;
-        display: flex;
-        height: 34px;
-        justify-content: center;
-        left: 8px;
-        position: absolute;
-        top: -20px;
-        width: 192px;
         p{
-            font-size: 20px;
-            font-weight: 600;
+            span{
+                color: #FF742B;
+            }
         }
+    }
+    &__tag::before{
+        background-color: #FF742B;
+        content: "";
+        height: 1px;
+        left: -9px;
+        position: absolute;
+        top: 16px;
+        width: 8px;
     }
     &__principal{
         margin-top: 34px;
@@ -90,6 +90,11 @@
                 font-weight: 700;
             }
         }
+        &__tag::before{
+            left: -49px;
+            top: 19px;
+            width: 48px;
+        }
         &__principal{
             margin-top: 50px;
             &--tagdate{
@@ -133,7 +138,7 @@
         }
     }
 }
-@include mq-min(xl){
+@include mq-min(lg){
     .recent{
         flex-direction: row;
         padding: 0 47px;

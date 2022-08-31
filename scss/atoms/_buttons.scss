@@ -34,3 +34,26 @@ input[type="button"]{
         }
     }
 }
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 36px;
+    a{
+        align-items: center;
+        border: solid 1px #EF0000;
+        border-radius: 8px;
+        color: #EF0000;
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        height: 34px;
+        justify-content: center;
+        text-align: center;
+        width: 166px;
+    }
+    a:after{
+        content: "»";
+        margin-left: 5px;
+    }
+}

@@ -45,6 +45,7 @@
                 color: #939EAD;
                 font-family: 'Poppins';
                 font-size: 10px;
+                font-weight: 600;
             }
         }
         &--video{
@@ -53,9 +54,12 @@
                 height: auto;
                 width: 100%;
             };
+            background: linear-gradient(#FFFFFFF2, #FFFFFF);
         }
         &--secondpart{
             padding: 0 16px;
+            position: relative;
+            z-index: 4;
             h3{
                 color: #EF0000;
                 font-size: 14px;
@@ -64,6 +68,27 @@
                 margin: 8px 0 34px;
                 text-align: center;
             }
+            div:first-of-type{
+                font-weight: 600;
+                position: relative;
+            }
+            div:first-of-type::before{
+                    background-color: #FFFFFF;
+                    content: "";
+                    height: 30px;
+                    left: -5px;
+                    position: absolute;
+                    top: 0px;
+                    width: 10px;
+            }
+            div:first-of-type::after{
+                content: "•";
+                color: #EF0000;
+                font-size: 20px;
+                left: -4px;
+                position: absolute;
+                top: 8px;
+            }
         }
         &--update:nth-child(even){
             border-left: dashed 1px #20334E;
@@ -71,16 +96,15 @@
         }
         &--update:nth-child(odd){
             border-right: dashed 1px #20334E;
-            
             border-bottom: dashed 1px #20334E;
         }
-
         &--hour{
             align-items: center;
             color: #609FEE;
             display: flex;
             font-family: 'Poppins';
             font-size: 12px;
+            font-weight: 600;
             margin: 5px;
         }
         &--hour:before{
@@ -97,29 +121,6 @@
             height: 55px;
             width: 78%;
         }
-        &--button{
-            display: flex;
-            justify-content: center;
-            margin-top: 16px;
-            padding-bottom: 36px;
-            a{
-                align-items: center;
-                border: solid 1px #EF0000;
-                border-radius: 8px;
-                color: #EF0000;
-                display: flex;
-                font-size: 14px;
-                font-weight: 600;
-                height: 34px;
-                justify-content: center;
-                text-align: center;
-                width: 166px;
-            }
-            a:after{
-                content: "»";
-                margin-left: 5px;
-            }
-        }
     }
 }
 @include mq-min(md){
@@ -132,6 +133,8 @@
                 }
                 p{
                     font-size: 14px;
+                    font-weight: 700;
+                    margin-top: -5px;
                 }
             }
             &--video{
@@ -145,6 +148,14 @@
                 h3{
                     font-size: 20px;
                     text-align: left;
+                }
+                div:first-of-type::before{
+                    height: 48px;
+                }
+                div:first-of-type::after{
+                    font-size: 29px;
+                    left: -5px;
+                    top: 18px;
                 }
             }
             &--hour{
@@ -167,6 +178,7 @@
         &__content{
             display: flex;
             flex-direction: row;
+            padding-bottom: 10px;
             &--firstpart{
                 padding: 22px 0 0 58px;
                 h2{
@@ -185,12 +197,21 @@
                 flex-direction: column;
                 justify-content: center;
                 margin-right: 22px;
+                position: relative;
                 h3{
                     margin-top: 22px;
                 }
+                div:first-of-type::before{
+                    height: 62px;
+                }
+                div:first-of-type::after{
+                    font-size: 29px;
+                    left: -5px;
+                    top: 32px;
+                }
             }
             &--update{
-                padding: 18px 0 18px 24px;
+                padding: 4px 0 18px 24px;
             }
             &--event{
                 line-height: 22px;
@@ -198,9 +219,17 @@
                 width: 84%;
             }
             &--button{
+                position: absolute;
                 right: 8px;
                 top: -10px;
             }
+        }
+    }
+}
+@include mq-min(xxl){
+    .lasthour{
+        &__secondpart{
+            margin-left: 50px;
         }
     }
 }

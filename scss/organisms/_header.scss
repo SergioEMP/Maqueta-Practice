@@ -23,7 +23,52 @@
     }
     &__site{
         position: relative;
+        background: linear-gradient(to right,  #20334EFF, #20334E00), url(./../../image/header-background.png), no-repeat;
         background-color: #20334E;
+        &--menu{
+            span::before{
+                color: #FFFFFF;
+                content: "\e904";
+                cursor: pointer;
+                font-family: 'iconFont';
+                font-size: 22px;
+                left: 32px;
+                position: absolute;
+                top: 12px;
+            }
+            .active{
+                transform: translate(-600px);
+            }
+            .opacity{
+                background-color: black;
+                transition: all .5s ease;
+            }
+        }
+        &--menucont{
+            background-color: #20334E;
+            height: 600px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: all .5s ease;
+            width: 320px;
+            ul{
+                list-style: none;
+                padding: 20px 0 20px;
+                li{
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 12px;
+                    padding: 4px 10px;
+                    text-decoration: none;
+                }
+                li:hover{
+                    background-color: #33517D;
+                    color: #CCC;
+                }
+            }
+        }
         &--logo{
             align-items: center;
             display: flex;
@@ -31,13 +76,13 @@
             justify-content: center;
         }
         &--logo:before{
-            color: white;
-            content: "\e904";
-            font-family: $font-icon;
-            font-size: 25px;
+            background: url(./../../image/icon-search.png) no-repeat;
+            content: "";
+            height: 23px;
             position: absolute;
             right: 20px;
-            top: 10px;
+            top: 18px;
+            width: 21px;
         }
     }
     &__links{
@@ -110,11 +155,18 @@
         &__live{
             border-radius: 4px;
             height: 23px;
-            left: 60px;
+            left: 90px;
             position: absolute;
+            padding: 0px 15px;
             top: 16px;
-            width: 107px;
             z-index: 2;
+            p{
+                font-size: 10px;
+                margin-left: -8px;
+            }
+            p:before{
+                margin: 0 6px;
+            }
         }
         &__links{
             height: 40px;
@@ -132,7 +184,7 @@
         }
     }
 }
-@include mq-min(xl){
+@include mq-min(lg){
     .container{
         max-width: 100%;
     }

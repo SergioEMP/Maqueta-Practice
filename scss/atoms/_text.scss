@@ -23,4 +23,21 @@ p{
     text-align: center;
     width: fit-content;
 }
+
+.taghead{
+    align-items: center;
+    border: 1px solid #FF742B;
+    border-radius: 40px;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    left: 8px;
+    position: absolute;
+    top: -20px;
+    width: 192px;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
     

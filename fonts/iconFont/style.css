@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ph2l0v');
-  src:  url('fonts/icomoon.eot?ph2l0v#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ph2l0v') format('truetype'),
-    url('fonts/icomoon.woff?ph2l0v') format('woff'),
-    url('fonts/icomoon.svg?ph2l0v#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?hb0atq');
+  src:  url('fonts/icomoon.eot?hb0atq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hb0atq') format('truetype'),
+    url('fonts/icomoon.woff?hb0atq') format('woff'),
+    url('fonts/icomoon.svg?hb0atq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon-menu:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-play:before {
+  content: "\e90d";
+  color: #fff;
+}
+.icon-galery:before {
+  content: "\e90c";
+  color: #fff;
+}
 .icon-price:before {
   content: "\e90b";
 }
@@ -62,7 +74,4 @@
 .icon-Instagram:before {
   content: "\e903";
   color: #ff742b;
-}
-.icon-Icon-Search:before {
-  content: "\e904";
 }
