@@ -1,7 +1,7 @@
 .cityguide{
     background-color: #F4F4F4;
+    margin-bottom: 80px;
     position: relative;
-    padding: 10px 0;
     &__image{
         position: relative;
         &--mobile{
@@ -25,22 +25,27 @@
         height: 106px;
         left: 0px;
         position: absolute;
-        top: 42px;
+        top: 45px;
         width: 100%;
-        z-index: 1;
+        z-index: 1; 
     }
     h2{
         color: #20334E;
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
+        margin-top: -16px;
         position: relative;
         text-align: center;
         z-index: 2;
+        span{
+            color: #FF742B;
+        }
     }
     &__item{
         border-bottom: 1px solid #94949466;
         padding: 13px 28px;
+        position: relative;
         &--tag{
            background-color: #609FEE ;
            font-family: 'Poppins';
@@ -50,6 +55,14 @@
             font-weight: 700;
             line-height: 32px;
             margin: 10px 0;
+            text-align: left;
+            position: relative;
+        }
+        &--info::before{
+            color: #20334E;
+            font-family: "iconFont";
+            left: 0;
+            position: absolute;
         }
         &--plus{
             font-family: 'Poppins';
@@ -59,53 +72,61 @@
             p{
                 align-items: center;
                 font-size: 14px;
+                font-weight: 500;
+                padding-left: 25px;
+                position: relative;
+            }
+            p:before{
+                color: #20334E;
+                font-family: "iconFont";
+                left: 0;
+                position: absolute;
             }
             p:first-child::before{
-                color: #20334E;
                 content: "\e907";
-                font-family: "iconFont";
-                align-items: center;
                 font-size: 18px;
-                margin-right: 10px;
+            }
+            p:nth-child(2){
+                margin-left: 5px;
             }
             p:nth-child(2):before{
-                color: #20334E;
                 content: "\e906";
-                font-family: "iconFont";
-                align-items: center;
                 font-size: 15px;
-                margin-right: 10px;
             }
         }
     }
     &__item:nth-child(2){
         display: none;
+        p:nth-child(2){
+            padding-left: 30px;
+        }
         p:nth-child(2):before{
-            color: #20334E;
             content: "\e90b";
-            font-family: "iconFont";
-            align-items: center;
             font-size: 28px;
             font-weight: 500;
-            margin-right: 10px;
         }
         div{
+            p{
+                padding-left: 0;
+            }
             p:before{
                 display: none;
             }
         }
     }
     &__item:nth-child(3){
+        p:nth-child(2){
+            padding-left: 45px;
+        }
         p:nth-child(2):before{
-            color: #20334E;
             content: "\e908";
-            font-family: "iconFont";
-            align-items: center;
             font-size: 40px;
             font-weight: 500;
-            margin-right: 10px;
         }
         div{
+            p{
+                padding-left: 0;
+            }
             p:before{
                 display: none;
             }
@@ -114,29 +135,27 @@
     &__item:nth-child(4){
         p:nth-child(2){
             font-size: 14px;
+            padding-left: 50px;
         }
         p:nth-child(2):before{
-            color: #20334E;
             content: "\e909";
-            font-family: "iconFont";
-            align-items: center;
             font-size: 30px;
             font-weight: 500;
-            margin-right: 10px;
         }
     }
     &__item:nth-child(5){
         p:nth-child(2){
             font-size: 14px;
+            line-height: 22px;
+            padding-left: 50px;
+            width: 80%;
         }
         p:nth-child(2):before{
-            color: #20334E;
             content: "\e90a";
-            font-family: "iconFont";
-            align-items: center;
             font-size: 30px;
             font-weight: 500;
-            margin-right: 10px;
+            left: 0;
+            top: 10px;
         }
     }
     &__slidcontain{
@@ -170,23 +189,27 @@
                 font-size: 11px;
                 font-weight: 400;
                 line-height: 14px;
+                text-align: left;
             }
             p:first-child{
                 font-family: $font-primary;
                 font-size: 16px;
                 font-weight: 600;
+                line-height: 22px;
+                text-align: left;
             }
             p:nth-child(2){
                 margin-top: 6px;
             }
         }
         &--image{
+            margin:0 20px 0 20px;
             height: auto;
-            margin-left: 20px;
             width: 100%;
         }
         .slick-dots{
                 bottom: -15px;
+                z-index: 2;
             li{
                 margin: 0 1px;
                 button{
@@ -206,11 +229,40 @@
         }
     }
     &__button{
+        position: relative;
+        z-index: 2;
         padding-bottom: 8px;
         a{
+            background-color: #FFFFFF;
             border: solid 1px #FF742B;
             color: #FF742B;
         }
+    }
+}
+.cityguide::before{
+    background: url(../../image/cityguide-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 200px;
+    left: 0px;
+    position: absolute;
+    bottom: -135px;
+    width: 100%;
+    z-index: 1;
+}
+@include mq-min(sm){
+    .cityguide{
+        &__image::before{ 
+            top: 62px;
+        }
+        h2{
+            margin-top: -32px;
+        }
+    }
+    .cityguide::before{
+        height: 230px;
+        bottom: -135px;
     }
 }
 @include mq-min(md){
@@ -233,10 +285,14 @@
                 display: none;
             }
         }
+        &__image::before{
+            display: none;
+        }
         h2{
             font-size: 32px;
             line-height: 40px;
-            margin-left: 40px;
+            margin: 10px 16px 0 33px;
+            width: 800px;
         }
         &__itemcont{
             display: flex;
@@ -253,6 +309,7 @@
                 margin-bottom: 0;
             }
             &--plus{
+                width: 220px;
                 p{
                     align-items: center;
                     font-size: 11px;
@@ -270,6 +327,24 @@
                 }
             }
         }
+        &__item:first-child:before{
+            background-color: #F4F4F4;
+            content: "";
+            height: 10px;
+            left: 0;
+            position: absolute;
+            bottom: -1px;
+            width: 14px;
+        }
+        &__item:first-child:after{
+            color: #81A1C9;
+            content: "■";
+            font-size: 10px;
+            left: 10px;
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -7px;
+        }
         &__item:nth-child(2){
             border-left: 1px solid #94949466;
             display: block;
@@ -279,6 +354,24 @@
                 }
             }
         }
+        &__item:nth-child(3):before{
+            background-color: #F4F4F4;
+            content: "";
+            height: 10px;
+            right: 0;
+            position: absolute;
+            bottom: -1px;
+            width: 14px;
+        }
+        &__item:nth-child(3):after{
+            color: #81A1C9;
+            content: "■";
+            font-size: 10px;
+            right: 10px;
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -7px;
+        }
         &__item:nth-child(3){
             border-left: 1px solid #94949466;
             p:nth-child(2):before{
@@ -286,7 +379,7 @@
             }
             div{
                 p{
-                    margin-left: 40px;
+                    margin-left: 45px;
                 }
             }
         }
@@ -298,14 +391,20 @@
                 line-height: 15px;
                 margin-left: 34px;
                 padding: 10px 0;
-                position: relative;
             }
             p:nth-child(2):before{
                 font-size: 24px;
                 left: -38px;
-                position: absolute;
-                top: 9px;
             }
+        }
+        &__item:nth-child(4)::before{
+            color: #81A1C9;
+            content: "■";
+            font-size: 10px;
+            left: 0;
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -7px;
         }
         &__item:nth-child(5){
             padding: 25px 17px;
@@ -313,15 +412,101 @@
                 font-size: 12px;
                 line-height: 15px;
                 margin-left: 34px;
-                position: relative;
+                padding-left: 0;
             }
             p:nth-child(2):before{
                 font-size: 20px;
                 left: -34px;
-                position: absolute;
-                top: 4px;
+                top: 8px;
             }
         }
+        &__item:nth-child(5)::before{
+            color: #81A1C9;
+            content: "■";
+            font-size: 10px;
+            right: 0;
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -7px;
+        }
+        &__slidcontain{
+            padding: 38px 0 20px 40px;
+        }
+        &__slider{
+            &--item{
+                padding: 22px 12px 22px 0;
+            }
+            &--date{
+                margin-right: 26px;
+                p:first-child{
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+                p:nth-child(2){
+                    font-size: 20px;
+                    line-height: 26px;
+                    text-align: center;
+                }
+            }
+            &--info{
+                width: 800px;
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18px;
+                }
+                p:first-child{
+                    color: #609FEE;
+                    font-size: 20px;
+                    line-height: 26px;
+                    text-align: left;
+                }
+            }
+            &--image{
+                margin: 0 30px 0 0px;
+                img{
+                    height: auto;
+                    object-fit: cover;
+                    width: 116px;
+                }
+            }
+            .slick-dots{
+                    bottom: -15px;
+                li{
+                    margin: 0 1px;
+                    button{
+                        color: #939EAD;
+                    }
+                    button::before{
+                        color: #939EAD;
+                        font-size: 10px;
+                    }
+                }
+                .slick-active{
+                    button::before{
+                        color: #FF9D00;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__button{
+            margin-top: 40px;
+            a{
+                font-size: 16px;
+                line-height: 22px;
+                padding: 8px 16px;
+                width: fit-content;
+            }
+            a::after{
+                font-size: 26px;
+                font-weight: 300;
+            }
+        }
+    }
+    .cityguide::before{
+        height: 321px;
+        bottom: -196px;
     }
 }
 @include mq-min(xl){
@@ -350,19 +535,99 @@
             font-size: 36px;
             left: 0;
             line-height: 45px;
-            margin-left: 40px;
+            margin: 0 0 24px 55px;
             position: absolute;
             top: 30px;
+            width: auto;
         }
         &__itemcont{
-            margin: 8% 0 0 25px;
+            margin: 8% 0 0 35px;
             width: 60%;
         }
         &__item{
             padding: 13px 5px 13px 17px;
             &--plus{
                 margin-top: -10px;
+                width: auto;
             }
         }
+        &__item:nth-child(4){
+            width: 40%;
+        }
+        &__item:nth-child(5){
+            width: 40%;
+        }
+        &__slidcontain{
+            padding: 60px 0 0;
+            margin: 0 auto;
+            width: 93%;
+        }
+        &__slider{
+            padding: 0 0;
+            width: 88%;
+            margin: 0 auto;
+            .slick-dots{
+                    bottom: -28px;
+            }
+        }
+        .slick-arrow{
+            top: 45%;
+        }
+        .slick-arrow::before{
+            background-color: #20334E;
+            border-radius: 100%;
+            color: #FFFFFF;
+            font-family: 'iconFont';
+            font-size: 28px;
+            opacity: 1;
+        }
+        .slick-prev{
+            left: -70px;
+        }
+        .slick-prev::before {
+            content: "\e90e";
+            padding: 6px 12px 6px 10px;
+        }
+        .slick-next{
+            right: -20px;
+        }
+        .slick-next::before{
+            content: "\e90f";
+            padding: 6px 10px 6px 12px;
+        }
+    }
+    .cityguide::before{
+        background: url(../../image/cityguide-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 200px;
+        left: 0px;
+        position: absolute;
+        bottom: -160px;
+        width: 100%;
+        z-index: 1;
+    }
+}
+@include mq-min(xb){
+    .cityguide{
+        .slick-prev{
+            left: -80px;
+        }
+        .slick-next{
+            right: -60px;
+        }
+    }
+}   .cityguide::before{
+    bottom: -148px;
+}
+@include mq-min(xxl){
+    .cityguide{
+        &__slidcontain{
+            padding-top: 150px;
+        }
+    }
+   .cityguide::before{
+    bottom: -125px;
     }
 }

@@ -29,3 +29,13 @@
         }
     }
 }
+@include mq-min(md){
+    .news{
+        margin-top: 110px;
+    }
+}
+@include mq-min(xl){
+    .news{
+        margin-top: 80px;
+    }
+}

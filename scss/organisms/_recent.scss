@@ -74,7 +74,34 @@
                 font-size: 14px;
                 line-height: 18px;
                 margin: 8px 0;
+                position: relative;
             }
+        }
+        &--item:first-child{
+            border-bottom: solid 1px #E7E7E7;
+        }
+        &--item:nth-child(2){
+            h4{
+                margin-left: 20px;
+                padding-left: 10px;
+            }
+            h4:before{
+                background-color: #FF9D00;
+                border-radius: 50%;
+                content: "\e90d";
+                color: #FFFFFF;
+                font-family: 'iconFont';
+                font-size: 8px;
+                height: 18px;
+                left: -20px;
+                padding-left: 7px;
+                position: absolute;
+                top: 0px;
+                width: 18px;
+            }
+        }
+        &--item:nth-child(3){
+            display: none;
         }
     }
 }
@@ -96,7 +123,9 @@
             width: 48px;
         }
         &__principal{
+            border-bottom: solid 1px #E7E7E7;
             margin-top: 50px;
+            padding-bottom: 15px;
             &--tagdate{
                 margin-left: 16px;
             }
@@ -135,10 +164,27 @@
                     margin-left: 16px;
                 }
             }
+            &--item:first-child{
+                border-bottom: none;
+            }
+            &--item:nth-child(2){
+                h4{
+                    margin-left: 16px;
+                    padding-left: 0;
+                }
+                h4:before{
+                    display: none;
+                }
+            }
+            &--item:nth-child(3){
+                display: flex;
+                flex-direction: column;
+            }
+            
         }
     }
 }
-@include mq-min(lg){
+@include mq-min(xl){
     .recent{
         flex-direction: row;
         padding: 0 47px;
@@ -177,6 +223,11 @@
             }
             &--item{
                 padding-right: 20px;
+                h4{
+                    margin-left: 8px;
+                }
+            }
+            &--item:nth-child(2){
                 h4{
                     margin-left: 8px;
                 }

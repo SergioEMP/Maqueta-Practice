@@ -23,7 +23,7 @@
     }
     &__site{
         position: relative;
-        background: linear-gradient(to right,  #20334EFF, #20334E00), url(./../../image/header-background.png), no-repeat;
+        background: linear-gradient(to right,  #20334EFF 20%, #20334E00), url(./../../image/header-background.png), no-repeat;
         background-color: #20334E;
         &--menu{
             span::before{

@@ -9,14 +9,30 @@ const iconMenu = document.querySelector('#icon__menu'),
 
 $(document).ready(function(){
     $('.cityguide__slider').slick({
+      arrows: true,
       dots: true,
       infinite: false,
       speed: 300,
-      slidesToShow: 2.8,
-      slidesToScroll: 2,
+      slidesToShow: 2.6,
+      slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 744,
+          breakpoint: 1365,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1023,
+          settings: {
+            arrows:false,
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 746,
           settings: {
             slidesToShow: 1.12,
             slidesToScroll: 1,
