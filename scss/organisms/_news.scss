@@ -1,9 +1,7 @@
 .news{
     align-items: center;
-    display: flex;
-    flex-direction: column;
     margin-top: 32px;
-    padding: 0 16px;
+    padding: 10px 16px;
     position: relative;
     &__taghead{
         left: 16px;
@@ -80,6 +78,69 @@
         a::after{
             font-size: 20px;
             margin-bottom: 2px;
+        }
+    }
+    &__slider{
+        padding: 0 14px;
+        &--item{
+            position: relative;
+            .tag{
+                background-color: #609FEE;
+                font-family: 'Poppins';
+                font-weight: 500;
+                left: 16px;
+                padding: 8px 9px;
+                position: absolute;
+                top:16px
+            }
+        }
+        &--content{
+            position: absolute;
+            bottom: 50px;
+            left: 16px;
+            h4{
+                color: #FFFFFF;
+                font-family: 'Poppins';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-top: 8px;
+            }
+            div{
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: row;
+                margin-top: 8px;
+                p{
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 15px;
+                }
+                p:nth-child(2){
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .slick-dots{
+            bottom: 12px;
+            li{
+                margin: 0 1px;
+                button{
+                    color: #939EAD;
+                }
+                button::before{
+                    color: #939EAD;
+                    font-size: 10px;
+                }
+            }
+            .slick-active{
+                button::before{
+                    color: #FF9D00;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

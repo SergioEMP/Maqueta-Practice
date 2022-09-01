@@ -3785,10 +3785,8 @@ table th,
 }
 .news {
   align-items: center;
-  display: flex;
-  flex-direction: column;
   margin-top: 32px;
-  padding: 0 16px;
+  padding: 10px 16px;
   position: relative;
 }
 .news__taghead {
@@ -3865,6 +3863,67 @@ table th,
 .news__button a::after {
   font-size: 20px;
   margin-bottom: 2px;
+}
+.news__slider {
+  padding: 0 14px;
+}
+.news__slider--item {
+  position: relative;
+}
+.news__slider--item .tag {
+  background-color: #609FEE;
+  font-family: "Poppins";
+  font-weight: 500;
+  left: 16px;
+  padding: 8px 9px;
+  position: absolute;
+  top: 16px;
+}
+.news__slider--content {
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
+}
+.news__slider--content h4 {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.news__slider--content div {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+.news__slider--content div p {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 15px;
+}
+.news__slider--content div p:nth-child(2) {
+  font-family: "Poppins";
+  font-weight: 400;
+  margin-left: 5px;
+}
+.news__slider .slick-dots {
+  bottom: 12px;
+}
+.news__slider .slick-dots li {
+  margin: 0 1px;
+}
+.news__slider .slick-dots li button {
+  color: #939EAD;
+}
+.news__slider .slick-dots li button::before {
+  color: #939EAD;
+  font-size: 10px;
+}
+.news__slider .slick-dots .slick-active button::before {
+  color: #FF9D00;
+  font-size: 14px;
 }
 
 @media (min-width: 720px) {
