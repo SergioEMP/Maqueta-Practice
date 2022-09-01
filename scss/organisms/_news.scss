@@ -23,7 +23,7 @@
         width: 16px;
     }
     &__principal{
-        margin-top: 31px;
+        margin: 31px 0 20px;
         &--image{
             position: relative;
             img{
@@ -39,12 +39,10 @@
             content: "\e90c";
             font-family: "iconFont";
             font-size: 10px;
-            height: 24px;
             padding: 3px 4px;
             position: absolute;
             right: 10px;
             top: 10px;
-            width: 24px;
         }
     }
     &__plus{
@@ -56,6 +54,7 @@
             position: absolute;
             img{
                 border-radius: 4px;
+                object-fit: cover;
             }
         }
         &--tagdate{
@@ -71,10 +70,121 @@
             display: block;
         }
     }
+    &__button{
+        margin: 30px 0 10px;
+        a{
+            background-color: #FFFFFF;
+            border: solid 1px #FF742B;
+            color: #FF742B;
+        }
+        a::after{
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+    }
 }
 @include mq-min(md){
     .news{
         margin-top: 110px;
+        padding: 0 26px;
+        &__taghead{
+            left: 48px;
+            p{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+        &__taghead::before{
+            left: -49px;
+            width: 48px;
+        }
+        &__principal{
+            margin-top: 45px;
+            &--image:before{
+                font-size: 22px;
+                padding: 8px 11px;
+                right: 23px;
+                top: 23px;
+            }
+            &--tagdate{
+                margin-left: 0;
+            }
+            &--content{
+                margin-left: 0;
+            }
+        }
+        &__plus{
+            position: relative;
+            &--item{
+                h4{
+                    margin:2px 0;
+                    width: 244px;
+                }
+            }
+            &--item:first-child{
+                img{
+                    position: relative;
+                    z-index: 1;
+                }
+                img:before{
+                    background-color: #FF9D00;
+                    border-radius: 50%;
+                    content: "\e90d";
+                    color: #FFFFFF;
+                    font-family: "iconFont";
+                    font-size: 8px;
+                    height: 18px;
+                    right: 12px;
+                    padding-left: 7px;
+                    position: absolute;
+                    top: 12px;
+                    width: 18px;
+                    z-index: 2;
+                }
+            }
+            &--item:nth-child(2){
+                h4{
+                    margin-left: 0;
+                }
+            }
+            &--image{
+                position: relative;
+                img{
+                    border-radius: 4px;
+                    height: auto;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+            &--tagdate{
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                p:nth-child(2){
+                    margin-left: 8px;
+                }
+            }
+            &--content{
+                margin-left: 0 ;
+            }
+            &--item:nth-child(3){
+                display: none;
+            }
+        }
+        &__button{
+            margin: 30px 0 10px;
+            a{
+                background-color: #FFFFFF;
+                border: solid 1px #FF742B;
+                color: #FF742B;
+            }
+            a::after{
+                font-size: 20px;
+                margin-bottom: 2px;
+            }
+        }
+
     }
 }
 @include mq-min(xl){
