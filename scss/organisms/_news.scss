@@ -5,12 +5,31 @@
     margin-top: 32px;
     padding: 0 16px;
     position: relative;
+    &__taghead{
+        left: 16px;
+        p{
+            span{
+                color: #FF742B;
+            }
+        }
+    }
+    &__taghead::before{
+        background-color: #FF742B;
+        content: "";
+        height: 1px;
+        left: -17px;
+        position: absolute;
+        top: 16px;
+        width: 16px;
+    }
     &__principal{
         margin-top: 31px;
         &--image{
-            height: auto;
             position: relative;
-            width: 100%;
+            img{
+                height: auto;
+                width: 100%;
+            }
         }
         &--image:before{
             background-color: #FF9D00;
@@ -26,6 +45,30 @@
             right: 10px;
             top: 10px;
             width: 24px;
+        }
+    }
+    &__plus{
+        position: relative;
+        &--item:first-child{
+            border-bottom: none;
+        }
+        &--image{
+            position: absolute;
+            img{
+                border-radius: 4px;
+            }
+        }
+        &--tagdate{
+            margin: 0 0 0 80px;
+        }
+        &--date{
+            text-align: left;
+        }
+        &--content{
+            margin-left: 80px ;
+        }
+        &--item:nth-child(3){
+            display: block;
         }
     }
 }

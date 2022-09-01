@@ -618,9 +618,10 @@
             right: -60px;
         }
     }
-}   .cityguide::before{
-    bottom: -148px;
-}
+    .cityguide::before{
+        bottom: -148px;
+    }
+}   
 @include mq-min(xxl){
     .cityguide{
         &__slidcontain{

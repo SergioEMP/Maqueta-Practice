@@ -3771,11 +3771,10 @@ table th,
   .cityguide .slick-next {
     right: -60px;
   }
+  .cityguide::before {
+    bottom: -148px;
+  }
 }
-.cityguide::before {
-  bottom: -148px;
-}
-
 @media (min-width: 1920px) {
   .cityguide__slidcontain {
     padding-top: 150px;
@@ -3792,12 +3791,29 @@ table th,
   padding: 0 16px;
   position: relative;
 }
+.news__taghead {
+  left: 16px;
+}
+.news__taghead p span {
+  color: #FF742B;
+}
+.news__taghead::before {
+  background-color: #FF742B;
+  content: "";
+  height: 1px;
+  left: -17px;
+  position: absolute;
+  top: 16px;
+  width: 16px;
+}
 .news__principal {
   margin-top: 31px;
 }
 .news__principal--image {
-  height: auto;
   position: relative;
+}
+.news__principal--image img {
+  height: auto;
   width: 100%;
 }
 .news__principal--image:before {
@@ -3814,6 +3830,30 @@ table th,
   right: 10px;
   top: 10px;
   width: 24px;
+}
+.news__plus {
+  position: relative;
+}
+.news__plus--item:first-child {
+  border-bottom: none;
+}
+.news__plus--image {
+  position: absolute;
+}
+.news__plus--image img {
+  border-radius: 4px;
+}
+.news__plus--tagdate {
+  margin: 0 0 0 80px;
+}
+.news__plus--date {
+  text-align: left;
+}
+.news__plus--content {
+  margin-left: 80px;
+}
+.news__plus--item:nth-child(3) {
+  display: block;
 }
 
 @media (min-width: 720px) {
