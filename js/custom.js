@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('.cityguide__slider').slick({
       arrows: true,
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 2.6,
       slidesToScroll: 1,
