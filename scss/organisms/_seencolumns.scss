@@ -5,6 +5,7 @@
     &__contain{
         padding: 0 16px;
         h2{
+            color: #20334E;
             font-size: 24px;
             font-weight: 700;
             line-height: 32px;
@@ -50,6 +51,39 @@
                     font-weight: 500;
                     margin-bottom: 3px;
                     width: fit-content;
+                }
+            }
+        }
+    }
+}
+@include mq-min(md){
+    .seencolumns{
+        margin-top: 10px;
+        &__contain{
+            padding: 0 51px;
+            h2{
+                font-size: 32px;
+                line-height: 40px;
+                span{
+                    color: #FF742B;
+                }
+            }
+            &--item{
+                padding: 17px 24px;
+                p:first-child{
+                    font-size: 60px;
+                    line-height: 75px;
+                }
+                div{
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 600;
+                        width: 97%;
+                    }
+                    p:first-child{
+                        margin-bottom: 8px;
+                    }
                 }
             }
         }
