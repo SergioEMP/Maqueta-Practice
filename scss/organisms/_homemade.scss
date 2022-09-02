@@ -1,0 +1,75 @@
+.homemade{
+    padding: 30px 0;
+    color: transparent;
+    background-image: url(../../image/homemade-background.png);
+    &__container{
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px;
+        padding: 30px 15px;
+    }
+    &__logo{
+        margin-bottom: 18px;
+    }
+    &__content{
+        &--image{
+            margin-bottom: 8px; 
+            position: relative;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        &--image::before{
+            background-color: #145AB1;
+            border: solid 2px #FFFFFF;
+            border-radius: 50%;
+            content: "\e90d";
+            color: #FFFFFF;
+            font-family: "iconFont";
+            font-size: 12px;
+            height: 24px;
+            left: 50%;
+            padding: 1px 7px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            width: 24px;
+        }
+        &--text{
+            h2{
+                color: #20334E;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26px;
+                text-align: center;
+            }
+            .tag{
+                background-color: #609FEE;
+                color: #FFFFFF;
+                font-size: 12px;
+                margin: 14px 0 8px;
+                width: fit-content;
+            }
+            p{
+                color: #20334E;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 4px;
+                width: 90%;
+            }
+        }
+        &--button{
+            padding-bottom: 17px;
+            a{
+                border: solid 1px #FF742B;
+                color: #FF742B;
+                padding: 8px;
+                width: fit-content;
+            }
+        }
+    }
+}
