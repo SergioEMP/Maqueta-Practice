@@ -1,7 +1,7 @@
 .news{
     align-items: center;
     margin-top: 32px;
-    padding: 10px 16px;
+    padding: 10px 16px 40px;
     position: relative;
     &__taghead{
         left: 16px;
@@ -157,6 +157,18 @@
         }
     }
 }
+.news::before {
+    background: url(../../image/news-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 226px;
+    left: 0px;
+    position: absolute;
+    bottom: -170px;
+    width: 100%;
+    z-index: 1;
+}
 @include mq-min(md){
     .news{
         margin-top: 100px;
@@ -304,7 +316,20 @@
             }
         }
     }
+    .news::before {
+        background: url(../../image/news-background-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 156px;
+        left: 0px;
+        position: absolute;
+        bottom: -96px;
+        width: 100%;
+        z-index: 1;
+    }
 }
+
 @include mq-min(lg){
     .news{
         &__slider{
@@ -395,6 +420,18 @@
             bottom: 24px;
             right: 47px;
         }
+    }
+    .news::before {
+        background: url(../../image/news-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 160px;
+        left: 0px;
+        position: absolute;
+        bottom: -134px;
+        width: 100%;
+        z-index: 1;
     }
 }
 @include mq-min(xb){
