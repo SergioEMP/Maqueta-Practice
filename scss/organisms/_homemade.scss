@@ -119,3 +119,63 @@
         }
     }
 }
+@include mq-min(xl){
+    .homemade{
+        &__content{
+            &--text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .tag{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xb){
+    .homemade{
+        padding: 43px;
+        &__container{
+            margin: 0 auto;
+            padding: 50px 29px 50px 37px;
+            position: relative;
+            width: 1056px;
+        }
+        &__logo{
+            position: absolute;
+            left: 131px;
+            top: 50px;
+        }
+        &__content{
+            &--image{
+                width: 62%;
+            }
+            &--image::before{
+                font-size: 24px;
+                height: 44px;
+                padding: 3px 14px;
+                width: 44px;
+            }
+            &--text{
+                justify-content: end;
+                h2{
+                    margin-bottom: 40px;
+                }
+                .tag{
+                    margin: 10px 0px;
+                }
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+        &__button{
+            padding-bottom: 0px;
+            a{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}

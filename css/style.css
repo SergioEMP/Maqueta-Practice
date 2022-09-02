@@ -4491,5 +4491,59 @@ table th,
     width: fit-content;
   }
 }
+@media (min-width: 1024px) {
+  .homemade__content--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .homemade__content--text .tag {
+    margin: 0;
+  }
+}
+@media (min-width: 1366px) {
+  .homemade {
+    padding: 43px;
+  }
+  .homemade__container {
+    margin: 0 auto;
+    padding: 50px 29px 50px 37px;
+    position: relative;
+    width: 1056px;
+  }
+  .homemade__logo {
+    position: absolute;
+    left: 131px;
+    top: 50px;
+  }
+  .homemade__content--image {
+    width: 62%;
+  }
+  .homemade__content--image::before {
+    font-size: 24px;
+    height: 44px;
+    padding: 3px 14px;
+    width: 44px;
+  }
+  .homemade__content--text {
+    justify-content: end;
+  }
+  .homemade__content--text h2 {
+    margin-bottom: 40px;
+  }
+  .homemade__content--text .tag {
+    margin: 10px 0px;
+  }
+  .homemade__content--text p {
+    line-height: 24px;
+  }
+  .homemade__button {
+    padding-bottom: 0px;
+  }
+  .homemade__button a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
