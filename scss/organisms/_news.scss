@@ -199,24 +199,22 @@
                 }
             }
             &--item:first-child{
-                img{
+                div:first-child{
                     position: relative;
-                    z-index: 1;
                 }
-                img:before{
+                div:first-child::before{
                     background-color: #FF9D00;
                     border-radius: 50%;
                     content: "\e90d";
                     color: #FFFFFF;
                     font-family: "iconFont";
-                    font-size: 8px;
-                    height: 18px;
+                    font-size: 10px;
+                    height: 22px;
                     right: 12px;
-                    padding-left: 7px;
+                    padding: 4px 8px;
                     position: absolute;
                     top: 12px;
-                    width: 18px;
-                    z-index: 2;
+                    width: 22px;
                 }
             }
             &--item:nth-child(2){
@@ -374,6 +372,23 @@
             }
             &--item:nth-child(3){
                 display: block;
+                div:first-child{
+                    position: relative;
+                }
+                div:first-child::before{
+                    background-color: #FF9D00;
+                    border-radius: 50%;
+                    content: "\e90d";
+                    color: #FFFFFF;
+                    font-family: "iconFont";
+                    font-size: 10px;
+                    height: 22px;
+                    right: 12px;
+                    padding: 4px 8px;
+                    position: absolute;
+                    top: 12px;
+                    width: 22px;
+                }
             }
         }
         &__slider{
@@ -385,16 +400,17 @@
 @include mq-min(xb){
     .news{
         &__plus{
-            width: 82%;
-            position: relative;
+            &--item{
+                width: 31%;
+            }
         }
         &__slider{
             bottom: -115px;
             width: 300px;
             &--item{
                 .tag{
-                    font-size: 12px;
-                    padding: 4px 9px;
+                    font-size: 14px;
+                    padding: 8px 9px;
                 }
             }
             &--background{ 
@@ -406,29 +422,74 @@
             &--logo{
                 img{
                     height: auto;
-                    width: 33px;
+                    width: 61px;
                 }
             }
             &--content{
-                position: absolute;
-                bottom: 50px;
-                left: 16px;
                 h4{
-                    font-size: 12px;
-                    line-height: 15px;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
                 div{
-                    flex-direction: column;
+                    flex-direction: row;
                     margin-top: 20px;
                     p{
-                        font-size: 8px;
+                        font-size: 11px;
                         font-weight: 700;
-                        line-height: 10px;
+                        line-height: 15px;
                     }
                     p:nth-child(2){
-                        font-family: $font-primary;
-                        font-weight: 400;
-                        margin: 4px 0 0;
+                        font-family: 'Poppins';
+                        margin: 0 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    .news{
+        &__plus{
+            &--item{
+                width: 33.3%;
+            }
+        }
+        &__slider{
+            bottom: -16px;
+            &--item{
+                .tag{
+                    font-size: 14px;
+                    padding: 8px 9px;
+                }
+            }
+            &--background{ 
+                img{
+                    height: 460px;
+                    width: 300px;
+                }
+            }
+            &--logo{
+                img{
+                    height: auto;
+                    width: 61px;
+                }
+            }
+            &--content{
+                h4{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                div{
+                    flex-direction: row;
+                    margin-top: 8px;
+                    p{
+                        font-size: 11px;
+                        font-weight: 700;
+                        line-height: 15px;
+                    }
+                    p:nth-child(2){
+                        font-family: 'Poppins';
+                        margin: 0 5px 0;
                     }
                 }
             }
