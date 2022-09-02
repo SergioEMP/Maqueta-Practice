@@ -4437,14 +4437,59 @@ table th,
   margin-bottom: 4px;
   width: 90%;
 }
-.homemade__content--button {
+.homemade__button {
   padding-bottom: 17px;
 }
-.homemade__content--button a {
+.homemade__button a {
   border: solid 1px #FF742B;
   color: #FF742B;
   padding: 8px;
   width: fit-content;
+}
+
+@media (min-width: 720px) {
+  .homemade {
+    padding: 24px 0;
+  }
+  .homemade__container {
+    flex-direction: column;
+    margin: 0 24px;
+    padding: 26px 20px 21px 26px;
+  }
+  .homemade__logo {
+    margin-bottom: 25px;
+  }
+  .homemade__content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .homemade__content--image {
+    width: 55%;
+  }
+  .homemade__content--text h2 {
+    font-weight: 700;
+    text-align: left;
+  }
+  .homemade__content--text .tag {
+    margin: 10px 0 8px;
+  }
+  .homemade__content--text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 2px;
+    width: 86%;
+  }
+  .homemade__button {
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+  .homemade__button a {
+    border: solid 1px #FF742B;
+    color: #FF742B;
+    padding: 8px;
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
