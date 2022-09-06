@@ -49,17 +49,9 @@
         &--content{
             margin-left: 80px;
             h4{
-                position: relative;
-            }
-        }
-        &--item:nth-child(odd){
-            border-bottom: none;
-            p:first-child{
-                background-color: #9518B9;
-            }
-            h4{
                 margin-left: 20px;
                 padding-left: 10px;
+                position: relative;
             }
             h4:before{
                 background-color: #C657E6;
@@ -74,6 +66,12 @@
                 position: absolute;
                 top: 0px;
                 width: 18px;
+            }
+        }
+        &--item:first-child{
+            border-bottom: none;
+            p:first-child{
+                background-color: #9518B9;
             }
         }
         &--item:nth-child(2){
@@ -150,13 +148,13 @@
                 margin: 14px 0;
             }
             &--tagdate{
+                align-items: center;
                 flex-direction: row;
                 p:nth-child(2){
                     margin-left: 8px;
                 }
             }
             &--content{
-                margin-left: 80px;
                 h4{
                     position: relative;
                 }
@@ -208,39 +206,64 @@
         &__plus{
             flex-direction: row;
             margin-top: 4px;
-            width: 50%;
+            width: 77%;
             &--item{
-                margin: 14px 0;
+                height: fit-content;
+                margin: 14px 24px 14px 0;
+                position: relative;
             }
-            &--tagdate{
-                flex-direction: row;
-                p:nth-child(2){
-                    margin-left: 8px;
+            &--image{
+                position: relative; 
+                img{
+                    height: auto;
+                    width: 100%;
                 }
             }
+            &--tagdate{
+                margin-left: 0;
+            }
             &--content{
-                margin-left: 80px;
+                margin-left: 0;
                 h4{
-                    position: relative;
+                    margin: 0;
+                    padding-left: 0;
+                    position: static;
+                }
+                h4:before{
+                    border: 2px solid #FFFFFF;
+                    font-size: 16px;
+                    height: 30px;
+                    left: inherit;
+                    padding: 4px 9px;
+                    right: 14px;
+                    top: 22px;
+                    width: 30px;
                 }
             }
             &--item:nth-child(2){
                 h4{
-                    margin-left: 20px;
-                    padding-left: 10px;
+                    margin-left: 0px;
+                    padding-left: 0px;
                 }
                 h4:before{
-                    display: block;
+                    display: none;
                 }
             }
             &--item:nth-child(3){
-                display: block;
-                h4::before{
-                    content: "\e90d";
-                    padding-left: 7px;
-                    font-weight: 600;
+                h4{
+                    margin-left: 0px;
+                    padding-left: 0px;
+                }
+                h4:before{
+                    content: "\e90c";
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding-left: 4px;
                 }
             }
+        }
+        &__button{
+            margin-top: 0;
         }
     }
 }
