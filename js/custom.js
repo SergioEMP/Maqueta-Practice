@@ -51,3 +51,40 @@ $(document).ready(function(){
     slidesToScroll: 1,
   });  
 })
+
+$(document).ready(function(){
+  $('.programs__slider').slick({
+    adaptiveHeight: true,
+    arrows: true,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4.9,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1365,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2.9 ,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 746,
+        settings: {
+          adaptiveHeight: false,
+          arrows: false,
+          slidesToShow: 1.9,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });  
+})

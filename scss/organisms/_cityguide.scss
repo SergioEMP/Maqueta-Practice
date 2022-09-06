@@ -570,31 +570,31 @@
             .slick-dots{
                     bottom: -28px;
             }
-        }
-        .slick-arrow{
-            top: 45%;
-        }
-        .slick-arrow::before{
-            background-color: #20334E;
-            border-radius: 100%;
-            color: #FFFFFF;
-            font-family: 'iconFont';
-            font-size: 28px;
-            opacity: 1;
-        }
-        .slick-prev{
-            left: -70px;
-        }
-        .slick-prev::before {
-            content: "\e90e";
-            padding: 6px 12px 6px 10px;
-        }
-        .slick-next{
-            right: -20px;
-        }
-        .slick-next::before{
-            content: "\e90f";
-            padding: 6px 10px 6px 12px;
+            .slick-arrow{
+                top: 45%;
+            }
+            .slick-arrow::before{
+                background-color: #20334E;
+                border-radius: 100%;
+                color: #FFFFFF;
+                font-family: 'iconFont';
+                font-size: 28px;
+                opacity: 1;
+            }
+            .slick-prev{
+                left: -70px;
+            }
+            .slick-prev::before {
+                content: "\e90e";
+                padding: 6px 12px 6px 10px;
+            }
+            .slick-next{
+                right: -20px;
+            }
+            .slick-next::before{
+                content: "\e90f";
+                padding: 6px 10px 6px 12px;
+            }
         }
     }
     .cityguide::before{

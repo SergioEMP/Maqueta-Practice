@@ -34,12 +34,22 @@ p{
     height: 34px;
     justify-content: center;
     left: 8px;
+    padding: 0 16px;
     position: absolute;
     top: -20px;
-    width: 192px;
+    width: fit-content;
     p{
         font-size: 20px;
         font-weight: 600;
     }
+}
+.taghead::before{
+    background-color: #FF742B;
+    content: "";
+    height: 1px;
+    left: -9px;
+    position: absolute;
+    top: 16px;
+    width: 8px;
 }
     
