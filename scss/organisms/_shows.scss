@@ -1,0 +1,246 @@
+.show{
+    padding: 20px 16px;
+    &__principal{
+        &--image{
+            position: relative;
+            img{
+                border-radius: 4px;
+                height: auto;
+                width: 100%;
+            }
+        }
+        &--image::before{
+            background-color: #C657E6;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            color: #FFFFFF;
+            content: "\e90d";
+            font-family: "iconFont";
+            font-size: 14px;
+            height: 26px;
+            padding: 3px 8px;
+            position: absolute;
+            right: 11px;
+            top: 11px;
+            width: 26px;
+        }
+        &--tagdate{
+            p:first-child{
+                background-color: #9518B9;
+            }
+        }
+    }
+    &__plus{
+        &--item{
+            height: 70px;
+            margin: 18px 0;
+            padding: 8px 0;
+        }
+        &--image{
+            position: absolute;
+            img{
+                border-radius: 4px;
+                object-fit: cover;
+            }
+        }
+        &--tagdate{
+            margin: 0 0 0 80px;
+        }
+        &--content{
+            margin-left: 80px;
+            h4{
+                position: relative;
+            }
+        }
+        &--item:nth-child(odd){
+            border-bottom: none;
+            p:first-child{
+                background-color: #9518B9;
+            }
+            h4{
+                margin-left: 20px;
+                padding-left: 10px;
+            }
+            h4:before{
+                background-color: #C657E6;
+                border-radius: 50%;
+                content: "\e90d";
+                color: #FFFFFF;
+                font-family: "iconFont";
+                font-size: 8px;
+                height: 18px;
+                left: -20px;
+                padding-left: 7px;
+                position: absolute;
+                top: 0px;
+                width: 18px;
+            }
+        }
+        &--item:nth-child(2){
+            h4{
+                margin-left: 0;
+                padding-left: 0;
+            }
+            h4:before{
+                display: none;
+            }
+        }
+        &--item:nth-child(3){
+            display: block;
+            p:first-child{
+                background-color: #FF9D00;
+            }
+            h4::before{
+                background-color: #FF9D00;
+                content: "\e90c";
+                font-weight: 200;
+                padding-left: 4px;
+            }
+        }
+    }
+    &__button{
+        margin-top: 40px;
+        a{
+            border: solid 1px #FF742B;
+            color: #FF742B;
+        }
+        a:after{
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+    }
+}
+@include mq-min(md){
+    .show{
+        padding: 20px 23px;
+        &__principal{
+            &--image{
+                img{
+                    border-radius: 8px;
+                }
+            }
+            &--image::before{
+                border: 2px solid #FFFFFF;
+                font-size: 30px;
+                height: 55px;
+                padding: 3px 18px;
+                right: 23px;
+                top: 23px;
+                width: 55px;
+            }
+            &--tagdate{
+                margin-left: 0;
+            }
+            &--content{
+                margin-left: 0;
+                h4{
+                    span{
+                        background-color: #78BFBA;
+                        color: #FFFFFF;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+        &__plus{
+            flex-direction: column;
+            margin-top: 12px;
+            width: 50%;
+            &--item{
+                margin: 14px 0;
+            }
+            &--tagdate{
+                flex-direction: row;
+                p:nth-child(2){
+                    margin-left: 8px;
+                }
+            }
+            &--content{
+                margin-left: 80px;
+                h4{
+                    position: relative;
+                }
+            }
+            &--item:nth-child(2){
+                h4{
+                    margin-left: 20px;
+                    padding-left: 10px;
+                }
+                h4:before{
+                    display: block;
+                }
+            }
+            &--item:nth-child(3){
+                display: block;
+                h4::before{
+                    content: "\e90d";
+                    padding-left: 7px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .show{
+        padding: 40px 47px;
+        &__principal{
+            display: flex;
+            flex-direction: row;
+            &--image{
+                width: 100%;
+            }
+            &--image::before{
+                height: 58px;
+                padding: 5px 20px;
+                right: 24px;
+                top: 24px;
+                width: 58px;
+            }
+            &--contain{
+                padding: 14px 39px;
+                width: 69%;
+            }
+            &--tagdate{
+                margin-top: 0;
+            }
+        }
+        &__plus{
+            flex-direction: row;
+            margin-top: 4px;
+            width: 50%;
+            &--item{
+                margin: 14px 0;
+            }
+            &--tagdate{
+                flex-direction: row;
+                p:nth-child(2){
+                    margin-left: 8px;
+                }
+            }
+            &--content{
+                margin-left: 80px;
+                h4{
+                    position: relative;
+                }
+            }
+            &--item:nth-child(2){
+                h4{
+                    margin-left: 20px;
+                    padding-left: 10px;
+                }
+                h4:before{
+                    display: block;
+                }
+            }
+            &--item:nth-child(3){
+                display: block;
+                h4::before{
+                    content: "\e90d";
+                    padding-left: 7px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
