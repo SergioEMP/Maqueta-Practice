@@ -5214,5 +5214,70 @@ table th,
     top: -100px;
   }
 }
+@media (min-width: 1024px) {
+  .gallery__principal--image::before {
+    font-size: 26px;
+    height: 50px;
+    padding: 5px 7px;
+    width: 50px;
+  }
+  .gallery__principal--content {
+    padding: 70px 21px 70px 24px;
+  }
+  .gallery__principal--content h3 {
+    font-size: 32px;
+    line-height: 40px;
+    width: 370px;
+  }
+  .gallery__principal--tagdate {
+    margin-left: 0;
+  }
+  .gallery__principal--date {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .gallery__principal::after {
+    bottom: -95px;
+  }
+  .gallery__button {
+    margin-top: 40px;
+  }
+  .gallery::before {
+    background: url(../../image/gallery-background-desktop.png) no-repeat;
+    background-size: contain;
+    height: 234px;
+    top: -80px;
+  }
+}
+@media (min-width: 1366px) {
+  .gallery h2 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 10px;
+  }
+  .gallery__principal {
+    margin: 0 auto;
+    padding: 32px 11.3%;
+  }
+  .gallery__principal::after {
+    bottom: -120px;
+  }
+  .gallery__slider {
+    margin: 0 auto;
+    margin-left: 15px;
+    padding: 0 10%;
+  }
+  .gallery__slider--content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1366px) {
+  .gallery::before {
+    height: 240px;
+    top: -120px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

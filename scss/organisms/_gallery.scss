@@ -279,3 +279,76 @@
         top: -100px;
     }
 }
+@include mq-min(xl){
+    .gallery{
+        &__principal{
+            &--image::before{
+                font-size: 26px;
+                height: 50px;
+                padding: 5px 7px;
+                width: 50px;
+            }
+            &--content{
+                padding: 70px 21px 70px 24px;
+                h3{
+                    font-size: 32px;
+                    line-height: 40px;
+                    width: 370px;
+                }
+            }
+            &--tagdate{
+                margin-left: 0;
+            }
+            &--date{
+                display: block;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        &__principal::after{
+            bottom: -95px;
+        }
+        &__button{
+            margin-top: 40px;
+        }
+    }
+    .gallery::before{
+        background: url(../../image/gallery-background-desktop.png) no-repeat;
+        background-size: contain;
+        height: 234px;
+        top: -80px;
+    }
+}
+@include mq-min(xb){
+    .gallery{
+        h2{
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 10px;
+        }
+        &__principal{
+            margin: 0 auto;
+            padding: 32px 11.3%;
+        }
+        &__principal::after{
+            bottom: -120px;
+        }
+        &__slider{
+            margin: 0 auto;
+            margin-left: 15px;
+            padding: 0 10%;
+            &--content{
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xb){
+    .gallery::before{
+        height: 240px;
+        top: -120px;
+    }
+}

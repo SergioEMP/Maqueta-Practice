@@ -92,19 +92,12 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.gallery__slider').slick({
     arrows: true,
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 300,
-    slidesToShow: 4.9,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1365,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
       {
         breakpoint: 1023,
         settings: {
