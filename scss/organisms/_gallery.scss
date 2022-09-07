@@ -44,6 +44,8 @@
             border-radius: 0px 0px 8px 8px;
             margin-top: -6px;
             padding: 8px 8px 16px;
+            position: relative;
+            z-index: 3;
             h3{
                 color: #20334E;
                 font-size: 16px;
@@ -58,9 +60,24 @@
             }
         }
     }
+    &__principal::after{
+        content: "";
+        background: #78BFBA;
+        bottom: -48%;
+        display: block;
+        height: 195px;
+        left: 0;
+        position: absolute;
+        transform: translate(0%, -50%);
+        width: 100%;
+        z-index: 0;
+    }
     &__slider{
+        position: relative;
+        z-index: 2;
         margin: 12px 0 0 16px;
         &--item{
+            margin-right: 24px;
             position: relative;
         }
         &--image{
@@ -126,6 +143,9 @@
     }
     &__button{
         margin-top: 60px;
+        a::after{
+            font-size: 20px;
+        }
     }
 }
 .gallery::before{
@@ -139,4 +159,123 @@
     top: -80px;
     width: 100%;
     z-index: 1;
+}
+@include mq-min(sm){
+    .gallery::before{
+        height: 230px;
+        top: -120px;
+    }
+}
+@include mq-min(md){
+    .gallery{
+        margin-top: 60px;
+        h2{
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__principal{
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 32px 22px;
+            position: relative;
+            z-index: 3;
+            &--image{
+                width: 100%;
+                img{
+                    border-radius: 0px 4px 4px 0px;
+                }
+            }
+            &--image::before{
+                font-size: 16px;
+                height: 34px;
+                padding: 3px 5px;
+                right: 14px;
+                top: 14px;
+                width: 34px;
+            }
+            &--content{
+                border-radius: 8px 0px 0px 8px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                margin-top: 0;
+                padding: 27px 12px 27px 20px;
+                z-index: 0;
+                h3{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    margin-top: 0;
+                    width: 240px;
+                    span{
+                        background-color: #78BFBA;
+                        color: #FFFFFF;
+                        margin-left: -6px;
+                        padding: 0 6px;
+                    }
+                }
+            }
+            &--tagdate{
+                margin: 15px 0 0 -6px;
+            }
+            &--date{
+                display: none;
+            }
+        }
+        &__principal::after{
+            bottom: -150px;
+            height: 195px;
+            transform: translate(0, 0);
+            width: 100%;
+            z-index: -1;
+        }
+        &__slider{
+            margin: 14px 0 0 22px;
+            z-index: 3;
+            &--content{
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            &--content::before{
+                font-size: 22px;
+                height: 49px;
+                padding: 6px 9px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: -50%;
+                width: 49px;
+            }
+        }
+        .slick-dots{
+            bottom: -50px;
+        }
+        &__button{
+            margin-top: 80px;
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+    .gallery::before{
+        background: url(../../image/gallery-background-tablet.png) no-repeat;
+        background-size: contain;
+        height: 205px;
+        top: -80px;
+    }
+}
+@include mq-min(lg){
+    .gallery{
+        &__principal::after{
+            bottom: -118px;
+        }
+    }
+    .gallery::before{
+        background: url(../../image/gallery-background-tablet.png) no-repeat;
+        background-size: contain;
+        height: 234px;
+        top: -100px;
+    }
 }

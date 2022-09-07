@@ -108,12 +108,12 @@ $(document).ready(function(){
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 2.9 ,
+          slidesToShow: 2.7,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 746,
+        breakpoint: 745,
         settings: {
           arrows: false,
           slidesToShow: 1.7,
