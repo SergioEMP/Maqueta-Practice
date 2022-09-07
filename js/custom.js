@@ -109,7 +109,33 @@ $(document).ready(function(){
         breakpoint: 745,
         settings: {
           arrows: false,
+          dots: true,
           slidesToShow: 1.7,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });  
+})
+
+$(document).ready(function(){
+  $('.bussiness__slider').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2.7,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 745,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       }
