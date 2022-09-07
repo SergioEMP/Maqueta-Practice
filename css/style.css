@@ -5281,5 +5281,72 @@ table th,
     top: -120px;
   }
 }
+.bussiness {
+  margin-top: 40px;
+  padding: 40px 0;
+  position: relative;
+}
+.bussiness__taghead {
+  border-color: #98B438;
+  left: 16px;
+}
+.bussiness__taghead h2 {
+  color: #20334E;
+  font-size: 20px;
+}
+.bussiness__taghead h2 span {
+  color: #98B438;
+}
+.bussiness__taghead::before {
+  background-color: #98B438;
+  left: -17px;
+  width: 16px;
+}
+.bussiness__slider {
+  margin: 0 45px 10px;
+}
+.bussiness__slider--item {
+  background-color: #F4F4F4;
+  border-radius: 4px;
+  height: 100px;
+  margin-top: 40px;
+  position: relative;
+}
+.bussiness__slider--item picture img {
+  left: 50%;
+  position: absolute;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.bussiness__slider--item h3 {
+  color: #20334E;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 40px 52px 8px 52px;
+  text-align: center;
+}
+.bussiness__slider--item p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 17px;
+}
+.bussiness .slick-dots {
+  bottom: -40px;
+}
+.bussiness .slick-dots li {
+  margin: 0 1px;
+}
+.bussiness .slick-dots li button::before {
+  color: #939EAD;
+  font-size: 8px;
+  opacity: 1;
+}
+.bussiness .slick-dots .slick-active button::before {
+  color: #98B438;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
