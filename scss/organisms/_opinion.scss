@@ -85,7 +85,6 @@
             font-size: 32px;
             font-weight: 700;
             line-height: 40px;
-            text-align: center;
         }
         &__slider{
             margin: 42px 10px;
@@ -137,6 +136,24 @@
         .slick-dots{
             bottom: -60px;
             
+        }
+    }
+}
+@include mq-min(xl){ 
+    .opinion{
+        padding: 32px 0 80px;
+        h2{
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &__slider{
+            margin: 42px 10px;
+            .slick-arrow{
+                top: 25%;
+            }
+        }
+        .slick-dots{
+            bottom: -48px;
         }
     }
 }

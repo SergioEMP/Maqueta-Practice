@@ -5498,7 +5498,6 @@ table th,
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
-    text-align: center;
   }
   .opinion__slider {
     margin: 42px 10px;
@@ -5547,6 +5546,24 @@ table th,
   }
   .opinion .slick-dots {
     bottom: -60px;
+  }
+}
+@media (min-width: 1024px) {
+  .opinion {
+    padding: 32px 0 80px;
+  }
+  .opinion h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .opinion__slider {
+    margin: 42px 10px;
+  }
+  .opinion__slider .slick-arrow {
+    top: 25%;
+  }
+  .opinion .slick-dots {
+    bottom: -48px;
   }
 }
 

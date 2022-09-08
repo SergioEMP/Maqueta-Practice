@@ -157,16 +157,9 @@ $(document).ready(function(){
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 4.57,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1365,
-        settings: {
-          slidesToShow: 3.6,
-          slidesToScroll: 1,
-        }
-      },
       {
         breakpoint: 1023,
         settings: {
