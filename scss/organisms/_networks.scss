@@ -1,0 +1,56 @@
+.networks{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    position: relative;
+    padding: 40px 13px 80px 19px;
+    &__taghead{
+        border-color: #609FEE;
+        left: 16px;
+        h2{
+            color: #20334E;
+            span{
+                color: #609FEE;
+            }
+        }
+    }
+    &__taghead::before{
+        background-color: #609FEE;
+        left: -17px;
+        width: 16px;
+    }
+    .fb-page{
+        margin-top: 10px;
+    }
+}
+@include mq-min(md){
+    .networks{
+        margin-top: 40px;
+        position: relative;
+        padding: 40px 13px 80px 19px;
+        &__taghead{
+            left: inherit;
+            right: 49px;
+            h2{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+        }
+        &__taghead::before{
+            background-color: #609FEE;
+            left: inherit;
+            right: -50px;
+            width: 49px;
+        }
+        .fb-page{
+            margin-top: 10px;
+            span{
+                iframe{
+                    width: 511px;
+                }
+            }
+        }
+    }
+}

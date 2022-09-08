@@ -5661,5 +5661,60 @@ table th,
     margin-top: 12px;
   }
 }
+.networks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  position: relative;
+  padding: 40px 13px 80px 19px;
+}
+.networks__taghead {
+  border-color: #609FEE;
+  left: 16px;
+}
+.networks__taghead h2 {
+  color: #20334E;
+}
+.networks__taghead h2 span {
+  color: #609FEE;
+}
+.networks__taghead::before {
+  background-color: #609FEE;
+  left: -17px;
+  width: 16px;
+}
+.networks .fb-page {
+  margin-top: 10px;
+}
+
+@media (min-width: 720px) {
+  .networks {
+    margin-top: 40px;
+    position: relative;
+    padding: 40px 13px 80px 19px;
+  }
+  .networks__taghead {
+    left: inherit;
+    right: 49px;
+  }
+  .networks__taghead h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .networks__taghead::before {
+    background-color: #609FEE;
+    left: inherit;
+    right: -50px;
+    width: 49px;
+  }
+  .networks .fb-page {
+    margin-top: 10px;
+  }
+  .networks .fb-page span iframe {
+    width: 511px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
