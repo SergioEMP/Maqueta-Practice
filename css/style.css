@@ -2192,7 +2192,6 @@ p {
   border: 1px solid #FF742B;
   border-radius: 40px;
   display: flex;
-  height: 34px;
   justify-content: center;
   left: 8px;
   padding: 0 16px;
@@ -5347,6 +5346,208 @@ table th,
 .bussiness .slick-dots .slick-active button::before {
   color: #98B438;
   font-size: 14px;
+}
+
+@media (min-width: 720px) {
+  .bussiness {
+    padding: 20px 0 40px;
+  }
+  .bussiness__taghead {
+    left: 42px;
+  }
+  .bussiness__taghead h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 8px;
+  }
+  .bussiness__taghead::before {
+    left: -43px;
+    width: 42px;
+  }
+  .bussiness__slider {
+    margin: 0 0 10px;
+  }
+  .bussiness__slider--item {
+    border-radius: 50px 0 0 50px;
+    height: 90px;
+    margin: 30px 0 0 24px;
+  }
+  .bussiness__slider--item picture img {
+    left: 15px;
+    top: 15px;
+    transform: translate(0, 0);
+  }
+  .bussiness__slider--item h3 {
+    margin: 24px 0 5px 90px;
+    text-align: left;
+  }
+  .bussiness__slider--item p {
+    margin-left: 90px;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .bussiness {
+    padding: 20px 0 50px;
+  }
+  .bussiness__taghead {
+    left: 47px;
+  }
+  .bussiness__taghead h2 {
+    padding: 4px 10px;
+  }
+  .bussiness__taghead::before {
+    left: -48px;
+    width: 47px;
+  }
+  .bussiness__slider {
+    margin-left: 30px;
+  }
+  .bussiness__slider--item {
+    border-radius: 50px 0 0 50px;
+    height: 90px;
+    margin: 30px 0 0 17px;
+  }
+  .bussiness .slick-dots {
+    bottom: -50px;
+  }
+}
+.opinion {
+  background-color: #F4F4F4;
+  padding: 24px 0 40px;
+}
+.opinion h2 {
+  color: #20334E;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.opinion h2 span {
+  color: #F06D6D;
+}
+.opinion__slider {
+  margin: 32px 30px;
+}
+.opinion__slider--item span {
+  display: none;
+}
+.opinion__slider--item h3 {
+  color: #20334E;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 16px;
+  text-align: center;
+}
+.opinion__slider--item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+.opinion__slider--item p:before {
+  content: "“";
+  font-size: 36px;
+  font-weight: 700;
+  left: -10px;
+  line-height: 45px;
+  position: absolute;
+  top: -8px;
+}
+.opinion__slider--item p:after {
+  content: "”";
+  font-size: 36px;
+  font-weight: 700;
+  right: -10px;
+  line-height: 45px;
+  position: absolute;
+  top: -8px;
+}
+.opinion__slider--container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.opinion .slick-dots {
+  bottom: -40px;
+}
+.opinion .slick-dots li {
+  margin: 0 1px;
+}
+.opinion .slick-dots li button::before {
+  color: #D8D8D8;
+  font-size: 8px;
+  opacity: 1;
+}
+.opinion .slick-dots .slick-active button::before {
+  color: #20334E;
+  font-size: 14px;
+}
+
+@media (min-width: 720px) {
+  .opinion {
+    padding: 32px 0 40px;
+  }
+  .opinion h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+  }
+  .opinion__slider {
+    margin: 42px 10px;
+  }
+  .opinion__slider--item span {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 0px 0 -20px;
+  }
+  .opinion__slider--item h3 {
+    margin-top: 0;
+  }
+  .opinion__slider--item p:before {
+    display: none;
+  }
+  .opinion__slider--item p:after {
+    display: none;
+  }
+  .opinion__slider .slick-arrow {
+    top: 34%;
+    z-index: 2;
+  }
+  .opinion__slider .slick-arrow::before {
+    background-color: #20334E;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-family: "iconFont";
+    font-size: 22px;
+    opacity: 1;
+  }
+  .opinion__slider .slick-prev {
+    left: 10px;
+  }
+  .opinion__slider .slick-prev::before {
+    content: "\e90e";
+    padding: 6px 12px 6px 10px;
+  }
+  .opinion__slider .slick-next {
+    right: 20px;
+  }
+  .opinion__slider .slick-next::before {
+    content: "\e90f";
+    padding: 6px 10px 6px 12px;
+  }
+  .opinion .slick-dots {
+    bottom: -60px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -121,21 +121,64 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.bussiness__slider').slick({
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 4.57,
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1365,
+        settings: {
+          slidesToShow: 3.6,
+          slidesToScroll: 1,
+        }
+      },
+      {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 2.7,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
         }
       },
       {
         breakpoint: 745,
         settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });  
+})
+
+$(document).ready(function(){
+  $('.opinion__slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4.57,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1365,
+        settings: {
+          slidesToShow: 3.6,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 745,
+        settings: {
+          arrows: false,
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
         }
