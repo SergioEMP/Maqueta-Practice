@@ -2582,6 +2582,200 @@ table th,
     justify-content: space-between;
   }
 }
+.footer {
+  background-color: #30496C;
+  border-bottom: solid 16px #81A1C9;
+  padding: 20px 20px 0;
+}
+.footer__logos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__logos .icon::before {
+  margin: 0 12px;
+}
+.footer__logos .icon-Instagram::before {
+  content: "\e903";
+  color: #FFFFFF;
+}
+.footer__logos .icon-Facebook::before {
+  content: "\e902";
+  color: #FFFFFF;
+}
+.footer__logos .icon-Twitter::before {
+  content: "\e901";
+  color: #FFFFFF;
+}
+.footer__logos .icon-YouTube::before {
+  content: "\e900";
+  color: #FFFFFF;
+}
+.footer__menu {
+  border-top: 0.5px dashed #EBEBEB;
+}
+.footer__menu--styles {
+  position: relative;
+  border-bottom: 0.5px dashed #EBEBEB;
+  padding: 14px 0;
+}
+.footer__menu--styles p {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.footer__menu--styles p::after {
+  content: "\e911";
+  color: #fff;
+  font-family: "iconFont";
+  font-size: 6px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.footer__menu--styles ul {
+  display: none;
+}
+.footer__button {
+  margin-top: 24px;
+  text-align: center;
+}
+.footer__button .tag {
+  background-color: #609FEE;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 8px 24px;
+}
+.footer__copyright {
+  color: #FFFFFF;
+  margin-top: 52px;
+  position: relative;
+}
+.footer__copyright p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+.footer__copyright p:nth-child(2) {
+  margin-top: 20px;
+}
+.footer__copyright .icon-icon-pencil a {
+  color: #30496C;
+  margin-top: -30px;
+}
+.footer__copyright .icon-icon-pencil:before {
+  background-color: #98B438;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  content: "\e910";
+  color: #FFFFFF;
+  font-size: 24px;
+  height: 45px;
+  padding: 9px;
+  position: absolute;
+  right: -11px;
+  top: 22px;
+  width: 45px;
+}
+
+@media (min-width: 720px) {
+  .footer {
+    padding: 20px 34px 0;
+  }
+  .footer__logos {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer__logos picture {
+    margin-right: 28px;
+  }
+  .footer__logos .icon::before {
+    margin: 0 8px;
+    font-size: 24px;
+  }
+  .footer__logos .icon-Facebook::before {
+    font-size: 26px;
+  }
+  .footer__menu {
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__menu--styles {
+    border-bottom: none;
+  }
+  .footer__menu--styles p {
+    margin-bottom: 10px;
+  }
+  .footer__menu--styles p::after {
+    display: none;
+  }
+  .footer__menu--styles ul {
+    display: block;
+    list-style: none;
+    margin-left: 0;
+  }
+  .footer__menu--styles ul a {
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+  .footer__menu--content {
+    display: none;
+  }
+  .footer__button {
+    margin-top: 24px;
+    text-align: center;
+  }
+  .footer__button .tag {
+    background-color: #609FEE;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 8px 24px;
+  }
+  .footer__copyright {
+    color: #FFFFFF;
+    margin-top: 52px;
+    position: relative;
+  }
+  .footer__copyright p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+  }
+  .footer__copyright p:nth-child(2) {
+    margin-top: 20px;
+  }
+  .footer__copyright .icon-icon-pencil a {
+    color: #30496C;
+    margin-top: -30px;
+  }
+  .footer__copyright .icon-icon-pencil:before {
+    background-color: #98B438;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    content: "\e910";
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 45px;
+    padding: 9px;
+    position: absolute;
+    right: -11px;
+    top: 22px;
+    width: 45px;
+  }
+}
 .lasthour {
   background-color: #20334E;
   border-top: solid #EF0000 6px;
