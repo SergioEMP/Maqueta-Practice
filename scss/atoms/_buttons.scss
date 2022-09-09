@@ -55,6 +55,12 @@ input[type="button"]{
     }
     a:after{
         content: "»";
-        margin-left: 5px;
+        font-size: 20px;
+        margin:0 0 2px 5px;
+    }
+    a:hover{
+        background-color: #FF742B;
+        border: none;
+        color: #FFFFFF;
     }
 }

@@ -18,7 +18,7 @@
         }
     }
     &__image::before{   
-        background: url(../../image/cityguide-mobile-background.png);
+        background: url(./../image/cityguide-mobile-background.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: "";
@@ -241,7 +241,7 @@
     }
 }
 .cityguide::before{
-    background: url(../../image/cityguide-background.png);
+    background: url(./../image/cityguide-background.png);
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
@@ -598,7 +598,7 @@
         }
     }
     .cityguide::before{
-        background: url(../../image/cityguide-background-desktop.png);
+        background: url(./../image/cityguide-background-desktop.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: "";

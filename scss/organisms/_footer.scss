@@ -79,8 +79,12 @@
             margin-top: 20px;
         }
         .icon-icon-pencil{
+            bottom: 111px;
+            position: fixed;
+            right: 30px;
+            z-index: 99;
             a{
-                color: #30496C;
+                color: transparent;
                 margin-top: -30px;
             }
         }
@@ -177,6 +181,8 @@
                 margin-top: 12px;
             }
             .icon-icon-pencil{
+                bottom: 76px;
+                right: 48px;
                 a{
                     background-color: #98B438;
                     color: #FFFFFF;
@@ -255,6 +261,8 @@
                 margin-top: 0px;
             }
             .icon-icon-pencil{
+                bottom: 50px;
+                right: 185px;
                 a{
                     right: -121px;
                     top: -40px;

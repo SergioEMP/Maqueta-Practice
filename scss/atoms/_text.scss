@@ -37,15 +37,14 @@ p{
     position: absolute;
     top: -20px;
     width: fit-content;
-    p{
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 26px;
-    }
     h2{
+        color: #20334E;
         font-size: 20px;
         font-weight: 600;
         line-height: 26px;
+        span{
+            color: #FF742B;
+        }
     }
 }
 .taghead::before{
@@ -57,4 +56,28 @@ p{
     top: 16px;
     width: 8px;
 }
-    
+@include mq-min(md){
+    .taghead{
+        left: 46px;
+        padding: 3px 24px;
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    .taghead::before{
+        left: -47px;
+        top: 19px;
+        width: 46px;
+    }
+}
+@include mq-min(xl){
+    .taghead{
+        left: 48px;
+    }
+    .taghead::before{
+        left: -49px;
+        width: 48px;
+    }
+}

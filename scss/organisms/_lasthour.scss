@@ -15,11 +15,11 @@
         position: absolute;
         top: -20px;
         width: 208px;
-        p{
+        h1{
             color: white;
             font-size: 20px;
         }
-        p:before{
+        h1:before{
             color: white;
             content: "\e905";
             font-family: $font-icon;
@@ -120,6 +120,16 @@
             margin: 0 30px;
             height: 55px;
             width: 78%;
+        }
+        &--button{
+            a{
+                border-color: #EF0000;
+                color: #EF0000;
+            }
+            a:after{
+                font-size: 12px;
+                margin-top: 2px;
+            }
         }
     }
 }
