@@ -88,6 +88,7 @@
             background-color: #98B438;
             border: 2px solid #FFFFFF;
             border-radius: 50%;
+            box-shadow: 0px 4px 4px rgba(32, 51, 78, 0.26);
             content: "\e910";
             color: #FFFFFF;
             font-size: 24px;
@@ -147,50 +148,121 @@
                 display: none;
             }
         }
+        &__menu div:nth-of-type(1){
+            order: 1;
+        }
+        &__menu div:nth-of-type(2){
+            order: 3;
+        }
+        &__menu div:nth-of-type(3){
+            order: 2;
+        }
+        &__menu div:nth-of-type(4){
+            order: 4;
+        }
         &__button{
-            margin-top: 24px;
-            text-align: center;
+            margin: -50px 0 80px -50px;
             .tag{
-                background-color: #609FEE;
-                border-radius: 8px;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 18px;
-                padding: 8px 24px;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 8px 16px;
             }
         }
         &__copyright{
-            color: #FFFFFF;
-            margin-top: 52px;
-            position: relative;
             p{
-                font-size: 10px;
-                font-weight: 400;
-                line-height: 18px;
-                text-align: center;
+                font-size: 11px;
+                line-height: 14px;
             }
             p:nth-child(2){
-                margin-top: 20px;
+                margin-top: 12px;
             }
             .icon-icon-pencil{
                 a{
-                    color: #30496C;
+                    background-color: #98B438;
+                    color: #FFFFFF;
+                    font-family: 'Poppins';
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 22px;
                     margin-top: -30px;
+                    padding: 6px 20px 6px 32px;
+                    position: absolute;
+                    right: -34px;
+                    top: -40px;
+                    width: 140px;
+                    z-index: 1;
                 }
             }
             .icon-icon-pencil:before{
-                background-color: #98B438;
-                border: 2px solid #FFFFFF;
-                border-radius: 50%;
-                content: "\e910";
-                color: #FFFFFF;
-                font-size: 24px;
-                height: 45px;
-                padding: 9px;
-                position: absolute;
-                right: -11px;
-                top: 22px;
-                width: 45px;
+                font-size: 30px;
+                height: 56px;
+                padding: 11px;
+                right: 82px;
+                top: -70px;
+                width: 56px;
+                z-index: 2;
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .footer{
+        &__menu{
+            &--content{
+                display: block;
+            }
+        }
+        &__button{
+            margin: -74px 0 80px 202px;
+        }
+    }
+}
+@include mq-min(xb){
+    .footer{
+        padding: 30px 121px 0 164px;
+        position: relative;
+        &__container{
+            align-items: flex-start;
+            display: flex;
+            flex-direction: row;
+        }
+        &__logos{
+            flex-direction: column;
+            margin-right: 30px;
+            picture{
+                margin-right: 0px;
+                img{
+                    height: auto;
+                    width: 114px;
+                }
+            }
+            &--icons{
+                margin-top: 12px;
+            }
+        }
+        &__menu{
+            width: 78%;
+            &--styles{
+                padding: 0;
+            }
+        }
+        &__button{
+            margin: -60px 0 80px 376px;
+        }
+        &__copyright{
+            margin-top: 100px;
+            p:nth-child(2){
+                margin-top: 0px;
+            }
+            .icon-icon-pencil{
+                a{
+                    right: -121px;
+                    top: -40px;
+                }
+            }
+            .icon-icon-pencil:before{
+                right: -2px;
+                top: -70px;
             }
         }
     }
