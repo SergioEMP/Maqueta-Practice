@@ -120,7 +120,7 @@
             font-size: 15px;
             margin-right: 10px;
         }
-        p:nth-child(2){
+        &--event{
             font-size: 11px;
             height: 55px;
             line-height: 15px;
@@ -155,31 +155,40 @@
                 };
             }
             &--secondpart{
-                margin-top: 26px;
+                margin: 16px;
+                padding-bottom: 8px;
                 position: relative;
                 h3{
                     font-size: 20px;
                     text-align: left;
                 }
+            }
+            &--secondtain{
                 div:first-of-type::before{
                     height: 48px;
                 }
                 div:first-of-type::after{
                     font-size: 29px;
-                    left: -5px;
+                    left: 12px;
                     top: 18px;
                 }
+            }
+            &--update{
+                padding: 10px 0 0 18px;
             }
             &--hour{
                 font-size: 14px;
             }
             &--event{
                 font-size: 16px;
-                width: 68%;
+                height: 68px;
+                line-height: 22px;
+                margin: -5px 30px 0;
+                width: 75%;
             }
             &--button{
                 position: absolute;
-                right: 16px;
+                right: 4px;
                 top: -22px;
             }
         }
@@ -193,6 +202,7 @@
             padding-bottom: 10px;
             &--firstpart{
                 padding: 22px 0 0 58px;
+                width: 100%;
             }
             &--video{
                 iframe{
@@ -203,27 +213,33 @@
             &--secondpart{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-end;
                 margin-right: 22px;
+                padding-bottom: 50px;
                 position: relative;
+                width: 62%;
                 h3{
                     margin-top: 22px;
                 }
+            }
+            &--secondtain{
+                height: 320px;
+                padding: 0 4px;
                 div:first-of-type::before{
                     height: 62px;
+                    left: 2px;
                 }
                 div:first-of-type::after{
                     font-size: 29px;
-                    left: -5px;
+                    left: -1px;
                     top: 32px;
                 }
             }
             &--update{
-                padding: 4px 0 18px 24px;
+                padding: 4px 0 18px 20px;
             }
             &--event{
-                line-height: 22px;
-                margin-top: -14px;
+                margin-top: -5px;
                 width: 84%;
             }
             &--button{
@@ -234,10 +250,17 @@
         }
     }
 }
-@include mq-min(xxl){
-    .lasthour{
-        &__secondpart{
-            margin-left: 50px;
+@include mq-min(xb){
+    .lasthour{ 
+        &__content{
+            &--secondpart{
+            margin-right: 40px;
+            }
+            &--button{
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
         }
     }
 }

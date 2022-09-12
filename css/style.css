@@ -2966,7 +2966,7 @@ table th,
   font-size: 15px;
   margin-right: 10px;
 }
-.lasthour__content p:nth-child(2) {
+.lasthour__content--event {
   font-size: 11px;
   height: 55px;
   line-height: 15px;
@@ -2992,31 +2992,38 @@ table th,
     height: 374px;
   }
   .lasthour__content--secondpart {
-    margin-top: 26px;
+    margin: 16px;
+    padding-bottom: 8px;
     position: relative;
   }
   .lasthour__content--secondpart h3 {
     font-size: 20px;
     text-align: left;
   }
-  .lasthour__content--secondpart div:first-of-type::before {
+  .lasthour__content--secondtain div:first-of-type::before {
     height: 48px;
   }
-  .lasthour__content--secondpart div:first-of-type::after {
+  .lasthour__content--secondtain div:first-of-type::after {
     font-size: 29px;
-    left: -5px;
+    left: 12px;
     top: 18px;
+  }
+  .lasthour__content--update {
+    padding: 10px 0 0 18px;
   }
   .lasthour__content--hour {
     font-size: 14px;
   }
   .lasthour__content--event {
     font-size: 16px;
-    width: 68%;
+    height: 68px;
+    line-height: 22px;
+    margin: -5px 30px 0;
+    width: 75%;
   }
   .lasthour__content--button {
     position: absolute;
-    right: 16px;
+    right: 4px;
     top: -22px;
   }
 }
@@ -3028,6 +3035,7 @@ table th,
   }
   .lasthour__content--firstpart {
     padding: 22px 0 0 58px;
+    width: 100%;
   }
   .lasthour__content--video iframe {
     height: 410px;
@@ -3036,27 +3044,33 @@ table th,
   .lasthour__content--secondpart {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     margin-right: 22px;
+    padding-bottom: 50px;
     position: relative;
+    width: 62%;
   }
   .lasthour__content--secondpart h3 {
     margin-top: 22px;
   }
-  .lasthour__content--secondpart div:first-of-type::before {
-    height: 62px;
+  .lasthour__content--secondtain {
+    height: 320px;
+    padding: 0 4px;
   }
-  .lasthour__content--secondpart div:first-of-type::after {
+  .lasthour__content--secondtain div:first-of-type::before {
+    height: 62px;
+    left: 2px;
+  }
+  .lasthour__content--secondtain div:first-of-type::after {
     font-size: 29px;
-    left: -5px;
+    left: -1px;
     top: 32px;
   }
   .lasthour__content--update {
-    padding: 4px 0 18px 24px;
+    padding: 4px 0 18px 20px;
   }
   .lasthour__content--event {
-    line-height: 22px;
-    margin-top: -14px;
+    margin-top: -5px;
     width: 84%;
   }
   .lasthour__content--button {
@@ -3065,9 +3079,14 @@ table th,
     top: -10px;
   }
 }
-@media (min-width: 1920px) {
-  .lasthour__secondpart {
-    margin-left: 50px;
+@media (min-width: 1366px) {
+  .lasthour__content--secondpart {
+    margin-right: 40px;
+  }
+  .lasthour__content--button {
+    position: absolute;
+    right: 0;
+    top: 10px;
   }
 }
 .recent {
@@ -3406,7 +3425,6 @@ table th,
   }
   .guide__programs--item:last-child {
     border-bottom: dashed 1px #FFD8B1;
-    margin-left: 2px;
     padding-bottom: 15px;
   }
 }
