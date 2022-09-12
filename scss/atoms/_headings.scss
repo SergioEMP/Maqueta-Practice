@@ -22,7 +22,7 @@ h3{
         @include titles(24px, 32px, 700);
     }
     @include mq-min(xl){
-        @include titles(32px, 40px, 700);
+        @include titles(32px, 40px, 700); 
     }
 }
 h4{
