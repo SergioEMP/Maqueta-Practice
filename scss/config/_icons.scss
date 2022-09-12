@@ -55,3 +55,31 @@
 .icon-search:before {
   content: "\e908";
 }
+.icons{
+  font-family: 'iconFont' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.icon::before{
+  background-color: #FF9D00;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-family: 'iconFont' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}

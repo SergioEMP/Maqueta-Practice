@@ -30,60 +30,68 @@
             }
         }
         &--image:before{
-            background-color: #FF9D00;
-            border: 2px solid #FFFFFF ;
-            border-radius: 50%;
-            color: #FFFFFF;
             content: "\e90c";
             font-family: "iconFont";
             font-size: 10px;
-            padding: 3px 4px;
+            height: 24px;
+            padding: 4px 4px;
             position: absolute;
             right: 10px;
             top: 10px;
+            width: 24px;
         }
-        &--content{
+        &--content{ 
+            margin-top: 8px;
+            width: 95%;
             p{
                 font-family: 'Poppins';
+                margin-top: 10px;
             }
         }
     }
     &__plus{
         position: relative;
-        &--item:first-child{
-            border-bottom: none;
+        width: 100%;
+        &--item{
+            display: flex;
+            flex-direction: row;
+            padding: 12px 0;
+        }
+        &--item:nth-child(2){
+            span::before{
+                border: none;
+                content: "\e90d";
+                font-size: 8px;
+                height: 18px;
+                left: 0;
+                padding: 4px 7px;
+                position: absolute;
+                top: 0px;
+                width: 18px;
+            }
+            h4{
+                margin-left: 24px;
+            }
         }
         &--image{
-            position: absolute;
             img{
                 border-radius: 4px;
                 object-fit: cover;
             }
         }
-        &--tagdate{
-            margin: 0 0 0 80px;
+        &--info{
+            margin-left: 10px;
         }
-        &--date{
-            text-align: left;
+        &--tagdate{
+            margin-top: 0;
         }
         &--content{
-            margin-left: 80px ;
-        }
-        &--item:nth-child(3){
-            display: block;
+            margin-top: 8px;
+            position: relative;
         }
     }
     &__button{
         margin: 30px 0 10px;
-        a{
-            background-color: #FFFFFF;
-            border: solid 1px #FF742B;
-            color: #FF742B;
-        }
-        a::after{
-            font-size: 20px;
-            margin-bottom: 2px;
-        }
     }
     &__slider{
         margin: 0 auto;
@@ -113,22 +121,22 @@
             h3{
                 color: #FFFFFF;
                 font-family: 'Poppins';
-                font-size: 16px;
                 font-weight: 700;
                 line-height: 24px;
                 margin-top: 8px;
             }
             div{
-                color: #FFFFFF;
                 display: flex;
                 flex-direction: row;
                 margin-top: 8px;
                 p{
+                    color: #FFFFFF;
                     font-size: 11px;
                     font-weight: 700;
                     line-height: 15px;
                 }
                 p:nth-child(2){
+                    color: #FFFFFF;
                     font-family: 'Poppins';
                     font-weight: 400;
                     margin-left: 5px;
@@ -172,7 +180,7 @@
 @include mq-min(md){
     .news{
         margin-top: 100px;
-        padding: 0 26px 20px;
+        padding: 1px 26px 20px;
         position: relative;
         &__taghead{
             left: 48px;
@@ -187,12 +195,15 @@
             width: 48px;
         }
         &__principal{
-            padding-top: 40px;
+            margin-bottom: 5px;
+            padding-top: 20px;
             &--image:before{
-                font-size: 22px;
-                padding: 8px 11px;
+                font-size: 26px;
+                height: 55px;
+                padding: 8px 10px;
                 right: 23px;
                 top: 23px;
+                width: 55px;
             }
             &--tagdate{
                 margin-left: 0;
@@ -202,36 +213,16 @@
             }
         }
         &__plus{
+            display: flex;
+            flex-direction: row;
             width: 77%;
-            position: relative;
             &--item{
+                flex-direction: column;
+                margin-right: 24px;
+                width: 48%;
                 h3{
                     margin:2px 0;
                     width: 220px;
-                }
-            }
-            &--item:first-child{
-                div:first-child{
-                    position: relative;
-                }
-                div:first-child::before{
-                    background-color: #FF9D00;
-                    border-radius: 50%;
-                    content: "\e90d";
-                    color: #FFFFFF;
-                    font-family: "iconFont";
-                    font-size: 10px;
-                    height: 22px;
-                    right: 12px;
-                    padding: 4px 8px;
-                    position: absolute;
-                    top: 12px;
-                    width: 22px;
-                }
-            }
-            &--item:nth-child(2){
-                h3{
-                    margin-left: 0;
                 }
             }
             &--image{
@@ -243,16 +234,30 @@
                     width: 100%;
                 }
             }
-            &--tagdate{
-                margin: 0;
-                display: flex;
-                flex-direction: row;
-                p:nth-child(2){
-                    margin-left: 8px;
-                }
+            &--image::before{
+                border: none;
+                content: "\e90d";
+                font-size: 12px;
+                height: 24px;
+                padding: 3px 8px ;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 24px;
             }
-            &--content{
-                margin-left: 0 ;
+            &--info{
+                margin-left: 0;
+            }
+            &--item:nth-child(2){
+                div::before{
+                    display: none;
+                }
+                span::before{
+                    display: none;
+                }
+                h4{
+                    margin-left: 0;
+                }
             }
             &--item:nth-child(3){
                 display: none;
@@ -269,7 +274,7 @@
             }
         }
         &__slider{
-            bottom: 30px;
+            bottom: 44px;
             position: absolute;
             right: 30px;
             width: 160px;
@@ -339,12 +344,14 @@
 }
 @include mq-min(xl){
     .news{
-        padding: 0 50px 20px;
+        margin-bottom: 130px;
+        padding: 2px 50px 20px;
         position: relative;
         &__taghead{
-            height: 48px;
             left: 44px;
+            padding: 6px 16px;
             top: -32px;
+            
         }
         &__taghead::before{
             left: -46px;
@@ -358,14 +365,16 @@
                 width: 100%;
             }
             &--image:before{
-                font-size: 22px;
+                height: 58px;
                 padding: 8px 11px;
-                right: 23px;
-                top: 23px;
+                right: 24px;
+                top: 24px;
+                width: 58px;
             }
             &--contain{
-                width: 71%; 
+                margin-top: 20px;
                 padding-left: 39px;
+                width: 71%; 
             }
             &--tagdate{
                 align-items: flex-start;
@@ -390,35 +399,13 @@
         &__plus{
             width: 82%;
             position: relative;
-            &--tagdate{
-                p:nth-child(2){
-                    line-height: 20px;
-                }
-            }
             &--item:nth-child(3){
                 display: block;
-                div:first-child{
-                    position: relative;
-                }
-                div:first-child::before{
-                    background-color: #FF9D00;
-                    border-radius: 50%;
-                    content: "\e90d";
-                    color: #FFFFFF;
-                    font-family: "iconFont";
-                    font-size: 10px;
-                    height: 22px;
-                    right: 12px;
-                    padding: 4px 8px;
-                    position: absolute;
-                    top: 12px;
-                    width: 22px;
-                }
             }
         }
         &__slider{
-            bottom: 24px;
-            right: 47px;
+            bottom: 36px;
+            right: 50px;
         }
     }
     .news::before {
@@ -429,7 +416,7 @@
         height: 160px;
         left: 0px;
         position: absolute;
-        bottom: -134px;
+        bottom: -225px;
         width: 100%;
         z-index: 1;
     }
@@ -437,12 +424,13 @@
 @include mq-min(xb){
     .news{
         &__plus{
+            width: 76%;
             &--item{
                 width: 31%;
             }
         }
         &__slider{
-            bottom: -115px;
+            bottom: -104px;
             width: 300px;
             &--item{
                 .tag{

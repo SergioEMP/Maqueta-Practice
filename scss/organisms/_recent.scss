@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 49px;
-    padding: 0 16px;
+    padding: 0 16px 20px;
     position: relative;
     &__principal{
         margin-top: 34px;
@@ -13,16 +13,6 @@
                 object-fit: cover;
                 width: 100%;
             }
-        }
-        &--tagdate{
-            align-items: center;
-            display: flex;
-            flex-direction: row;
-            margin-top: 10px;
-        }
-        &--date{
-            font-size: 11px;
-            margin-left: 8px;
         }
         &--content{
             margin-top: 8px;
@@ -46,9 +36,7 @@
                 border-radius: 50%;
                 content: "\e90d";
                 color: #FFFFFF;
-                font-family: 'iconFont';
                 font-size: 8px;
-                font-weight: 500;
                 height: 18px;
                 left: 0;
                 padding: 4px 7px;
@@ -81,6 +69,7 @@
 @include mq-min(md){
     .recent{
         margin-top: 60px;
+        padding-bottom: 40px;
         &__principal{
             border-bottom: solid 1px #E7E7E7;
             margin-top: 50px;
@@ -135,7 +124,7 @@
 @include mq-min(xl){
     .recent{
         flex-direction: row;
-        padding: 0 47px;
+        padding: 0 47px 40px;
         align-items: flex-start;
         &__tag{
             height: 40px;

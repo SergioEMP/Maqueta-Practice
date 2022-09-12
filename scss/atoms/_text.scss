@@ -73,3 +73,14 @@ p{
         width: 48px;
     }
 }
+.tagdate{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.date{
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 8px;
+}
