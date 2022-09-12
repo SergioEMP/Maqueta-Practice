@@ -15,11 +15,11 @@
         position: absolute;
         top: -20px;
         width: 208px;
-        h1{
+        p{
             color: white;
             font-size: 20px;
         }
-        h1:before{
+        p:before{
             color: white;
             content: "\e905";
             font-family: $font-icon;
@@ -34,11 +34,7 @@
         margin: 64px 16px 24px;
         &--firstpart{
             padding: 22px 16px 0;
-            h2{
-                color: #20334E;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 22px;
+            h1{
                 margin-bottom: 18px;
             }
             p{
@@ -54,12 +50,8 @@
                 height: auto;
                 width: 100%;
             };
-            background: linear-gradient(#FFFFFFF2, #FFFFFF);
         }
         &--secondpart{
-            padding: 0 16px;
-            position: relative;
-            z-index: 4;
             h3{
                 color: #EF0000;
                 font-size: 14px;
@@ -68,15 +60,28 @@
                 margin: 8px 0 34px;
                 text-align: center;
             }
+        }
+        &--secondtain{
+            background: linear-gradient (to top, #FFFFFFF2 20%, #FFFFFF);
+            display: flex;
+            flex-direction: column;
+            height: 190px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 0 16px;
+            position: relative;
+            z-index: 4;
             div:first-of-type{
-                font-weight: 600;
-                position: relative;
+                p{
+                    font-weight: 600;
+                    position: relative;
+                }
             }
             div:first-of-type::before{
                     background-color: #FFFFFF;
                     content: "";
                     height: 30px;
-                    left: -5px;
+                    left: 12px;
                     position: absolute;
                     top: 0px;
                     width: 10px;
@@ -85,16 +90,16 @@
                 content: "•";
                 color: #EF0000;
                 font-size: 20px;
-                left: -4px;
+                left: 13px;
                 position: absolute;
                 top: 8px;
             }
         }
-        &--update:nth-child(even){
+        &--update:nth-child(odd){
             border-left: dashed 1px #20334E;
             border-bottom: dashed 1px #20334E;
         }
-        &--update:nth-child(odd){
+        &--update:nth-child(even){
             border-right: dashed 1px #20334E;
             border-bottom: dashed 1px #20334E;
         }
@@ -115,10 +120,11 @@
             font-size: 15px;
             margin-right: 10px;
         }
-        &--event{
+        p:nth-child(2){
             font-size: 11px;
-            margin: 0 30px;
             height: 55px;
+            line-height: 15px;
+            margin: 0 30px;
             width: 78%;
         }
         &--button{
@@ -137,10 +143,6 @@
     .lasthour{
         &__content{
             &--firstpart{
-                h2{
-                    font-size: 24px;
-                    line-height: 32px;
-                }
                 p{
                     font-size: 14px;
                     font-weight: 700;
@@ -191,10 +193,6 @@
             padding-bottom: 10px;
             &--firstpart{
                 padding: 22px 0 0 58px;
-                h2{
-                    font-size: 32px;
-                    line-height: 40px;
-                }
             }
             &--video{
                 iframe{

@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 49px;
     padding: 0 16px;
     position: relative;
     &__principal{
@@ -20,15 +20,6 @@
             flex-direction: row;
             margin-top: 10px;
         }
-        &--tag{
-            background-color: #FF9D00;
-            border-radius: 4px;
-            color: white;
-            font-size: 12px;
-            line-height: 15px;
-            padding: 3px 9px;
-            text-align: center;
-        }
         &--date{
             font-size: 11px;
             margin-left: 8px;
@@ -36,16 +27,8 @@
         &--content{
             margin-top: 8px;
             width: 95%;
-            h3{
-                color: #20334E;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 22px;
-            }
             p{
-                color: #20334E;
-                font-size: 14px;
-                line-height: 22px;
+                margin-top: 8px;
             }
         }
     }
@@ -53,10 +36,11 @@
         width: 100%;
         &--item{
             padding: 8px 0;
-            h3{
-                color: #20334E;
-                font-size: 14px;
-                line-height: 18px;
+            .icon::before{
+                content: "\e90d";
+                position: absolute;
+            }
+            h4{
                 margin: 8px 0;
                 position: relative;
             }
@@ -65,11 +49,11 @@
             border-bottom: solid 1px #E7E7E7;
         }
         &--item:nth-child(2){
-            h3{
+            h4{
                 margin-left: 20px;
                 padding-left: 10px;
             }
-            h3:before{
+            h4:before{
                 background-color: #FF9D00;
                 border-radius: 50%;
                 content: "\e90d";
@@ -86,6 +70,9 @@
         }
         &--item:nth-child(3){
             display: none;
+        }
+        &--content{
+            position: relative;
         }
     }
 }

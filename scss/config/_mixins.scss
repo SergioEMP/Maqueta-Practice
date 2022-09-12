@@ -224,9 +224,10 @@
 // ==========================================================================
 // Mixins para el texto @include text(1.2rem,1.6) 
 // ==========================================================================
-@mixin text($tamano, $line-height) {
+@mixin text($tamano, $line-height, $weights) { 
   font-size: $tamano;
   line-height:$line-height;
+  font-weight: $weights;
 }
 
 // ==========================================================================
@@ -285,9 +286,10 @@
 // Mixins para Titulos : @include titles (color, font-family)
 // ==========================================================================
 
-@mixin titles($font-size,$line-height){
+@mixin titles($font-size,$line-height,$weights){
     font-size: $font-size;
     line-height: $line-height;
+    font-weight: $weights;
 }
 
 // ==========================================================================

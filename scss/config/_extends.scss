@@ -9,14 +9,13 @@
 }
 
 %link{
-    @include link (color(primary,500),color(complementary,300));
+    color: #20334E;
     cursor:pointer;
-    font-size: $font-size;
     outline: 0;
     text-decoration: none;
     transition: color .1s ease-out;
     &:focus{
-      outline: dotted;
+      outline: dotted 2px;
     }
 }
 
@@ -36,6 +35,6 @@
 }
 
 %titles{
-  color: color(primary,500);
+  color: #20334E;
   font-family: $font-primary;
 }

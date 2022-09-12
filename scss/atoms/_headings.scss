@@ -2,56 +2,35 @@ h1,h2,h3,h4,h5,h6{
     @extend %titles;
 }
 h1{
-    @include titles(map-get($sizes, medium), map-get($lineheight, lh-medium));
+    @include titles(16px, 22px, 600);
     @include mq-min(md){
-        @include titles(4rem, map-get($lineheight, lh-huge));
+        @include titles(24px, 32px, 700);
     }
     @include mq-min(xl){
-        @include titles(map-get($sizes, large), map-get($lineheight, lh-huge));
-    }
+        @include titles(32px, 40px, 700);
+    } 
 }
-h2{
-    @include titles(3.2rem, map-get($lineheight , lh-huge));
+h2{ 
+    @include titles(20px, 26px, 600);
     @include mq-min(md){
-        @include titles(map-get($sizes, medium), map-get($lineheight, lh-huge));
-    }
-    @include mq-min(xl){
-        @include titles(4.4rem, map-get($lineheight, lh-huge));
+        @include titles(24px, 32px, 700);
     }
 }
 h3{
-    @include titles(3rem, map-get($lineheight , lh-huge));
+    @include titles(16px, 22px, 600);
     @include mq-min(md){
-        @include titles(3.4rem, map-get($lineheight, lh-huge));
+        @include titles(24px, 32px, 700);
     }
     @include mq-min(xl){
-        @include titles(4.2rem, map-get($lineheight, lh-huge));
+        @include titles(32px, 40px, 700);
     }
 }
 h4{
-    @include titles(2.8rem,map-get($lineheight , lh-huge));
-    @include mq-min(md){
-        @include titles(3.2rem, map-get($lineheight, lh-huge));
-    }
-    @include mq-min(xl){
-        @include titles(4rem, map-get($lineheight, lh-huge));
-    }
+    @include titles(14px, 18px, 600);
 }
 h5{
-    @include titles(2.6rem, map-get($lineheight , lh-huge));
-    @include mq-min(md){
-        @include titles(3rem, map-get($lineheight, lh-huge));
-    }
-    @include mq-min(xl){
-        @include titles(3.8rem, map-get($lineheight, lh-huge));
-    }
+    @include titles(12px, 14px, 400);
 }
 h6{
-    @include titles(map-get($sizes, half), map-get($lineheight , lh-huge));
-    @include mq-min(md){
-        @include titles(2.8rem, map-get($lineheight, lh-huge));
-    }
-    @include mq-min(xl){
-        @include titles(map-get($sizes, medium), map-get($lineheight, lh-huge));
-    }
+    @include titles(10px, 22px, 300);
 }

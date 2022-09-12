@@ -28,7 +28,7 @@
         position: relative;
         background: linear-gradient(to right,  #20334EFF 20%, #20334E00), url(./../image/header-background.png), no-repeat;
         background-color: #20334E;
-        &--menu{
+        &--menu{ 
             span::before{
                 color: #FFFFFF;
                 content: "\e904";
@@ -124,6 +124,8 @@
         }
         &--social{
             display: flex;
+            display: none;
+            margin-left: 30px;
         }
         &--icons{
             align-items: center;
@@ -195,6 +197,9 @@
     .header{
         &__links{
             justify-content: space-between;
+            &--social{
+                display: flex;
+            }
         }
     }
 }

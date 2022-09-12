@@ -1,15 +1,11 @@
 p{
-    @include text(map-get($sizes ,tiny),map-get($lineheight ,lh-base));
-    text-align: justify
+    color: #20334E;
+    @include text(14px, 22px, 400);
+    text-align: left
 }
 @include mq-min(md){
     p{   
-        @include text(map-get($sizes ,small),map-get($lineheight , lh-half)); 
-    }
-}
-@include mq-min(lg){
-    p{
-        @include text(map-get($sizes ,thumb),map-get($lineheight , lh-medium));
+        @include text(16px, 24px, 400); 
     }
 }
 
@@ -21,7 +17,7 @@ p{
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    padding: 3px 9px;
+    padding: 4px 9px;
     text-align: center;
     width: fit-content;
 }
@@ -38,10 +34,6 @@ p{
     top: -20px;
     width: fit-content;
     h2{
-        color: #20334E;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 26px;
         span{
             color: #FF742B;
         }
