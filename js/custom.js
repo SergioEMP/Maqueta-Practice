@@ -81,7 +81,7 @@ $(document).ready(function(){
         settings: {
           adaptiveHeight: false,
           arrows: false,
-          slidesToShow: 1.9,
+          slidesToShow: 1.8,
           slidesToScroll: 1,
         }
       }

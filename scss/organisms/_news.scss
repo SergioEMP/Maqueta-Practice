@@ -1,6 +1,6 @@
 .news{
     align-items: center;
-    margin-top: 32px;
+    margin: 32px 0 60px;
     padding: 10px 16px 40px;
     position: relative;
     &__taghead{
@@ -165,18 +165,6 @@
         }
     }
 }
-.news::before {
-    background: url(../../image/news-background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    height: 226px;
-    left: 0px;
-    position: absolute;
-    bottom: -170px;
-    width: 100%;
-    z-index: 1;
-}
 @include mq-min(md){
     .news{
         margin-top: 100px;
@@ -321,18 +309,6 @@
             }
         }
     }
-    .news::before {
-        background: url(../../image/news-background-tablet.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: "";
-        height: 156px;
-        left: 0px;
-        position: absolute;
-        bottom: -96px;
-        width: 100%;
-        z-index: 1;
-    }
 }
 
 @include mq-min(lg){
@@ -344,7 +320,7 @@
 }
 @include mq-min(xl){
     .news{
-        margin-bottom: 130px;
+        margin-bottom: 70px;
         padding: 2px 50px 20px;
         position: relative;
         &__taghead{
@@ -408,21 +384,10 @@
             right: 50px;
         }
     }
-    .news::before {
-        background: url(../../image/news-background-desktop.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: "";
-        height: 160px;
-        left: 0px;
-        position: absolute;
-        bottom: -225px;
-        width: 100%;
-        z-index: 1;
-    }
 }
 @include mq-min(xb){
     .news{
+        margin-bottom: 150px;
         &__plus{
             width: 76%;
             &--item{
@@ -474,13 +439,16 @@
 }
 @include mq-min(xxl){
     .news{
+        margin-bottom: 70px;
         &__plus{
+            width: 83%;
             &--item{
                 width: 33.3%;
             }
         }
         &__slider{
-            bottom: -16px;
+            bottom: -18px;
+            margin-bottom: 0;
             &--item{
                 .tag{
                     font-size: 14px;

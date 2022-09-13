@@ -1,14 +1,11 @@
 .programs{
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
-    padding: 40px 0 0;
+    padding: 30px 0 0;
     &__taghead{
         border-color: #3F9891;
         left: 16px;
         h2{
-            color: #20334E;
-            font-size: 20px;
-            line-height: 26px;
             span{
                 color: #3F9891;
             }
@@ -25,8 +22,9 @@
         padding: 16px 0 53px 0;
         &--item{
             background-color: #FFFFFF;
+            border-radius: 8px;
             margin-left: 16px;
-            padding: 8px;
+            padding: 8px 8px 16px 8px;
             picture{
                 img{
                     height: auto;
@@ -34,15 +32,12 @@
                 } 
             }
             h3{
-                color: #20334E;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 22px;
                 margin-top: 8px;
             }
             p{
                 font-family: 'Poppins';
                 font-size: 12px;
+                line-height: 17px;
                 margin-top: 8px;
             }
         }
@@ -68,6 +63,7 @@
 @include mq-min(md){
     .programs{
         margin-top: 50px;
+        padding: 40px 0 0;
         &__taghead{
             left: 47px;
             padding: 0 24px;
@@ -81,6 +77,11 @@
             z-index: 1;
             &--item{
                 margin-left: 24px;
+                h3{
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 600;
+                }
             }
             .slick-arrow{
                 top: 42%;

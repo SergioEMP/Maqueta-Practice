@@ -1,7 +1,9 @@
 .seencolumns{
     background-color: #F4F4F4;
-    margin-top: 30px;
-    padding: 10px 0 55px;
+    margin-top: 50px;
+    padding: 0 0 39px;
+    position: relative;
+    z-index: 4;
     h2{
         color: #20334E;
         font-size: 24px;
@@ -37,24 +39,30 @@
             div{
                 display: flex;
                 flex-direction: column;
-                a{
-                    font-size: 11px;
-                    line-height: 15px;
-                    font-weight: 400;
-                    width: 92%;
-                }
-                a:first-child{
+               .tag{
                     background-color: #609FEE;
-                    color: #FFFFFF;
+                    font-weight: 600;
+               }
+               p{
                     font-size: 12px;
                     line-height: 15px;
-                    font-weight: 500;
-                    margin-bottom: 3px;
-                    width: fit-content;
-                }
+                    margin-top: 4px;
+               }
             }
         }
     }
+}
+.seencolumns::before{
+    background: url(./../image/news-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 226px;
+    left: 0px;
+    position: absolute;
+    top: -112px;
+    width: 100%;
+    z-index: -1;
 }
 @include mq-min(md){
     .seencolumns{
@@ -96,5 +104,34 @@
                 grid-row: 5;
             }
         }
+    }
+    .seencolumns::before{
+        background: url(./../image/news-background-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 156px;
+        left: 0px;
+        position: absolute;
+        top: -96px;
+        width: 100%;
+        z-index: -1;
+    }
+}
+@include mq-min(xl){
+    .seencolumns{
+        padding: 0 0 64px;
+    }
+    .seencolumns::before{
+        background: url(./../image/news-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 160px;
+        left: 0px;
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        z-index: 1;
     }
 }

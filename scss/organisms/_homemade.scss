@@ -25,11 +25,7 @@
         }
         &--image::before{
             background-color: #145AB1;
-            border: solid 2px #FFFFFF;
-            border-radius: 50%;
             content: "\e90d";
-            color: #FFFFFF;
-            font-family: "iconFont";
             font-size: 12px;
             height: 24px;
             left: 50%;
@@ -41,22 +37,21 @@
         }
         &--text{
             h2{
-                color: #20334E;
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 26px;
+                margin-bottom: 14px;
                 text-align: center;
+                span{
+                    background-color: #FCC690;
+                    padding: 0 8px 0 2px;
+                }
             }
             .tag{
                 background-color: #609FEE;
-                color: #FFFFFF;
-                font-size: 12px;
                 margin: 14px 0 8px;
-                width: fit-content;
             }
+        }
+        &--p{
+            margin-top: 8px;
             p{
-                color: #20334E;
-                font-size: 14px;
                 line-height: 20px;
                 margin-bottom: 4px;
                 width: 90%;
@@ -64,12 +59,14 @@
         }
     }
     &__button{
+        margin-top: 14px;
         padding-bottom: 17px;
         a{
-            border: solid 1px #FF742B;
-            color: #FF742B;
             padding: 8px;
-            width: fit-content;
+        }
+        a:after{
+            font-size: 12px;
+            margin-top: 2px;
         }
     }
 }
@@ -88,22 +85,23 @@
             display: flex;
             flex-direction: row-reverse;
             &--image{
-                width: 55%;
+                margin-top: 10px;
+                width: 62%;
             }
             &--text{
                 h2{
+                    font-size: 20px;
                     font-weight: 700;
+                    line-height: 25px;
+                    margin-bottom: 10px;
                     text-align: left;
-                }
-                .tag{
-                    margin: 10px 0 8px;
                 }
                 p{
                     font-size: 16px;
                     font-weight: 400;
-                    line-height: 20px;
+                    line-height: 24px;
                     margin-bottom: 2px;
-                    width: 86%;
+                    width: 96%;
                 }
             }
         }
@@ -160,10 +158,9 @@
             &--text{
                 justify-content: end;
                 h2{
-                    margin-bottom: 40px;
-                }
-                .tag{
-                    margin: 10px 0px;
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 36px;
                 }
                 p{
                     line-height: 24px;
