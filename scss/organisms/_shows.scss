@@ -1,5 +1,5 @@
 .show{
-    padding: 20px 16px;
+    padding: 10px 16px;
     &__principal{
         &--image{
             position: relative;
@@ -12,10 +12,7 @@
         &--image::before{
             background-color: #C657E6;
             border: 1px solid #FFFFFF;
-            border-radius: 50%;
-            color: #FFFFFF;
             content: "\e90d";
-            font-family: "iconFont";
             font-size: 14px;
             height: 26px;
             padding: 3px 8px;
@@ -35,6 +32,7 @@
         }
     }
     &__plus{
+        width: 100%;
         &--item{
             height: 70px;
             margin: 18px 0;
@@ -51,52 +49,40 @@
             margin: 0 0 0 80px;
         }
         &--content{
+            margin: 8px;
+            position: relative;
             margin-left: 80px;
-            h3{
-                margin-left: 20px;
-                padding-left: 10px;
-                position: relative;
-            }
-            h3:before{
-                background-color: #C657E6;
-                border-radius: 50%;
+            .icon::before{
                 content: "\e90d";
-                color: #FFFFFF;
-                font-family: "iconFont";
                 font-size: 8px;
-                height: 18px;
-                left: -20px;
-                padding-left: 7px;
+                height: 20px;
+                left: 0;
+                padding: 3px 6px;
                 position: absolute;
-                top: 0px;
-                width: 18px;
+                top: -1px;
+                width: 20px;
+            }
+            h4{
+                margin-left: 24px;
             }
         }
         &--item:first-child{
-            border-bottom: none;
-            a:first-child{
+            .tag{
                 background-color: #9518B9;
             }
         }
         &--item:nth-child(2){
-            h3{
-                margin-left: 0;
-                padding-left: 0;
-            }
-            h3:before{
+            .icon::before{
                 display: none;
+            }
+            h4{
+                margin-left: 0;
             }
         }
         &--item:nth-child(3){
-            display: block;
-            p:first-child{
-                background-color: #FF9D00;
-            }
-            h3::before{
-                background-color: #FF9D00;
+            .icon::before{
                 content: "\e90c";
-                font-weight: 200;
-                padding-left: 4px;
+                padding: 3px 3px 0;
             }
         }
     }
@@ -208,6 +194,7 @@
             }
         }
         &__plus{
+            display: flex;
             flex-direction: row;
             margin-top: 4px;
             width: 77%;

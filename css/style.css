@@ -4961,7 +4961,7 @@ table th,
   }
 }
 .show {
-  padding: 20px 16px;
+  padding: 10px 16px;
 }
 .show__principal--image {
   position: relative;
@@ -4974,10 +4974,7 @@ table th,
 .show__principal--image::before {
   background-color: #C657E6;
   border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  color: #FFFFFF;
   content: "\e90d";
-  font-family: "iconFont";
   font-size: 14px;
   height: 26px;
   padding: 3px 8px;
@@ -4992,6 +4989,9 @@ table th,
 .show__principal--content {
   margin-top: 8px;
   width: 95%;
+}
+.show__plus {
+  width: 100%;
 }
 .show__plus--item {
   height: 70px;
@@ -5009,51 +5009,35 @@ table th,
   margin: 0 0 0 80px;
 }
 .show__plus--content {
+  margin: 8px;
+  position: relative;
   margin-left: 80px;
 }
-.show__plus--content h3 {
-  margin-left: 20px;
-  padding-left: 10px;
-  position: relative;
-}
-.show__plus--content h3:before {
-  background-color: #C657E6;
-  border-radius: 50%;
+.show__plus--content .icon::before {
   content: "\e90d";
-  color: #FFFFFF;
-  font-family: "iconFont";
   font-size: 8px;
-  height: 18px;
-  left: -20px;
-  padding-left: 7px;
+  height: 20px;
+  left: 0;
+  padding: 3px 6px;
   position: absolute;
-  top: 0px;
-  width: 18px;
+  top: -1px;
+  width: 20px;
 }
-.show__plus--item:first-child {
-  border-bottom: none;
+.show__plus--content h4 {
+  margin-left: 24px;
 }
-.show__plus--item:first-child a:first-child {
+.show__plus--item:first-child .tag {
   background-color: #9518B9;
 }
-.show__plus--item:nth-child(2) h3 {
-  margin-left: 0;
-  padding-left: 0;
-}
-.show__plus--item:nth-child(2) h3:before {
+.show__plus--item:nth-child(2) .icon::before {
   display: none;
 }
-.show__plus--item:nth-child(3) {
-  display: block;
+.show__plus--item:nth-child(2) h4 {
+  margin-left: 0;
 }
-.show__plus--item:nth-child(3) p:first-child {
-  background-color: #FF9D00;
-}
-.show__plus--item:nth-child(3) h3::before {
-  background-color: #FF9D00;
+.show__plus--item:nth-child(3) .icon::before {
   content: "\e90c";
-  font-weight: 200;
-  padding-left: 4px;
+  padding: 3px 3px 0;
 }
 .show__button {
   margin-top: 40px;
@@ -5154,6 +5138,7 @@ table th,
     margin-top: 0;
   }
   .show__plus {
+    display: flex;
     flex-direction: row;
     margin-top: 4px;
     width: 77%;
