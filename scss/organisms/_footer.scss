@@ -2,11 +2,14 @@
     background-color: #30496C;
     border-bottom: solid 16px #81A1C9;
     padding: 20px 20px 0;
+    position: relative;
+    z-index: 2;
     &__logos{
         align-items: center;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        z-index: 2;
         .icon::before{
             margin: 0 12px;
         }
@@ -66,10 +69,10 @@
         }
     }
     &__copyright{
-        color: #FFFFFF;
         margin-top: 52px;
         position: relative;
         p{
+            color: #FFFFFF;
             font-size: 10px;
             font-weight: 400;
             line-height: 18px;
@@ -104,6 +107,18 @@
             width: 45px;
         }
     }
+}
+.footer::before{
+    background: url(./../image/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 228px;
+    left: 0px;
+    position: absolute;
+    top: -112px;
+    width: 100%;
+    z-index: -1;
 }
 @include mq-min(md){
     .footer{
@@ -210,6 +225,22 @@
             }
         }
     }
+    .footer::before{
+        background: url(./../image/footer-background-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 254px;
+        top: -130px;
+    }
+}
+@include mq-min(lg){
+    .footer::before{
+        background: url(./../image/footer-background-tablet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 290px;
+        top: -152px;
+    }
 }
 @include mq-min(xl){
     .footer{
@@ -222,7 +253,15 @@
             margin: -74px 0 80px 202px;
         }
     }
+    .footer::before{
+        background: url(./../image/footer-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 290px;
+        top: -120px;
+    }
 }
+
 @include mq-min(xb){
     .footer{
         padding: 30px 121px 0 164px;
@@ -273,5 +312,14 @@
                 top: -70px;
             }
         }
+    }
+}
+@include mq-min(xxl){
+    .footer::before{
+        background: url(./../image/footer-background-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 300px;
+        top: -166px;
     }
 }

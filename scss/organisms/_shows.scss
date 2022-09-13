@@ -34,24 +34,25 @@
     &__plus{
         width: 100%;
         &--item{
-            height: 70px;
-            margin: 18px 0;
-            padding: 8px 0;
+            display: flex;
+            flex-direction: row;
+            padding: 12px 0;
         }
         &--image{
-            position: absolute;
             img{
                 border-radius: 4px;
                 object-fit: cover;
             }
         }
+        &--info{
+            margin-left: 10px;
+        }
         &--tagdate{
-            margin: 0 0 0 80px;
+            margin-top: 0;
         }
         &--content{
-            margin: 8px;
+            margin-top: 8px;
             position: relative;
-            margin-left: 80px;
             .icon::before{
                 content: "\e90d";
                 font-size: 8px;
@@ -137,33 +138,17 @@
             &--item{
                 margin: 14px 0;
             }
-            &--tagdate{
-                align-items: center;
-                flex-direction: row;
-                p:nth-child(2){
-                    margin-left: 8px;
-                }
-            }
-            &--content{
-                h3{
-                    position: relative;
+            &--item:first-child{
+                .icon::before{
+                    background-color: #C657E6;
                 }
             }
             &--item:nth-child(2){
-                h3{
-                    margin-left: 20px;
-                    padding-left: 10px;
-                }
-                h3:before{
+                .icon::before{
                     display: block;
                 }
-            }
-            &--item:nth-child(3){
-                display: block;
-                h3::before{
-                    content: "\e90d";
-                    padding-left: 7px;
-                    font-weight: 600;
+                h4{
+                    margin-left: 24px;
                 }
             }
         }
@@ -199,9 +184,8 @@
             margin-top: 4px;
             width: 77%;
             &--item{
-                height: fit-content;
-                margin: 14px 24px 14px 0;
-                position: relative;
+                flex-direction: column;
+                margin-right: 24px;
             }
             &--image{
                 position: relative; 
@@ -210,46 +194,23 @@
                     width: 100%;
                 }
             }
-            &--tagdate{
+            &--info{
                 margin-left: 0;
             }
             &--content{
-                margin-left: 0;
-                h3{
-                    margin: 0;
-                    padding-left: 0;
-                    position: static;
+                .icon::before{
+                    display: none;
                 }
-                h3:before{
-                    border: 2px solid #FFFFFF;
-                    font-size: 16px;
-                    height: 30px;
-                    left: inherit;
-                    padding: 4px 9px;
-                    right: 14px;
-                    top: 22px;
-                    width: 30px;
+                h4{
+                    margin-left: 0;
                 }
             }
             &--item:nth-child(2){
-                h3{
-                    margin-left: 0px;
-                    padding-left: 0px;
-                }
-                h3:before{
+                .icon::before{
                     display: none;
                 }
-            }
-            &--item:nth-child(3){
-                h3{
-                    margin-left: 0px;
-                    padding-left: 0px;
-                }
-                h3:before{
-                    content: "\e90c";
-                    font-size: 14px;
-                    font-weight: 300;
-                    padding-left: 4px;
+                h4{
+                    margin-left: 0;
                 }
             }
         }

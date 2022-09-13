@@ -149,7 +149,7 @@
     }
 }
 .gallery::before{
-    background: url(../../image/gallery-background-mobile.png);
+    background: url(./../image/gallery-background-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
@@ -260,7 +260,7 @@
         }
     }
     .gallery::before{
-        background: url(../../image/gallery-background-tablet.png) no-repeat;
+        background: url(./../image/gallery-background-tablet.png) no-repeat;
         background-size: contain;
         height: 205px;
         top: -80px;
@@ -273,7 +273,7 @@
         }
     }
     .gallery::before{
-        background: url(../../image/gallery-background-tablet.png) no-repeat;
+        background: url(./../image/gallery-background-tablet.png) no-repeat;
         background-size: contain;
         height: 234px;
         top: -100px;
@@ -315,7 +315,7 @@
         }
     }
     .gallery::before{
-        background: url(../../image/gallery-background-desktop.png) no-repeat;
+        background: url(./../image/gallery-background-desktop.png) no-repeat;
         background-size: contain;
         height: 234px;
         top: -80px;
