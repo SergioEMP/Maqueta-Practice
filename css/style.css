@@ -2432,20 +2432,20 @@ table th,
   align-items: center;
   background-color: #F06D6D;
   display: flex;
-  height: 30px;
+  height: 3rem;
   justify-content: center;
 }
 .header__live p {
   color: white;
   display: flex;
   font-family: "Lexend Deca", sans-serif;
-  font-size: 12px;
-  margin: 2px 0 0 -12px;
+  font-size: 1.2rem;
+  margin: 2px 0 0 -1.2rem;
 }
 .header__live p:before {
   content: "•";
-  font-size: 28px;
-  margin: -1px 12px;
+  font-size: 2.8rem;
+  margin: -0.1rem 1.2rem;
 }
 .header__site {
   position: relative;
@@ -2465,10 +2465,10 @@ table th,
   border: none;
   border-radius: 0;
   content: "\e904";
-  font-size: 23px;
-  left: 32px;
+  font-size: 2.3rem;
+  left: 3.2rem;
   position: absolute;
-  top: 16px;
+  top: 1.6rem;
 }
 .header__site--menucont {
   background-color: #F4F4F4;
@@ -2582,11 +2582,12 @@ table th,
   display: none;
   margin-left: 30px;
 }
-.header__links--icons {
+.header__links--icons::before {
   align-items: center;
+  background-color: transparent;
   color: #FF742B;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   margin: 2px 6px;
 }
 .header__links--insta::before {
@@ -2605,7 +2606,7 @@ table th,
   align-items: center;
   display: flex;
   font-size: 12px;
-  padding: 0 20px;
+  padding: 0 1.1rem;
 }
 
 @media (min-width: 720px) {
@@ -2701,7 +2702,11 @@ table th,
     justify-content: space-between;
   }
   .header__links--social {
+    align-items: center;
     display: flex;
+  }
+  .header__links--date {
+    margin-right: 2.3rem;
   }
 }
 .footer {
@@ -3036,12 +3041,12 @@ table th,
   background-color: #EF0000;
   border-radius: 30px;
   display: flex;
-  height: 34px;
   justify-content: center;
   left: 25px;
+  padding: 0.6rem 3.2rem;
   position: absolute;
   top: -20px;
-  width: 208px;
+  width: fit-content;
 }
 .lasthour__tag p {
   color: white;
@@ -3080,10 +3085,12 @@ table th,
 }
 .lasthour__content--video div {
   height: 17.1rem;
+  margin: 0 auto;
   position: relative;
   width: 29.8rem;
 }
 .lasthour__content--video div iframe {
+  border-radius: 0.4rem;
   height: 100%;
   left: 0;
   position: absolute;
@@ -3175,33 +3182,61 @@ table th,
 }
 
 @media (min-width: 720px) {
-  .lasthour__content--firstpart p {
-    font-size: 14px;
-    font-weight: 700;
-    margin-top: -5px;
+  .lasthour {
+    margin-top: 6.2rem;
   }
-  .lasthour__content--video iframe {
-    height: 374px;
+  .lasthour__tag {
+    padding: 0.7rem 3.6rem;
+    top: -2.1rem;
+  }
+  .lasthour__content {
+    border-radius: 0.8rem;
+    margin: 6.2rem 2.6rem 2.4rem;
+  }
+  .lasthour__content--firstpart {
+    padding: 1.7rem 2.8rem 0;
+  }
+  .lasthour__content--firstpart h1 {
+    margin-bottom: 1.5rem;
+  }
+  .lasthour__content--firstpart p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+  }
+  .lasthour__content--video div {
+    height: 37.4rem;
+    width: 64.2rem;
+  }
+  .lasthour__content--video div iframe {
+    border-radius: 0.8rem;
   }
   .lasthour__content--secondpart {
     margin: 16px;
     padding-bottom: 8px;
     position: relative;
   }
-  .lasthour__content--secondpart h3 {
+  .lasthour__content--secondpart h2 {
     font-size: 20px;
     text-align: left;
+    margin: 3rem 0 0 1.2rem;
+  }
+  .lasthour__content--secondtain {
+    height: 23.8rem;
+  }
+  .lasthour__content--secondtain div:first-child {
+    margin-top: -1.4rem;
   }
   .lasthour__content--secondtain div:first-of-type::before {
     height: 48px;
   }
   .lasthour__content--secondtain div:first-of-type::after {
-    font-size: 29px;
-    left: 12px;
-    top: 18px;
+    font-size: 3.8rem;
+    left: 1.1rem;
+    top: 1.3rem;
   }
   .lasthour__content--update {
-    padding: 10px 0 0 18px;
+    padding: 1rem 0 0 1.4rem;
   }
   .lasthour__content--hour {
     font-size: 14px;
@@ -3215,8 +3250,8 @@ table th,
   }
   .lasthour__content--button {
     position: absolute;
-    right: 4px;
-    top: -22px;
+    right: 1.2rem;
+    top: -2.2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -3229,9 +3264,10 @@ table th,
     padding: 22px 0 0 58px;
     width: 100%;
   }
-  .lasthour__content--video iframe {
-    height: 410px;
-    width: 95%;
+  .lasthour__content--video div {
+    margin-left: 0;
+    height: 33.4rem;
+    width: 53.2rem;
   }
   .lasthour__content--secondpart {
     display: flex;
@@ -3240,14 +3276,15 @@ table th,
     margin-right: 22px;
     padding-bottom: 50px;
     position: relative;
-    width: 62%;
+    width: 81%;
   }
-  .lasthour__content--secondpart h3 {
-    margin-top: 22px;
+  .lasthour__content--secondpart h2 {
+    margin-top: 11.2rem;
   }
   .lasthour__content--secondtain {
     height: 320px;
-    padding: 0 4px;
+    margin-top: 1.6rem;
+    padding: 0.4rem;
   }
   .lasthour__content--secondtain div:first-of-type::before {
     height: 62px;
@@ -3272,13 +3309,75 @@ table th,
   }
 }
 @media (min-width: 1366px) {
+  .lasthour {
+    margin-top: 7.5rem;
+    padding-bottom: 3.1rem;
+  }
+  .lasthour__tag {
+    left: 4.8rem;
+    padding: 0.5rem 3.2rem;
+    top: -2.2rem;
+  }
+  .lasthour__content {
+    margin: 4rem 3.6rem 0;
+    padding-bottom: 0.6rem;
+  }
+  .lasthour__content--firstpart h1 {
+    letter-spacing: 0.1rem;
+    width: 98%;
+  }
+  .lasthour__content--firstpart p {
+    margin-top: 1.6rem;
+  }
+  .lasthour__content--video div {
+    margin: -0.5rem 0.1rem;
+    height: 40.9rem;
+    width: 71.2rem;
+  }
   .lasthour__content--secondpart {
     margin-right: 40px;
+    width: 57%;
+  }
+  .lasthour__content--secondpart h2 {
+    margin: 10.2rem 0 2.6rem 1.2rem;
+  }
+  .lasthour__content--secondtain {
+    padding: 0.4rem 1.8rem;
+  }
+  .lasthour__content--secondtain div:first-of-type::before {
+    height: 4.8rem;
+    left: 1.2rem;
+  }
+  .lasthour__content--secondtain div:first-of-type::after {
+    font-size: 3.8rem;
+    left: 1.1rem;
+    top: 1rem;
+  }
+  .lasthour__content--update {
+    padding: 4px 0 15px 20px;
+  }
+  .lasthour__content--event {
+    width: 86%;
   }
   .lasthour__content--button {
     position: absolute;
-    right: 0;
-    top: 10px;
+    right: 0.3rem;
+    top: 1.3rem;
+  }
+}
+@media (min-width: 1920px) {
+  .lasthour__content--video div {
+    height: 60.9rem;
+    width: 105.2rem;
+  }
+  .lasthour__content--secondpart {
+    justify-content: center;
+  }
+  .lasthour__content--secondpart h2 {
+    margin-top: 4rem;
+  }
+  .lasthour__content--secondtain {
+    height: 40rem;
   }
 }
 .recent {
