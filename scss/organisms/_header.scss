@@ -16,61 +16,94 @@
             display: flex;
             font-family: $font-primary;
             font-size: 12px;
-            margin-left: -12px;
+            margin:2px 0 0 -12px;
         }
         p:before{
             content: "•";
             font-size: 28px;
-            margin: 0 12px;
+            margin: -1px 12px;
         }
     }
     &__site{
         position: relative;
         background: linear-gradient(to right,  #20334EFF 20%, #20334E00), url(./../image/header-background.png), no-repeat;
         background-color: #20334E;
-        &--menu{ 
-            span::before{
-                color: #FFFFFF;
-                content: "\e904";
-                cursor: pointer;
-                font-family: 'iconFont';
-                font-size: 22px;
+        &--menu{
+            .icon__menu{
+                background-color: transparent;
+                background: none;
+                border: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+            }
+            .icon__menu::before{
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                content: "\e904";;
+                font-size: 23px;
                 left: 32px;
                 position: absolute;
-                top: 12px;
-            }
-            .active{
-                transform: translate(-600px);
-            }
-            .opacity{
-                background-color: black;
-                transition: all .5s ease;
+                top: 16px;
             }
         }
         &--menucont{
-            background-color: #20334E;
-            height: 600px;
+            background-color: #F4F4F4;
+            height: 0;
             left: 0;
+            overflow: hidden;
             position: absolute;
-            top: 0;
+            top: 100%;
             transition: all .5s ease;
-            width: 320px;
+            width: 55%;
             ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 list-style: none;
-                padding: 20px 0 20px;
+                margin-left: 1rem;
                 li{
-                    color: #FFFFFF;
-                    cursor: pointer;
-                    display: block;
-                    font-size: 12px;
-                    padding: 4px 10px;
-                    text-decoration: none;
+                    padding: 0.5rem 0;
+                    position: relative;
+                    a{
+                        cursor: pointer;
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding: 4px 10px;
+                        text-decoration: none;
+                    }   
+                    a:hover{
+                        color: #609FEE;
+                    }
+                    a:focus{
+                        color: #609FEE;
+                    }
                 }
-                li:hover{
-                    background-color: #33517D;
-                    color: #CCC;
+                .icon::after{
+                    content: "\e911";
+                    color: #20334E;;
+                    font-size: 0.6rem;
+                    font-family: 'iconFont';
+                    position: absolute;
+                    right: 1.2rem;
+                    top: 1.2rem;
+                }
+                li:nth-child(3):after{
+                    display: none;
+                }
+                li:nth-child(4):after{
+                    display: none;
+                }
+                li:nth-child(5):after{
+                    display: none;
                 }
             }
+        }
+        .menu-active{
+            height: auto;
+            z-index: 9;
         }
         &--logo{
             align-items: center;
@@ -83,7 +116,7 @@
             content: "";
             height: 23px;
             position: absolute;
-            right: 20px;
+            right: 25px;
             top: 18px;
             width: 21px;
         }
@@ -160,23 +193,55 @@
         &__live{
             border-radius: 4px;
             height: 23px;
-            left: 90px;
+            left: 9.7rem;
             position: absolute;
-            padding: 0px 15px;
-            top: 16px;
+            padding: 0 1.2rem;
+            top: 2.4rem;
             z-index: 2;
             p{
-                font-size: 10px;
+                font-size: 1.1rem;
                 margin-left: -8px;
             }
             p:before{
-                margin: 0 6px;
+                margin: 0 0.7rem 0 0.6rem;
+            }
+        }
+        &__site{
+            &--logo{
+                height: 68px;
+                img{
+                    height: auto;
+                    width: 116px;
+                }
+            }
+            &--logo::before{
+                right: 3.2rem;
+                top: 2.4rem;
+            }
+            &--menu{
+                .icon__menu::before{
+                    left: 3.8rem;
+                    top: 2.3rem;
+                }
+            }
+            &--menucont{
+                width: 100%;
+                ul{
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-right: 3rem;
+                   .icon::after{
+                    right: -1rem;
+                    top: 1.4rem;
+                   }
+                }
             }
         }
         &__links{
             height: 40px;
             &--list{
                 li{
+                    letter-spacing: 0.05rem;
                     a{    
                         color: #20334E;
                         font-size: 14px;
@@ -194,6 +259,37 @@
         max-width: 100%;
     }
     .header{
+        &__live{
+            left: 10.7rem;
+            top: 2.6rem;
+        }
+        &__site{
+            &--menu{
+                .icon__menu::before{
+                    left: 4.6rem;
+                    top: 2.5rem;
+                }
+            }&--menucont{
+                ul{
+                    margin: 0 6rem 0 4rem;
+                    li{
+                        a{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            &--logo{
+                height: 7.2rem;
+                img{
+                    width: 10.4rem;
+                }
+            }
+            &--logo::before{
+                right: 5.2rem;
+                top: 2.6rem;
+            }
+        }
         &__links{
             justify-content: space-between;
             &--social{

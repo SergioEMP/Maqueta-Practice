@@ -1,11 +1,7 @@
-const iconMenu = document.querySelector('#icon__menu'),
-  menu = document.querySelector('#menu');
-  
-  iconMenu.addEventListener('click', (e) => {
-
-    menu.classList.toggle('active');
-    document.body.classList.toggle('opacity');
-  })
+function changeClass(){
+  let siteNav = document.getElementById('menu');
+    siteNav.classList.toggle('menu-active');
+}
 
 $(document).ready(function(){
     $('.cityguide__slider').slick({

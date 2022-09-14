@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +19,24 @@
             </div>
             <div class="header__site">
                 <div class="header__site--menu">
-                    <span id="icon__menu"></span>
-                    <nav class="header__site--menucont active" id="menu">
+                    <button class="icon__menu icon" onclick="changeClass()"></button>
+                    <nav class="header__site--menucont" id="menu">
                         <ul>
-                            <li>Inicio</li>
-                            <li>Opcion 1</li>
-                            <li>Opcion 2</li>
-                            <li>Opcion 3</li>
-                            <li>Opcion 4</li>
+                            <li class="icon"><a href="">Noticias</a></li>
+                            <li class="icon"><a href="">Programas</a></li>
+                            <li class="icon"><a href="">Cityguia</a></li>
+                            <li class="icon"><a href="">Guia de programación</a></li>
+                            <li class="icon"><a href="">Liveshop</a></li>
+                            <li class="icon"><a href="">Más</a></li>
                         </ul>
                     </nav>
                 </div>
-                <picture class="header__site--logo">
-                    <source srcset="./image/logo-city.webp">
-                    <img src="./image/logo-city.png" width="59" height="31" alt="Logo pagina">
-                </picture>
+                <a href="#">
+                    <picture class="header__site--logo">
+                        <source srcset="./image/logo-city.webp">
+                        <img src="./image/logo-city.png" width="59" height="31" alt="Logo pagina">
+                    </picture>
+                </a>
             </div>
             <div class="header__links">
                 <ul class="header__links--list">
@@ -63,12 +66,14 @@
                 <div class="lasthour__content--firstpart">
                     <h1><a href="">Oscars: Will Smith empaña la ceremonia con su puñetazo a Chris Rock</a></h1>
                     <div class="lasthour__content--video">
-                        <iframe width="298" height="171" src="https://www.youtube.com/embed/wyFpItmics0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div>
+                            <iframe width="298" height="171" src="https://www.youtube.com/embed/wyFpItmics0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <p>Tomado de twitter @Variety</p>
                 </div>
                 <div class="lasthour__content--secondpart">
-                    <h3>Minuto a minuto</h3>
+                    <h2>Minuto a minuto</h2>
                     <div class="lasthour__content--secondtain">
                         <div class="lasthour__content--update">
                             <p class="lasthour__content--hour">9:35 P.M</p>

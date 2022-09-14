@@ -1477,9 +1477,8 @@ input[type=button].btn__tab.active {
   display: flex;
   font-size: 14px;
   font-weight: 600;
-  height: 34px;
   justify-content: center;
-  padding: 0 16px;
+  padding: 0.4rem 1.6rem;
   text-align: center;
   width: fit-content;
 }
@@ -2441,59 +2440,92 @@ table th,
   display: flex;
   font-family: "Lexend Deca", sans-serif;
   font-size: 12px;
-  margin-left: -12px;
+  margin: 2px 0 0 -12px;
 }
 .header__live p:before {
   content: "•";
   font-size: 28px;
-  margin: 0 12px;
+  margin: -1px 12px;
 }
 .header__site {
   position: relative;
   background: linear-gradient(to right, #20334e 20%, rgba(32, 51, 78, 0)), url(./../image/header-background.png), no-repeat;
   background-color: #20334E;
 }
-.header__site--menu span::before {
-  color: #FFFFFF;
+.header__site--menu .icon__menu {
+  background-color: transparent;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.header__site--menu .icon__menu::before {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
   content: "\e904";
-  cursor: pointer;
-  font-family: "iconFont";
-  font-size: 22px;
+  font-size: 23px;
   left: 32px;
   position: absolute;
-  top: 12px;
-}
-.header__site--menu .active {
-  transform: translate(-600px);
-}
-.header__site--menu .opacity {
-  background-color: black;
-  transition: all 0.5s ease;
+  top: 16px;
 }
 .header__site--menucont {
-  background-color: #20334E;
-  height: 600px;
+  background-color: #F4F4F4;
+  height: 0;
   left: 0;
+  overflow: hidden;
   position: absolute;
-  top: 0;
+  top: 100%;
   transition: all 0.5s ease;
-  width: 320px;
+  width: 55%;
 }
 .header__site--menucont ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
-  padding: 20px 0 20px;
+  margin-left: 1rem;
 }
 .header__site--menucont ul li {
-  color: #FFFFFF;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.header__site--menucont ul li a {
   cursor: pointer;
   display: block;
   font-size: 12px;
+  font-weight: 600;
   padding: 4px 10px;
   text-decoration: none;
 }
-.header__site--menucont ul li:hover {
-  background-color: #33517D;
-  color: #CCC;
+.header__site--menucont ul li a:hover {
+  color: #609FEE;
+}
+.header__site--menucont ul li a:focus {
+  color: #609FEE;
+}
+.header__site--menucont ul .icon::after {
+  content: "\e911";
+  color: #20334E;
+  font-size: 0.6rem;
+  font-family: "iconFont";
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+}
+.header__site--menucont ul li:nth-child(3):after {
+  display: none;
+}
+.header__site--menucont ul li:nth-child(4):after {
+  display: none;
+}
+.header__site--menucont ul li:nth-child(5):after {
+  display: none;
+}
+.header__site .menu-active {
+  height: auto;
+  z-index: 9;
 }
 .header__site--logo {
   align-items: center;
@@ -2506,7 +2538,7 @@ table th,
   content: "";
   height: 23px;
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 18px;
   width: 21px;
 }
@@ -2583,21 +2615,51 @@ table th,
   .header__live {
     border-radius: 4px;
     height: 23px;
-    left: 90px;
+    left: 9.7rem;
     position: absolute;
-    padding: 0px 15px;
-    top: 16px;
+    padding: 0 1.2rem;
+    top: 2.4rem;
     z-index: 2;
   }
   .header__live p {
-    font-size: 10px;
+    font-size: 1.1rem;
     margin-left: -8px;
   }
   .header__live p:before {
-    margin: 0 6px;
+    margin: 0 0.7rem 0 0.6rem;
+  }
+  .header__site--logo {
+    height: 68px;
+  }
+  .header__site--logo img {
+    height: auto;
+    width: 116px;
+  }
+  .header__site--logo::before {
+    right: 3.2rem;
+    top: 2.4rem;
+  }
+  .header__site--menu .icon__menu::before {
+    left: 3.8rem;
+    top: 2.3rem;
+  }
+  .header__site--menucont {
+    width: 100%;
+  }
+  .header__site--menucont ul {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 3rem;
+  }
+  .header__site--menucont ul .icon::after {
+    right: -1rem;
+    top: 1.4rem;
   }
   .header__links {
     height: 40px;
+  }
+  .header__links--list li {
+    letter-spacing: 0.05rem;
   }
   .header__links--list li a {
     color: #20334E;
@@ -2610,6 +2672,30 @@ table th,
 @media (min-width: 900px) {
   .container {
     max-width: 100%;
+  }
+  .header__live {
+    left: 10.7rem;
+    top: 2.6rem;
+  }
+  .header__site--menu .icon__menu::before {
+    left: 4.6rem;
+    top: 2.5rem;
+  }
+  .header__site--menucont ul {
+    margin: 0 6rem 0 4rem;
+  }
+  .header__site--menucont ul li a {
+    font-size: 1.4rem;
+  }
+  .header__site--logo {
+    height: 7.2rem;
+  }
+  .header__site--logo img {
+    width: 10.4rem;
+  }
+  .header__site--logo::before {
+    right: 5.2rem;
+    top: 2.6rem;
   }
   .header__links {
     justify-content: space-between;
@@ -2959,15 +3045,18 @@ table th,
 }
 .lasthour__tag p {
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
+  margin-left: 2.9rem;
+  position: relative;
 }
 .lasthour__tag p:before {
   color: white;
   content: "\e905";
   font-family: "iconFont";
-  align-items: center;
-  font-size: 15px;
-  margin-right: 5px;
+  font-size: 1.7rem;
+  left: -3.1rem;
+  position: absolute;
+  top: 0;
 }
 .lasthour__content {
   background-color: white;
@@ -2978,25 +3067,34 @@ table th,
   padding: 22px 16px 0;
 }
 .lasthour__content--firstpart h1 {
+  letter-spacing: 0.03rem;
   margin-bottom: 18px;
+  width: 90%;
 }
 .lasthour__content--firstpart p {
   color: #939EAD;
   font-family: "Poppins";
   font-size: 10px;
   font-weight: 600;
+  margin-top: 0.6rem;
 }
-.lasthour__content--video iframe {
-  border-radius: 4px;
-  height: auto;
+.lasthour__content--video div {
+  height: 17.1rem;
+  position: relative;
+  width: 29.8rem;
+}
+.lasthour__content--video div iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
-.lasthour__content--secondpart h3 {
+.lasthour__content--secondpart h2 {
   color: #EF0000;
   font-size: 14px;
-  font-weight: 900;
   line-height: 20px;
-  margin: 8px 0 34px;
+  margin: 0.8rem 0 2.8rem;
   text-align: center;
 }
 .lasthour__content--secondtain {
@@ -3026,10 +3124,13 @@ table th,
 .lasthour__content--secondtain div:first-of-type::after {
   content: "•";
   color: #EF0000;
-  font-size: 20px;
-  left: 13px;
+  font-size: 2.3rem;
+  left: 1.3rem;
   position: absolute;
-  top: 8px;
+  top: 1.2rem;
+}
+.lasthour__content--update {
+  padding: 0.2rem 1rem 2.5rem 0;
 }
 .lasthour__content--update:nth-child(odd) {
   border-left: dashed 1px #20334E;
@@ -3046,7 +3147,7 @@ table th,
   font-family: "Poppins";
   font-size: 12px;
   font-weight: 600;
-  margin: 5px;
+  margin: 0.5rem 0 0 0.5rem;
 }
 .lasthour__content--hour:before {
   color: #20334E;
@@ -3057,19 +3158,20 @@ table th,
   margin-right: 10px;
 }
 .lasthour__content--event {
-  font-size: 11px;
-  height: 55px;
-  line-height: 15px;
-  margin: 0 30px;
-  width: 78%;
+  font-size: 1.1rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+  margin: -0.2rem 3rem 0 3.2rem;
+  width: 90%;
 }
 .lasthour__content--button a {
   border-color: #EF0000;
   color: #EF0000;
+  padding: 0.4rem 2rem;
 }
 .lasthour__content--button a:after {
   font-size: 12px;
-  margin-top: 2px;
+  margin: 0.2rem 0 0.2rem 1.1rem;
 }
 
 @media (min-width: 720px) {
