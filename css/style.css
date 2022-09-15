@@ -2245,7 +2245,7 @@ p {
 .date {
   font-size: 11px;
   font-weight: 400;
-  margin-left: 8px;
+  margin-left: 0.7rem;
 }
 
 .nav__list {
@@ -3384,9 +3384,15 @@ table th,
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 49px;
+  margin-top: 5.2rem;
   padding: 0 16px 20px;
   position: relative;
+}
+.recent__container {
+  margin-top: -0.4rem;
+}
+.recent__tag {
+  padding: 0.3rem 1.8rem;
 }
 .recent__principal {
   margin-top: 34px;
@@ -3398,13 +3404,17 @@ table th,
 }
 .recent__principal--content {
   margin-top: 8px;
-  width: 95%;
+}
+.recent__principal--content h3 {
+  letter-spacing: 0.03rem;
 }
 .recent__principal--content h3 span {
   background-color: #FCC690;
 }
 .recent__principal--content p {
-  margin-top: 8px;
+  font-family: "Poppins";
+  margin-top: 1.2rem;
+  padding-right: 1rem;
 }
 .recent__plus {
   width: 100%;
@@ -3418,16 +3428,22 @@ table th,
   content: "\e90d";
   color: #FFFFFF;
   font-size: 8px;
-  height: 18px;
-  left: 0;
+  height: 22px;
+  left: -0.1rem;
   padding: 4px 7px;
   position: absolute;
-  top: 0px;
-  width: 18px;
+  top: -0.2rem;
+  width: 22px;
 }
 .recent__plus--item h4 {
-  margin: 8px 0 8px 28px;
+  margin: 0.8rem 0 0.8rem 2.5rem;
   position: relative;
+}
+.recent__plus--tagdate {
+  margin-top: 0.8rem;
+}
+.recent__plus--date {
+  margin-top: -0.2rem;
 }
 .recent__plus--item:first-child {
   border-bottom: solid 1px #E7E7E7;

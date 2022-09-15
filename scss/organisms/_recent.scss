@@ -2,9 +2,15 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 49px;
+    margin-top: 5.2rem;
     padding: 0 16px 20px;
     position: relative;
+    &__container{
+        margin-top: -0.4rem;
+    }
+    &__tag{
+        padding: 0.3rem 1.8rem;
+    }
     &__principal{
         margin-top: 34px;
         &--image{
@@ -16,14 +22,16 @@
         }
         &--content{
             margin-top: 8px;
-            width: 95%;
             h3{
+                letter-spacing: 0.03rem;
                 span{
                     background-color: #FCC690;
                 }
             }
             p{
-                margin-top: 8px;
+                font-family: $font-secondary;
+                margin-top: 1.2rem;
+                padding-right: 1rem;
             }
         }
     }
@@ -37,17 +45,23 @@
                 content: "\e90d";
                 color: #FFFFFF;
                 font-size: 8px;
-                height: 18px;
-                left: 0;
+                height: 22px;
+                left: -0.1rem;
                 padding: 4px 7px;
                 position: absolute;
-                top: 0px;
-                width: 18px;
+                top: -0.2rem;
+                width: 22px;
             }
             h4{
-                margin: 8px 0 8px 28px;
+                margin: 0.8rem 0 0.8rem 2.5rem;
                 position: relative;
             }
+        }
+        &--tagdate{
+            margin-top: 0.8rem;
+        }
+        &--date{
+            margin-top: -0.2rem;
         }
         &--item:first-child{
             border-bottom: solid 1px #E7E7E7;
