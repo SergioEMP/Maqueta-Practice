@@ -154,6 +154,7 @@
         align-items: flex-start;
         &__container{
             margin-top: 1rem;
+            width: 63%;
         }
         &__tag{
             left: 4rem;
@@ -178,6 +179,7 @@
             }
             &--content{
                 margin: 1.5rem 0 0 0.8rem;
+                width: 90%;
                 p{
                     margin-top: 1.8rem;
                 }
@@ -186,6 +188,7 @@
         &__plus{
             margin: -4px 0 0 3px;
             padding: 0;
+            width: 78%;
             &--item{
                 margin-right: 42px;
                 padding: 1rem 0 0 0;
@@ -193,6 +196,26 @@
             &--content{
                 h4{
                     margin-right: 52px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xb){
+    .recent{
+        &__container{
+            width: 69%;
+        }
+        &__principal{
+            &--content{
+                width: 98%;
+            }
+        }
+        &__plus{
+            width: 100%;
+            &--content{
+                h4{
                     width: 196px;
                 }
             }

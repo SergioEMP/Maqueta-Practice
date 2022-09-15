@@ -3533,6 +3533,7 @@ table th,
   }
   .recent__container {
     margin-top: 1rem;
+    width: 63%;
   }
   .recent__tag {
     left: 4rem;
@@ -3554,6 +3555,7 @@ table th,
   }
   .recent__principal--content {
     margin: 1.5rem 0 0 0.8rem;
+    width: 90%;
   }
   .recent__principal--content p {
     margin-top: 1.8rem;
@@ -3561,6 +3563,7 @@ table th,
   .recent__plus {
     margin: -4px 0 0 3px;
     padding: 0;
+    width: 78%;
   }
   .recent__plus--item {
     margin-right: 42px;
@@ -3568,6 +3571,20 @@ table th,
   }
   .recent__plus--content h4 {
     margin-right: 52px;
+    width: 150px;
+  }
+}
+@media (min-width: 1366px) {
+  .recent__container {
+    width: 69%;
+  }
+  .recent__principal--content {
+    width: 98%;
+  }
+  .recent__plus {
+    width: 100%;
+  }
+  .recent__plus--content h4 {
     width: 196px;
   }
 }
