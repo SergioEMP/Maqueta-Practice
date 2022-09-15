@@ -1,13 +1,13 @@
 table,
 .table {
-  border: 1px solid color(grayscale, black);
+  //border: 1px solid color(grayscale, black);
   width: 100%;
   thead {
     background-color: color(primary, 100);
   }
   th,
   td {
-    border: 1px solid color(grayscale, black);
+    //border: 1px solid color(grayscale, black);
     border-collapse: collapse;
     caption-side: bottom;
     padding: 0.3em;

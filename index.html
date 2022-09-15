@@ -31,12 +31,15 @@
                         </ul>
                     </nav>
                 </div>
-                <a href="#">
-                    <picture class="header__site--logo">
-                        <source srcset="./image/logo-city.webp">
-                        <img src="./image/logo-city.png" width="59" height="31" alt="Logo pagina">
-                    </picture>
-                </a>
+                <div class="header__site--logo">
+                    <a href="#">
+                        <picture>
+                            <source srcset="./image/logo-city.webp">
+                            <img src="./image/logo-city.png" width="59" height="31" alt="Logo pagina">
+                        </picture>
+                    </a>
+                </div>
+                <span class="header__site--search"></span>
             </div>
             <div class="header__links">
                 <ul class="header__links--list">
@@ -49,13 +52,13 @@
                     <li><a>Estereo Picnic</a></li>
                     <li><a>Foo Figther</a></li>
                 </ul>
-                <div class="header__links--social">
-                    <a href="#" class="header__links--icons header__links--insta icon" target="_blank" rel="nofollow, noopener"></a>
-                    <a href="#" class="header__links--icons header__links--face icon" target="_blank" rel="nofollow, noopener"></span></a>
-                    <a href="#" class="header__links--icons header__links--twitter icon" target="_blank" rel="nofollow, noopener"></span></a>
-                    <a href="#" class="header__links--icons header__links--youtube icon" target="_blank" rel="nofollow, noopener"></span></a>
+                <ul class="header__links--social">
+                    <li><a href="#" class="header__links--icons header__links--insta icon" target="_blank" rel="nofollow, noopener"></a></li>
+                    <li><a href="#" class="header__links--icons header__links--face icon" target="_blank" rel="nofollow, noopener"></span></a></li>
+                    <li><a href="#" class="header__links--icons header__links--twitter icon" target="_blank" rel="nofollow, noopener"></span></a></li>
+                    <li><a href="#" class="header__links--icons header__links--youtube icon" target="_blank" rel="nofollow, noopener"></span></a></li>
                     <p class="header__links--date">Lunes, 28 de Febrero de 2022</p>
-                </div>
+                </ul>
             </div>
         </header>
         <section class="lasthour">
@@ -163,46 +166,46 @@
                 </div>
             </div>
             <section class="guide">
-                <div class="guide__container">
-                    <div class="guide__head">
-                        <p>GUÍA DE PROGRAMACIÓN TV</p>
-                        <p>24/03/2022</p>                  
-                    </div>
-                    <div class="guide__image">
-                        <picture>
-                            <source srcset="./image/guide-image.webp">
-                            <img src="./image/guide-image.png" width="70" height="70" alt="Imagen relacionada con el articulo">
-                        </picture>  
-                        <p>Casados con hijos</p>
-                    </div>
-                    <div class="guide__programs">
-                        <div class="guide__programs--item">
+                <table class="guide__container">
+                    <tr>
+                        <td class="guide__head">
+                            <p>GUÍA DE PROGRAMACIÓN TV</p>
+                            <p>24/03/2022</p>
+                        </td>
+                        <td class="guide__image">
+                            <picture>
+                                <source srcset="./image/guide-image.webp">
+                                <img src="./image/guide-image.png" width="70" height="70" alt="Imagen relacionada con el articulo">
+                            </picture>  
+                            <p>Casados con hijos</p>
+                        </td>
+                        <td class="guide__programs">
                             <p>Telenovela Brusko</p>
                             <p>15:00h</p>
                             <p>16:00h</p>
-                        </div>
-                        <div class="guide__programs--item">
+                        </td>
+                        <td class="guide__programs">
                             <p>Telenovela Brusko</p>
                             <p>16:00h</p>
                             <p>18:00h</p>
-                        </div>
-                        <div class="guide__programs--item">
+                        </td>
+                        <td class="guide__programs">
                             <p>Noticias de las seis</p>
                             <p>18:00h</p>
                             <p>19:00h</p>
-                        </div>
-                        <div class="guide__programs--item">
+                        </td>
+                        <td class="guide__programs">
                             <p>Dragon Ball Z</p>
                             <p>19:00h</p>
                             <p>22:00h</p>
-                        </div>
-                        <div class="guide__programs--item">
+                        </td>
+                        <td class="guide__programs">
                             <p>El noctámbulo</p>
                             <p>22:00h</p>
                             <p>24:00h</p>
-                        </div>
-                    </div>
-                </div>
+                        </td>
+                    </tr>
+                </table>
             </section>
         </section>
         <section class="cityguide">
