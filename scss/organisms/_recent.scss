@@ -82,21 +82,29 @@
 }
 @include mq-min(md){
     .recent{
-        margin-top: 60px;
-        padding-bottom: 40px;
+        margin-top: 6.4rem;
+        padding: 0 2.4rem 4rem;
+        &__tag{
+            padding: 0.3rem 2.7rem;
+        }
         &__principal{
             border-bottom: solid 1px #E7E7E7;
             margin-top: 50px;
-            padding-bottom: 15px;
+            padding-bottom: 1.6rem;
             &--tagdate{
                 margin-left: 16px;
             }
             &--date{
                 font-size: 14px;
+                margin-left: 0.5rem;
             }
             &--content{
                 margin-left: 16px;
+                h3{
+                    letter-spacing: 0.1rem;
+                }
                 p{
+                    margin-top: 0.9rem;
                     padding-right: 18px;
                 }
             }
@@ -104,7 +112,7 @@
         &__plus{
             display: flex;
             flex-direction: row;
-            padding-right: 10px;
+            padding: 0 1rem 0 0.7rem;
             &--tagdate{
                 align-items: flex-start;
                 display: flex;
@@ -114,19 +122,23 @@
                 }
             }
             &--item{
-                padding-right: 20px;
+                margin-left: 3px;
+                padding:8px  15px;
+                width: 33%;
                 .icon::before{
                     display: none;
                 }
                 h4{
-                    margin-left: 16px;
+                    margin-left: 0;
                 }
+            }
+            &--tagdate{
+                p{
+                    margin-top: 4px;
+                } 
             }
             &--item:first-child{
                 border-bottom: none;
-                h4{
-                    margin-left: 16px;
-                }
             }
             &--item:nth-child(3){
                 display: flex;

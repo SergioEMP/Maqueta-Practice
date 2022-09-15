@@ -61,9 +61,11 @@
         padding-bottom: 24px;
         position: relative;
         &__container{
-            width: 64%;
+            margin-top: 2rem;
+            width: 63%;
         }
         &__head{
+            padding: 0;
             p{
                 font-size: 14px;
             }
@@ -76,14 +78,14 @@
             padding: 17px 29px 17px;
             img{
                 height: auto;
-                left: 20px;
+                left: 25px;
                 object-fit: cover;
                 position: absolute;
-                top: 40px;
+                top: 62px;
                 width: 30%;
             }
             p{
-                margin-left: -8px;
+                margin: 0.3rem 0 0 -0.8rem;
                 position: relative;
             }
             p:before{
@@ -97,22 +99,31 @@
                 transform: rotate(180deg);
                 position: absolute;
                 z-index: 2;
-                left: -28px;
+                left: -2.5rem;
                 top: 4px;
             }
         }
         &__programs{
             background-color: #FFFFFF;
+            margin-left: 24px;
+            padding:  1.1rem 4rem 1.1rem 2.5rem;
             p{
                 font-size: 14px;
                 line-height: 22px;
             }
-            &--item:first-child{
-                display: none;
+            p:first-child{
+                width: 20.8rem;
             }
-            &--item:last-child{
-                border-bottom: dashed 1px #FFD8B1;
-                padding-bottom:15px;
+        }
+        &__container{
+            tr{
+                td:nth-child(3){
+                    display: none;
+                }
+                td:last-child{
+                    border-bottom: dashed 1px #FFD8B1;
+                    padding-bottom: 1.1rem;
+                }
             }
         }
     }

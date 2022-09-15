@@ -2287,7 +2287,6 @@ table td,
   padding: 0.3em;
   text-align: left;
   vertical-align: top;
-  width: 25%;
 }
 table caption,
 .table caption {
@@ -3183,6 +3182,7 @@ table th,
 @media (min-width: 720px) {
   .lasthour {
     margin-top: 6.2rem;
+    padding-bottom: 0.7rem;
   }
   .lasthour__tag {
     padding: 0.7rem 3.6rem;
@@ -3190,7 +3190,7 @@ table th,
   }
   .lasthour__content {
     border-radius: 0.8rem;
-    margin: 6.2rem 2.6rem 2.4rem;
+    margin: 6.2rem 2.6rem 0.4rem;
   }
   .lasthour__content--firstpart {
     padding: 1.7rem 2.8rem 0;
@@ -3462,30 +3462,38 @@ table th,
 
 @media (min-width: 720px) {
   .recent {
-    margin-top: 60px;
-    padding-bottom: 40px;
+    margin-top: 6.4rem;
+    padding: 0 2.4rem 4rem;
+  }
+  .recent__tag {
+    padding: 0.3rem 2.7rem;
   }
   .recent__principal {
     border-bottom: solid 1px #E7E7E7;
     margin-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 1.6rem;
   }
   .recent__principal--tagdate {
     margin-left: 16px;
   }
   .recent__principal--date {
     font-size: 14px;
+    margin-left: 0.5rem;
   }
   .recent__principal--content {
     margin-left: 16px;
   }
+  .recent__principal--content h3 {
+    letter-spacing: 0.1rem;
+  }
   .recent__principal--content p {
+    margin-top: 0.9rem;
     padding-right: 18px;
   }
   .recent__plus {
     display: flex;
     flex-direction: row;
-    padding-right: 10px;
+    padding: 0 1rem 0 0.7rem;
   }
   .recent__plus--tagdate {
     align-items: flex-start;
@@ -3496,19 +3504,21 @@ table th,
     margin-left: 0;
   }
   .recent__plus--item {
-    padding-right: 20px;
+    margin-left: 3px;
+    padding: 8px 15px;
+    width: 33%;
   }
   .recent__plus--item .icon::before {
     display: none;
   }
   .recent__plus--item h4 {
-    margin-left: 16px;
+    margin-left: 0;
+  }
+  .recent__plus--tagdate p {
+    margin-top: 4px;
   }
   .recent__plus--item:first-child {
     border-bottom: none;
-  }
-  .recent__plus--item:first-child h4 {
-    margin-left: 16px;
   }
   .recent__plus--item:nth-child(3) {
     display: flex;
@@ -3619,7 +3629,11 @@ table th,
     position: relative;
   }
   .guide__container {
-    width: 64%;
+    margin-top: 2rem;
+    width: 63%;
+  }
+  .guide__head {
+    padding: 0;
   }
   .guide__head p {
     font-size: 14px;
@@ -3633,14 +3647,14 @@ table th,
   }
   .guide__image img {
     height: auto;
-    left: 20px;
+    left: 25px;
     object-fit: cover;
     position: absolute;
-    top: 40px;
+    top: 62px;
     width: 30%;
   }
   .guide__image p {
-    margin-left: -8px;
+    margin: 0.3rem 0 0 -0.8rem;
     position: relative;
   }
   .guide__image p:before {
@@ -3654,22 +3668,27 @@ table th,
     transform: rotate(180deg);
     position: absolute;
     z-index: 2;
-    left: -28px;
+    left: -2.5rem;
     top: 4px;
   }
   .guide__programs {
     background-color: #FFFFFF;
+    margin-left: 24px;
+    padding: 1.1rem 4rem 1.1rem 2.5rem;
   }
   .guide__programs p {
     font-size: 14px;
     line-height: 22px;
   }
-  .guide__programs--item:first-child {
+  .guide__programs p:first-child {
+    width: 20.8rem;
+  }
+  .guide__container tr td:nth-child(3) {
     display: none;
   }
-  .guide__programs--item:last-child {
+  .guide__container tr td:last-child {
     border-bottom: dashed 1px #FFD8B1;
-    padding-bottom: 15px;
+    padding-bottom: 1.1rem;
   }
 }
 @media (min-width: 1024px) {
