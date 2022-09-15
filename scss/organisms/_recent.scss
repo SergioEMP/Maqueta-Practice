@@ -152,43 +152,48 @@
         flex-direction: row;
         padding: 0 47px 40px;
         align-items: flex-start;
+        &__container{
+            margin-top: 1rem;
+        }
         &__tag{
-            height: 40px;
-            left: 48px;
-            width: 242px;
+            left: 4rem;
+            padding: 0.5rem 2.7rem;
+            top:  -2.3rem;
             p{
                 font-size: 24px;
                 font-weight: 700;
             }
         }
+        &__tag::before{
+            top: 2.1rem;
+        }
         &__principal{
-            margin-top: 50px;
+            &--image{
+                img{
+                    width: 95.5%;
+                }
+            }
             &--tagdate{
                 margin-left: 8px;
             }
             &--content{
-                margin-left: 8px;
+                margin: 1.5rem 0 0 0.8rem;
+                p{
+                    margin-top: 1.8rem;
+                }
             }
         }
         &__plus{
-            &--tagdate{
-                align-items: flex-start;
-                display: flex;
-                flex-direction: column;
-                p:nth-child(2){
-                    font-size: 11px;
-                    margin-left: 0;
-                }
-            }
+            margin: -4px 0 0 3px;
+            padding: 0;
             &--item{
-                padding-right: 20px;
-                h4{
-                    margin-left: 8px;
-                }
+                margin-right: 42px;
+                padding: 1rem 0 0 0;
             }
-            &--item:first-child{
+            &--content{
                 h4{
-                    margin-left: 8px;
+                    margin-right: 52px;
+                    width: 196px;
                 }
             }
         }

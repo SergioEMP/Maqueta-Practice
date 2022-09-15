@@ -3531,41 +3531,44 @@ table th,
     padding: 0 47px 40px;
     align-items: flex-start;
   }
+  .recent__container {
+    margin-top: 1rem;
+  }
   .recent__tag {
-    height: 40px;
-    left: 48px;
-    width: 242px;
+    left: 4rem;
+    padding: 0.5rem 2.7rem;
+    top: -2.3rem;
   }
   .recent__tag p {
     font-size: 24px;
     font-weight: 700;
   }
-  .recent__principal {
-    margin-top: 50px;
+  .recent__tag::before {
+    top: 2.1rem;
+  }
+  .recent__principal--image img {
+    width: 95.5%;
   }
   .recent__principal--tagdate {
     margin-left: 8px;
   }
   .recent__principal--content {
-    margin-left: 8px;
+    margin: 1.5rem 0 0 0.8rem;
   }
-  .recent__plus--tagdate {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
+  .recent__principal--content p {
+    margin-top: 1.8rem;
   }
-  .recent__plus--tagdate p:nth-child(2) {
-    font-size: 11px;
-    margin-left: 0;
+  .recent__plus {
+    margin: -4px 0 0 3px;
+    padding: 0;
   }
   .recent__plus--item {
-    padding-right: 20px;
+    margin-right: 42px;
+    padding: 1rem 0 0 0;
   }
-  .recent__plus--item h4 {
-    margin-left: 8px;
-  }
-  .recent__plus--item:first-child h4 {
-    margin-left: 8px;
+  .recent__plus--content h4 {
+    margin-right: 52px;
+    width: 196px;
   }
 }
 .guide {
