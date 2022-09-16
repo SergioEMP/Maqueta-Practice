@@ -3793,21 +3793,20 @@ table th,
   display: none;
 }
 .cityguide__image::before {
-  background: url(./../image/cityguide-mobile-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
   height: 106px;
   left: 0px;
   position: absolute;
-  top: 45px;
+  top: 38px;
   width: 100%;
   z-index: 1;
 }
 .cityguide h2 {
-  color: #20334E;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 0.06rem;
   line-height: 32px;
   margin-top: -16px;
   position: relative;
@@ -3817,9 +3816,12 @@ table th,
 .cityguide h2 span {
   color: #FF742B;
 }
+.cityguide__itemcont {
+  margin-top: -2px;
+}
 .cityguide__item {
   border-bottom: 1px solid rgba(148, 148, 148, 0.4);
-  padding: 13px 28px;
+  padding: 12px 28px;
   position: relative;
 }
 .cityguide__item--tag {
@@ -3829,8 +3831,9 @@ table th,
 .cityguide__item--info {
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 0.1rem;
   line-height: 32px;
-  margin: 10px 0;
+  margin: 10px 0 0.5rem;
   text-align: left;
   position: relative;
 }
@@ -3850,7 +3853,7 @@ table th,
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  padding-left: 25px;
+  padding-left: 3.2rem;
   position: relative;
 }
 .cityguide__item--plus p:before {
@@ -3861,14 +3864,19 @@ table th,
 }
 .cityguide__item--plus p:first-child::before {
   content: "\e907";
-  font-size: 18px;
+  font-size: 22px;
+}
+.cityguide__item--plus p:first-child::after {
+  content: "|";
+  font-size: 13px;
+  padding-left: 4px;
 }
 .cityguide__item--plus p:nth-child(2) {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 .cityguide__item--plus p:nth-child(2):before {
   content: "\e906";
-  font-size: 15px;
+  font-size: 17px;
 }
 .cityguide__item:nth-child(2) {
   display: none;
@@ -3903,25 +3911,30 @@ table th,
 }
 .cityguide__item:nth-child(4) p:nth-child(2) {
   font-size: 14px;
-  padding-left: 50px;
+  letter-spacing: 0.03rem;
+  margin: 2rem 0 1.8rem;
+  padding-left: 58px;
 }
 .cityguide__item:nth-child(4) p:nth-child(2):before {
   content: "\e909";
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 500;
+  left: 2px;
+  top: 0;
 }
 .cityguide__item:nth-child(5) p:nth-child(2) {
   font-size: 14px;
+  letter-spacing: 0.05rem;
   line-height: 22px;
-  padding-left: 50px;
+  padding-left: 58px;
   width: 80%;
 }
 .cityguide__item:nth-child(5) p:nth-child(2):before {
   content: "\e90a";
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
-  left: 0;
-  top: 10px;
+  left: 5px;
+  top: 12px;
 }
 .cityguide__slidcontain {
   padding: 13px 7px 13px 15px;
@@ -3946,7 +3959,6 @@ table th,
   line-height: 22px;
 }
 .cityguide__slider--info {
-  margin-top: 6px;
   width: 580px;
 }
 .cityguide__slider--info p {
@@ -3955,6 +3967,7 @@ table th,
   font-weight: 400;
   line-height: 14px;
   text-align: left;
+  width: 140px;
 }
 .cityguide__slider--info p:first-child {
   font-family: "Lexend Deca", sans-serif;
@@ -3962,43 +3975,47 @@ table th,
   font-weight: 600;
   line-height: 22px;
   text-align: left;
+  width: 150px;
 }
 .cityguide__slider--info p:nth-child(2) {
   margin-top: 6px;
 }
 .cityguide__slider--image {
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 10px;
   height: auto;
   width: 100%;
 }
 .cityguide__slider .slick-dots {
-  bottom: -15px;
+  bottom: -5px;
   z-index: 2;
 }
 .cityguide__slider .slick-dots li {
-  margin: 0 1px;
+  margin: 0 -1px;
 }
 .cityguide__slider .slick-dots li button {
   color: #939EAD;
 }
 .cityguide__slider .slick-dots li button::before {
   color: #939EAD;
-  font-size: 10px;
+  font-size: 8px;
   opacity: 1;
 }
 .cityguide__slider .slick-dots .slick-active button::before {
   color: #20334E;
-  font-size: 14px;
+  font-size: 12px;
 }
 .cityguide__button {
+  margin-top: -20px;
   position: relative;
   z-index: 2;
   padding-bottom: 8px;
 }
 .cityguide__button a {
   background-color: #FFFFFF;
-  border: solid 1px #FF742B;
-  color: #FF742B;
+  padding: 0 1.8rem;
+}
+.cityguide__button a::after {
+  margin: 0 0 0.2rem 1.7rem;
 }
 
 .cityguide::before {
@@ -4009,7 +4026,7 @@ table th,
   height: 200px;
   left: 0px;
   position: absolute;
-  bottom: -135px;
+  bottom: -152px;
   width: 100%;
   z-index: 1;
 }

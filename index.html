@@ -211,17 +211,11 @@
         <section class="cityguide">
             <div class="cityguide__container">
                 <div class="cityguide__image">
-                    <picture class="cityguide__image--mobile">
-                        <source srcset="./image/cityguide-mobile.webp">
+                    <picture class="cityguide__image">
+                        <source media="(min-width: 1024px)" srcset="./image/cityguide-desktop.png">
+                        <source media="(min-width: 1023px)" srcset="./image/cityguide-tablet.png">
+                        <source media="(min-width: 719px)" srcset="./image/cityguide-tablet.png">
                         <img src="./image/cityguide-mobile.png" width="360" height="83" alt="Imagen de la ciudad">
-                    </picture>
-                    <picture class="cityguide__image--tablet">
-                        <source srcset="./image/cityguide-tablet.webp">
-                        <img src="./image/cityguide-tablet.png" width="431" height="72" alt="Imagen de la ciudad">
-                    </picture>
-                    <picture class="cityguide__image--desktop">
-                        <source srcset="./image/cityguide-desktop.webp">
-                        <img src="./image/cityguide-desktop.png" width="411" height="588" alt="Imagen de la ciudad">
                     </picture>
                     <h2>Cityguía <span>del día</span></h2>
                 </div>
@@ -230,7 +224,7 @@
                         <a href="" class="cityguide__item--tag tag">Pico y placa</a>
                         <p class="cityguide__item--info">1-3-5-7-9</p>
                         <div class="cityguide__item--plus">
-                            <p>6:00-8:30 a.m |  </p>
+                            <p>6:00-8:30 a.m </p>
                             <p> 3:00-7:30 p.m</p>
                         </div>
                     </div>
@@ -268,7 +262,7 @@
                                     <p>MAR</p>
                                 </div>
                                 <div class="cityguide__slider--info">
-                                        <p>Feria Basar</p>
+                                        <p>Feria Vassar</p>
                                         <p>Hora 10:00 am - 10:00 pm</p>
                                         <p>Lugar. Parque el country</p>
                                 </div>
@@ -321,12 +315,12 @@
                                     </picture>
                                 </div>
                             </div>
-                        </a>
+                            </a>
                         </div>
                     </div>
-                    <div class="cityguide__button button">
+                </div>
+                <div class="cityguide__button button">
                         <a href="#">Ver mas de cityguia</a>
-                    </div>
                 </div>
             </div>
         </section>
