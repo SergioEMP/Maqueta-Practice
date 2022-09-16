@@ -3713,15 +3713,20 @@ table th,
 }
 @media (min-width: 1024px) {
   .guide {
-    width: 68%;
+    border-bottom: solid #F4F4F4 2.4rem;
     display: flex;
-    margin: 50px 0 0;
+    margin: 38px 0 0 2rem;
+    padding-bottom: 0;
+    width: 68%;
   }
   .guide__container {
     background-color: #F4F4F4;
-    margin-left: 30px;
+    margin-left: 0;
     padding-bottom: 24px;
     width: 100%;
+  }
+  .guide__head {
+    padding: 2px 0;
   }
   .guide__image {
     box-shadow: none;
@@ -3730,29 +3735,38 @@ table th,
   .guide__image img {
     position: relative;
     height: 70px;
-    left: 0;
+    left: -0.1rem;
     top: 0;
-    width: 100%;
+    width: calc(100% + 6px);
   }
   .guide__image p {
-    margin-left: 40px;
+    margin: 0 0 0 4.4rem;
   }
   .guide__image p:before {
-    top: 11px;
+    top: 0.3rem;
   }
   .guide__programs {
     background-color: #F4F4F4;
+    padding: 1.7rem 4.9rem 1.1rem 2.4rem;
   }
-  .guide__programs--item {
-    padding: 6px 0;
+  .guide__programs p:first-child {
+    width: 18rem;
   }
-  .guide__programs--item:first-child {
+  .guide__container tr td:nth-child(3) {
     display: flex;
-    padding-top: 6px;
+    padding-top: 0.6rem;
   }
-  .guide__programs--item:last-child {
+  .guide__container tr td:last-child {
     border-bottom: dashed 1px #FFD8B1;
     padding-bottom: 15px;
+  }
+  .guide--item {
+    padding: 6px 0;
+  }
+}
+@media (min-width: 1366px) {
+  .guide {
+    margin-left: -1.3rem;
   }
 }
 @media (min-width: 1920px) {
