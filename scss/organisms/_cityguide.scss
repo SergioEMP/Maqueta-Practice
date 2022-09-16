@@ -4,18 +4,10 @@
     position: relative;
     &__image{
         position: relative;
-        &--mobile{
             img{
                 height: auto;
                 width: 100%;
             }
-        }
-        &--tablet{
-            display: none;
-        }
-        &--desktop{
-            display: none;
-        }
     }
     &__image::before{   
         //background: url(./../image/cityguide-mobile-background.png);
@@ -290,19 +282,6 @@
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
-            &--mobile{
-                display: none;
-            }
-            &--tablet{
-                display: block;
-                img{
-                    height: auto;
-                    width: 100%;
-                }
-            }
-            &--desktop{
-                display: none;
-            }
         }
         &__image::before{
             display: none;
@@ -310,22 +289,25 @@
         h2{
             font-size: 32px;
             line-height: 40px;
-            margin: 10px 16px 0 33px;
+            margin: 15px 18px 0 30px;
             width: 800px;
         }
         &__itemcont{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 9px;
+            padding: 0 10px;
+            width: 100%;
         }
         &__item{
-            width: 33%;
-            padding: 13px 17px;
+            padding: 11px 17px 17px;
             &--tag{
                font-weight: 500;
+               padding: 3px 9px;
             }
             &--info{
-                margin-bottom: 0;
+                margin: 9px 0 1rem;
             }
             &--plus{
                 width: 220px;
@@ -333,18 +315,29 @@
                     align-items: center;
                     font-size: 11px;
                     font-weight: 600;
+                    margin-top: -12px;
+                    padding-left: 1.2rem;
                 }
                 p:first-child::before{
                     font-size: 12px;
                     font-weight: 400;
                     margin-right: 4px;
+                }p:first-child::after{
+                    font-size: 11px;
+                    padding-left: 8px;
+                }
+                p:nth-child(2){
+                    margin-left: 2px;
                 }
                 p:nth-child(2):before{
-                    font-size: 10px;
+                    font-size: 8px;
                     font-weight: 400;
-                    margin: 0 4px;
+                    margin: 0 1px;
                 }
             }
+        }
+        &__item:first-child{
+            width: 33%;
         }
         &__item:first-child:before{
             background-color: #F4F4F4;
@@ -367,9 +360,16 @@
         &__item:nth-child(2){
             border-left: 1px solid #94949466;
             display: block;
+            width: 30%;
+            p:nth-child(2){
+                padding-left: 40px;
+            }
+            p:nth-child(2)::before{
+                margin-left: 7px;
+            }
             div{
                 p{
-                    margin-left: 28px;
+                    margin: -14px 0 0 35px;
                 }
             }
         }
@@ -393,27 +393,34 @@
         }
         &__item:nth-child(3){
             border-left: 1px solid #94949466;
+            width: 36%;
+            p:nth-child(2){
+                padding-left: 40px;
+            }
             p:nth-child(2):before{
-                font-size: 30px;
+                font-size: 33px;
+                margin-left: 2px;
             }
             div{
                 p{
-                    margin-left: 45px;
+                    margin: -14px 0 0 36px;
                 }
             }
         }
         &__item:nth-child(4){
             border-right: 1px solid #94949466;
-            padding: 25px 17px;
+            padding: 13px 16px 10px 54px;
+            width: 36%;
             p:nth-child(2){
                 font-size: 12px;
                 line-height: 15px;
-                margin-left: 34px;
+                margin: 8px 0 0 40px;
                 padding: 10px 0;
             }
             p:nth-child(2):before{
                 font-size: 24px;
                 left: -38px;
+                top: 16px;
             }
         }
         &__item:nth-child(4)::before{
@@ -426,16 +433,17 @@
             bottom: -7px;
         }
         &__item:nth-child(5){
-            padding: 25px 17px;
+            padding: 14px 20px 32px;
+            width: 36%;
             p:nth-child(2){
                 font-size: 12px;
                 line-height: 15px;
-                margin-left: 34px;
+                margin: 16px 0 0 40px;
                 padding-left: 0;
             }
             p:nth-child(2):before{
-                font-size: 20px;
-                left: -34px;
+                font-size: 22px;
+                left: -35px;
                 top: 8px;
             }
         }

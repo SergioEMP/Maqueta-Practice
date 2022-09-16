@@ -3782,15 +3782,9 @@ table th,
 .cityguide__image {
   position: relative;
 }
-.cityguide__image--mobile img {
+.cityguide__image img {
   height: auto;
   width: 100%;
-}
-.cityguide__image--tablet {
-  display: none;
-}
-.cityguide__image--desktop {
-  display: none;
 }
 .cityguide__image::before {
   background-repeat: no-repeat;
@@ -4049,42 +4043,32 @@ table th,
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .cityguide__image--mobile {
-    display: none;
-  }
-  .cityguide__image--tablet {
-    display: block;
-  }
-  .cityguide__image--tablet img {
-    height: auto;
-    width: 100%;
-  }
-  .cityguide__image--desktop {
-    display: none;
-  }
   .cityguide__image::before {
     display: none;
   }
   .cityguide h2 {
     font-size: 32px;
     line-height: 40px;
-    margin: 10px 16px 0 33px;
+    margin: 15px 18px 0 30px;
     width: 800px;
   }
   .cityguide__itemcont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 9px;
+    padding: 0 10px;
+    width: 100%;
   }
   .cityguide__item {
-    width: 33%;
-    padding: 13px 17px;
+    padding: 11px 17px 17px;
   }
   .cityguide__item--tag {
     font-weight: 500;
+    padding: 3px 9px;
   }
   .cityguide__item--info {
-    margin-bottom: 0;
+    margin: 9px 0 1rem;
   }
   .cityguide__item--plus {
     width: 220px;
@@ -4093,16 +4077,28 @@ table th,
     align-items: center;
     font-size: 11px;
     font-weight: 600;
+    margin-top: -12px;
+    padding-left: 1.2rem;
   }
   .cityguide__item--plus p:first-child::before {
     font-size: 12px;
     font-weight: 400;
     margin-right: 4px;
   }
+  .cityguide__item--plus p:first-child::after {
+    font-size: 11px;
+    padding-left: 8px;
+  }
+  .cityguide__item--plus p:nth-child(2) {
+    margin-left: 2px;
+  }
   .cityguide__item--plus p:nth-child(2):before {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 400;
-    margin: 0 4px;
+    margin: 0 1px;
+  }
+  .cityguide__item:first-child {
+    width: 33%;
   }
   .cityguide__item:first-child:before {
     background-color: #F4F4F4;
@@ -4125,9 +4121,16 @@ table th,
   .cityguide__item:nth-child(2) {
     border-left: 1px solid rgba(148, 148, 148, 0.4);
     display: block;
+    width: 30%;
+  }
+  .cityguide__item:nth-child(2) p:nth-child(2) {
+    padding-left: 40px;
+  }
+  .cityguide__item:nth-child(2) p:nth-child(2)::before {
+    margin-left: 7px;
   }
   .cityguide__item:nth-child(2) div p {
-    margin-left: 28px;
+    margin: -14px 0 0 35px;
   }
   .cityguide__item:nth-child(3):before {
     background-color: #F4F4F4;
@@ -4149,26 +4152,33 @@ table th,
   }
   .cityguide__item:nth-child(3) {
     border-left: 1px solid rgba(148, 148, 148, 0.4);
+    width: 36%;
+  }
+  .cityguide__item:nth-child(3) p:nth-child(2) {
+    padding-left: 40px;
   }
   .cityguide__item:nth-child(3) p:nth-child(2):before {
-    font-size: 30px;
+    font-size: 33px;
+    margin-left: 2px;
   }
   .cityguide__item:nth-child(3) div p {
-    margin-left: 45px;
+    margin: -14px 0 0 36px;
   }
   .cityguide__item:nth-child(4) {
     border-right: 1px solid rgba(148, 148, 148, 0.4);
-    padding: 25px 17px;
+    padding: 13px 16px 10px 54px;
+    width: 36%;
   }
   .cityguide__item:nth-child(4) p:nth-child(2) {
     font-size: 12px;
     line-height: 15px;
-    margin-left: 34px;
+    margin: 8px 0 0 40px;
     padding: 10px 0;
   }
   .cityguide__item:nth-child(4) p:nth-child(2):before {
     font-size: 24px;
     left: -38px;
+    top: 16px;
   }
   .cityguide__item:nth-child(4)::before {
     color: #81A1C9;
@@ -4180,17 +4190,18 @@ table th,
     bottom: -7px;
   }
   .cityguide__item:nth-child(5) {
-    padding: 25px 17px;
+    padding: 14px 20px 32px;
+    width: 36%;
   }
   .cityguide__item:nth-child(5) p:nth-child(2) {
     font-size: 12px;
     line-height: 15px;
-    margin-left: 34px;
+    margin: 16px 0 0 40px;
     padding-left: 0;
   }
   .cityguide__item:nth-child(5) p:nth-child(2):before {
-    font-size: 20px;
-    left: -34px;
+    font-size: 22px;
+    left: -35px;
     top: 8px;
   }
   .cityguide__item:nth-child(5)::before {
