@@ -4601,12 +4601,13 @@ table th,
 
 @media (min-width: 720px) {
   .news {
-    margin-top: 100px;
+    margin-top: 12.4rem;
     padding: 1px 26px 20px;
     position: relative;
   }
   .news__taghead {
     left: 48px;
+    padding: 3px 38px;
   }
   .news__taghead p {
     font-size: 24px;
@@ -4615,29 +4616,38 @@ table th,
   }
   .news__taghead::before {
     left: -49px;
+    top: 18px;
     width: 48px;
   }
   .news__principal {
     margin-bottom: 5px;
-    padding-top: 20px;
+    padding-top: 37px;
   }
   .news__principal--image:before {
     font-size: 26px;
     height: 55px;
     padding: 8px 10px;
-    right: 23px;
-    top: 23px;
+    right: 17px;
+    top: 22px;
     width: 55px;
   }
   .news__principal--tagdate {
+    align-items: center;
     margin-left: 0;
+  }
+  .news__principal--date {
+    font-size: 14px;
   }
   .news__principal--content {
     margin-left: 0;
   }
+  .news__principal--content p {
+    margin-top: 14px;
+  }
   .news__plus {
     display: flex;
     flex-direction: row;
+    margin-top: 14px;
     width: 77%;
   }
   .news__plus--item {
@@ -4650,20 +4660,20 @@ table th,
     width: 220px;
   }
   .news__plus--image {
+    margin-bottom: 3.5rem;
     position: relative;
   }
   .news__plus--image img {
     border-radius: 4px;
-    height: auto;
+    height: calc(100% + 28px);
     object-fit: cover;
     width: 100%;
   }
   .news__plus--image::before {
-    border: none;
     content: "\e90d";
     font-size: 12px;
     height: 24px;
-    padding: 3px 8px;
+    padding: 1px 7px;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -4685,24 +4695,27 @@ table th,
     display: none;
   }
   .news__button {
-    margin: 30px 0 10px;
+    margin: 59px 0 10px;
   }
   .news__button a {
     font-size: 16px;
+    padding: 0.2rem 2.5rem;
   }
   .news__button a::after {
     font-size: 20px;
     margin-bottom: 2px;
   }
   .news__slider {
-    bottom: 44px;
+    bottom: 108px;
     position: absolute;
-    right: 30px;
+    right: 20px;
     width: 160px;
   }
   .news__slider--item .tag {
     font-size: 12px;
+    left: 8px;
     padding: 4px 9px;
+    top: 9px;
   }
   .news__slider--background img {
     height: 282px;
@@ -4714,12 +4727,13 @@ table th,
   }
   .news__slider--content {
     position: absolute;
-    bottom: 50px;
-    left: 16px;
+    bottom: 31px;
+    left: 8px;
   }
   .news__slider--content h3 {
     font-size: 12px;
     line-height: 15px;
+    width: 90%;
   }
   .news__slider--content div {
     flex-direction: column;
@@ -4734,6 +4748,9 @@ table th,
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     margin: 4px 0 0;
+  }
+  .news__slider .slick-dots {
+    bottom: 1px;
   }
 }
 @media (min-width: 900px) {

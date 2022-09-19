@@ -176,11 +176,12 @@
 }
 @include mq-min(md){
     .news{
-        margin-top: 100px;
+        margin-top: 12.4rem;
         padding: 1px 26px 20px;
         position: relative;
         &__taghead{
             left: 48px;
+            padding: 3px 38px;
             p{
                 font-size: 24px;
                 font-weight: 700;
@@ -189,29 +190,38 @@
         }
         &__taghead::before{
             left: -49px;
+            top: 18px;
             width: 48px;
         }
         &__principal{
             margin-bottom: 5px;
-            padding-top: 20px;
+            padding-top: 37px;
             &--image:before{
                 font-size: 26px;
                 height: 55px;
                 padding: 8px 10px;
-                right: 23px;
-                top: 23px;
+                right: 17px;
+                top: 22px;
                 width: 55px;
             }
             &--tagdate{
+                align-items: center;
                 margin-left: 0;
+            }
+            &--date{
+                font-size: 14px;
             }
             &--content{
                 margin-left: 0;
+                p{
+                    margin-top: 14px;
+                }
             }
         }
         &__plus{
             display: flex;
             flex-direction: row;
+            margin-top: 14px;
             width: 77%;
             &--item{
                 flex-direction: column;
@@ -223,20 +233,20 @@
                 }
             }
             &--image{
+                margin-bottom: 3.5rem;
                 position: relative;
                 img{
                     border-radius: 4px;
-                    height: auto;
+                    height: calc(100% + 28px);
                     object-fit: cover;
                     width: 100%;
                 }
             }
             &--image::before{
-                border: none;
                 content: "\e90d";
                 font-size: 12px;
                 height: 24px;
-                padding: 3px 8px ;
+                padding: 1px 7px ;
                 position: absolute;
                 right: 10px;
                 top: 10px;
@@ -261,9 +271,10 @@
             }
         }
         &__button{
-            margin: 30px 0 10px;
+            margin: 59px 0 10px;
             a{
                 font-size: 16px;
+                padding: 0.2rem 2.5rem;
             }
             a::after{
                 font-size: 20px;
@@ -271,14 +282,16 @@
             }
         }
         &__slider{
-            bottom: 44px;
+            bottom: 108px;
             position: absolute;
-            right: 30px;
+            right: 20px;
             width: 160px;
             &--item{
                 .tag{
                     font-size: 12px;
+                    left: 8px;
                     padding: 4px 9px;
+                    top: 9px;
                 }
             }
             &--background{
@@ -295,11 +308,12 @@
             }
             &--content{
                 position: absolute;
-                bottom: 50px;
-                left: 16px;
+                bottom: 31px;
+                left: 8px;
                 h3{
                     font-size: 12px;
                     line-height: 15px;
+                    width: 90%;
                 }
                 div{
                     flex-direction: column;
@@ -315,6 +329,9 @@
                         margin: 4px 0 0;
                     }
                 }
+            }
+            .slick-dots{
+                bottom: 1px;
             }
         }
     }
