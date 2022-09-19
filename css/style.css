@@ -3779,14 +3779,15 @@ table th,
   margin-bottom: 80px;
   position: relative;
 }
-.cityguide__image {
+.cityguide__img {
   position: relative;
 }
-.cityguide__image img {
+.cityguide__img img {
   height: auto;
   width: 100%;
 }
 .cityguide__image::before {
+  background: url(./../image/cityguide-mobile-background.png);
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -4038,10 +4039,14 @@ table th,
   }
 }
 @media (min-width: 720px) {
+  .cityguide {
+    padding-top: 14px;
+  }
   .cityguide__image {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 58%;
   }
   .cityguide__image::before {
     display: none;
@@ -4049,14 +4054,14 @@ table th,
   .cityguide h2 {
     font-size: 32px;
     line-height: 40px;
-    margin: 15px 18px 0 30px;
-    width: 800px;
+    margin: 0 18px 0 32px;
+    text-align: left;
   }
   .cityguide__itemcont {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 9px;
+    margin-top: 27px;
     padding: 0 10px;
     width: 100%;
   }
@@ -4214,10 +4219,10 @@ table th,
     bottom: -7px;
   }
   .cityguide__slidcontain {
-    padding: 38px 0 20px 40px;
+    padding: 34px 0 20px 38px;
   }
   .cityguide__slider--item {
-    padding: 22px 12px 22px 0;
+    padding: 16px 12px 22px 9px;
   }
   .cityguide__slider--date {
     margin-right: 26px;
@@ -4225,19 +4230,22 @@ table th,
   .cityguide__slider--date p:first-child {
     font-size: 48px;
     line-height: 60px;
+    margin-top: -1rem;
   }
   .cityguide__slider--date p:nth-child(2) {
     font-size: 20px;
     line-height: 26px;
+    margin-top: -0.9rem;
     text-align: center;
   }
   .cityguide__slider--info {
-    width: 800px;
+    margin: -1.2rem 0 0 -0.6rem;
   }
   .cityguide__slider--info p {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+    width: 180px;
   }
   .cityguide__slider--info p:first-child {
     color: #609FEE;
@@ -4246,7 +4254,7 @@ table th,
     text-align: left;
   }
   .cityguide__slider--image {
-    margin: 0 30px 0 0px;
+    margin: -4px 30px 0 27px;
   }
   .cityguide__slider--image img {
     height: auto;
@@ -4254,7 +4262,7 @@ table th,
     width: 116px;
   }
   .cityguide__slider .slick-dots {
-    bottom: -15px;
+    bottom: -19px;
   }
   .cityguide__slider .slick-dots li {
     margin: 0 1px;
@@ -4271,12 +4279,12 @@ table th,
     font-size: 14px;
   }
   .cityguide__button {
-    margin-top: 40px;
+    margin: -2px 0 0 -2px;
   }
   .cityguide__button a {
     font-size: 16px;
     line-height: 22px;
-    padding: 8px 16px;
+    padding: 6px 17px;
     width: fit-content;
   }
   .cityguide__button a::after {
@@ -4285,93 +4293,84 @@ table th,
   }
   .cityguide::before {
     height: 321px;
-    bottom: -196px;
+    bottom: -212px;
   }
 }
 @media (min-width: 1024px) {
   .cityguide {
-    position: relative;
+    margin-top: 2.5rem;
+    padding-top: 3rem;
   }
-  .cityguide__image--mobile {
-    display: none;
-  }
-  .cityguide__image--tablet {
-    display: none;
-  }
-  .cityguide__image--desktop {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 37%;
-  }
-  .cityguide__image--desktop img {
-    height: auto;
-    width: 100%;
+  .cityguide__image {
+    width: 40%;
   }
   .cityguide h2 {
     font-size: 36px;
-    left: 0;
     line-height: 45px;
     margin: 0 0 24px 55px;
-    position: absolute;
-    top: 30px;
     width: auto;
   }
   .cityguide__itemcont {
-    margin: 8% 0 0 35px;
-    width: 60%;
+    margin: 1.1rem 0 0 1.5rem;
+    width: 62%;
   }
   .cityguide__item {
-    padding: 13px 5px 13px 17px;
+    padding: 13px 5px 28px 17px;
   }
-  .cityguide__item--plus {
-    margin-top: -10px;
-    width: auto;
+  .cityguide__item:first-child {
+    width: 36%;
+  }
+  .cityguide__item:nth-child(3) {
+    width: 32%;
   }
   .cityguide__item:nth-child(4) {
+    padding: 35px 16px 12px 64px;
     width: 40%;
   }
   .cityguide__item:nth-child(5) {
+    padding: 35px 16px 12px 30px;
     width: 40%;
   }
   .cityguide__slidcontain {
-    padding: 60px 0 0;
+    padding: 53px 0 0 12px;
     margin: 0 auto;
     width: 93%;
   }
   .cityguide__slider {
     padding: 0 0;
-    width: 88%;
+    width: 92%;
     margin: 0 auto;
   }
   .cityguide__slider .slick-dots {
-    bottom: -28px;
+    bottom: -12px;
   }
   .cityguide__slider .slick-arrow {
-    top: 45%;
+    top: 42%;
   }
   .cityguide__slider .slick-arrow::before {
     background-color: #20334E;
     border-radius: 100%;
     color: #FFFFFF;
     font-family: "iconFont";
-    font-size: 28px;
+    font-size: 20px;
     opacity: 1;
   }
   .cityguide__slider .slick-prev {
-    left: -70px;
+    left: -68px;
   }
   .cityguide__slider .slick-prev::before {
     content: "\e90e";
     padding: 6px 12px 6px 10px;
   }
   .cityguide__slider .slick-next {
-    right: -20px;
+    right: -42px;
   }
   .cityguide__slider .slick-next::before {
     content: "\e90f";
     padding: 6px 10px 6px 12px;
+  }
+  .cityguide__button {
+    margin: 3.5rem 0 0 1.4rem;
   }
   .cityguide::before {
     background: url(./../image/cityguide-background-desktop.png);
@@ -4387,19 +4386,38 @@ table th,
   }
 }
 @media (min-width: 1366px) {
-  .cityguide .slick-prev {
-    left: -80px;
+  .cityguide {
+    padding-top: 7rem;
   }
-  .cityguide .slick-next {
-    right: -60px;
+  .cityguide__image {
+    width: 43%;
   }
-  .cityguide::before {
-    bottom: -148px;
+  .cityguide__itemcont {
+    margin: 3.1rem 0 0 2.5rem;
+    width: 56.7%;
+  }
+  .cityguide__item:first-child {
+    width: 33%;
+  }
+  .cityguide__item:nth-child(3) {
+    width: 36%;
+  }
+  .cityguide__item:nth-child(4) {
+    width: 36%;
+  }
+  .cityguide__item:nth-child(5) {
+    width: 36%;
   }
 }
 @media (min-width: 1920px) {
+  .cityguide__image {
+    width: 40%;
+  }
+  .cityguide__itemcont {
+    margin-top: 6rem;
+  }
   .cityguide__slidcontain {
-    padding-top: 150px;
+    margin-top: 8rem;
   }
   .cityguide::before {
     bottom: -125px;
