@@ -39,7 +39,7 @@
     }
     &__item{
         border-bottom: 1px solid #94949466;
-        padding: 12px 28px;
+        padding: 12px 28px 10px;
         position: relative;
         &--tag{
            background-color: #609FEE ;
@@ -88,11 +88,12 @@
                 padding-left: 4px;
             }
             p:nth-child(2){
-                margin-left: 8px;
+                margin-left: 4px;
             }
             p:nth-child(2):before{
                 content: "\e906";
                 font-size: 17px;
+                left: 4px;
             }
         }
     }
@@ -116,16 +117,20 @@
         }
     }
     &__item:nth-child(3){
+        padding: 10px 28px 8px;
         p:nth-child(2){
+            margin-top: 12px;
             padding-left: 45px;
         }
         p:nth-child(2):before{
             content: "\e908";
             font-size: 40px;
             font-weight: 500;
+            top: 1px;
         }
         div{
             p{
+                margin-top: 5px;
                 padding-left: 0;
             }
             p:before{
@@ -137,7 +142,7 @@
         p:nth-child(2){
             font-size: 14px;
             letter-spacing: 0.03rem;
-            margin: 2rem 0 1.8rem;
+            margin: 2.2rem 0 1.8rem;
             padding-left: 58px;
         }
         p:nth-child(2):before{
