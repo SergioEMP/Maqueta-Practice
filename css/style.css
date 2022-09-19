@@ -4960,11 +4960,11 @@ table th,
   z-index: 4;
 }
 .seencolumns h2 {
-  color: #20334E;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 23px;
+  padding-top: 5px;
   position: relative;
   text-align: center;
   z-index: 2;
@@ -4982,16 +4982,16 @@ table th,
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
-  height: 88px;
   margin-bottom: 16px;
-  padding: 8px 16px;
+  padding: 6px 16px 10px;
 }
 .seencolumns__contain--item p:first-child {
   color: #F06D6D;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  margin-right: 16px;
+  margin-right: 19px;
+  width: 30px;
 }
 .seencolumns__contain--item div {
   display: flex;
@@ -5003,6 +5003,7 @@ table th,
 }
 .seencolumns__contain--item div p {
   font-size: 12px;
+  height: 45px;
   line-height: 15px;
   margin-top: 4px;
 }
@@ -5015,7 +5016,7 @@ table th,
   height: 226px;
   left: 0px;
   position: absolute;
-  top: -112px;
+  top: -98px;
   width: 100%;
   z-index: -1;
 }
