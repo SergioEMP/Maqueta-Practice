@@ -213,6 +213,11 @@
             }
             &--content{
                 margin-left: 0;
+                h3{
+                    span{
+                       background-color: #FCC690; 
+                    }
+                }
                 p{
                     margin-top: 14px;
                 }
@@ -351,7 +356,7 @@
         position: relative;
         &__taghead{
             left: 44px;
-            padding: 6px 16px;
+            padding: 8px 30px;
             top: -32px;
             
         }
@@ -363,18 +368,19 @@
         &__principal{
             display: flex;
             flex-direction: row;
+            padding-top: 0;
             &--image{
                 width: 100%;
             }
             &--image:before{
                 height: 58px;
                 padding: 8px 11px;
-                right: 24px;
-                top: 24px;
+                right: 19px;
+                top: 22px;
                 width: 58px;
             }
             &--contain{
-                margin-top: 20px;
+                margin-top: 22px;
                 padding-left: 39px;
                 width: 71%; 
             }
@@ -385,13 +391,14 @@
                 margin-top: 0;
             }
             &--date{
-                margin-left: 0;
+                margin: 6px 0 0;
             }
             &--content{
                 margin-top: -1px;
                 h3{
                     font-size: 24px;
                     line-height: 32px;
+                    margin-top: 8px;
                 }
                 p{
                     margin-top: 15px;
@@ -399,20 +406,42 @@
             }
         }
         &__plus{
-            width: 82%;
+            margin-top: 20px;
             position: relative;
+            width: 82%;
             &--item:nth-child(3){
                 display: block;
             }
+            &--image{
+                margin-bottom: 0;
+                img{
+                    height: auto;
+                }
+            }
+            &--image::before{
+                font-size: 14px;
+                height: 30px;
+                padding: 3px 9px;
+                right: 8px;
+                top: 14px;
+                width: 30px;
+            }&--tagdate{
+                margin-top: 3px;
+            }
+        }
+        &__button{
+            margin-top: 21px;
+            width: 82%;
         }
         &__slider{
-            bottom: 36px;
+            bottom: 28px;
             right: 50px;
         }
     }
 }
 @include mq-min(xb){
     .news{
+        margin-top: 14.4rem;
         margin-bottom: 150px;
         &__plus{
             width: 76%;
@@ -420,13 +449,18 @@
                 width: 31%;
             }
         }
+        &__button{
+            width: 74%;
+        }
         &__slider{
-            bottom: -104px;
+            bottom: -111px;
             width: 300px;
             &--item{
                 .tag{
                     font-size: 14px;
+                    left: 18px;
                     padding: 8px 9px;
+                    top: 16px;
                 }
             }
             &--background{ 
@@ -442,13 +476,15 @@
                 }
             }
             &--content{
+                bottom: 36px;
+                left: 19px;
                 h3{
                     font-size: 16px;
                     line-height: 24px;
                 }
                 div{
                     flex-direction: row;
-                    margin-top: 20px;
+                    margin: 8px 0 12px;
                     p{
                         font-size: 11px;
                         font-weight: 700;
@@ -459,6 +495,9 @@
                         margin: 0 5px 0;
                     }
                 }
+            }
+            .slick-dots{
+                bottom: 4px;
             }
         }
     }
@@ -473,7 +512,7 @@
             }
         }
         &__slider{
-            bottom: -18px;
+            bottom: -22px;
             margin-bottom: 0;
             &--item{
                 .tag{
