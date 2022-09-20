@@ -5193,7 +5193,7 @@ table th,
   color: transparent;
   background-image: url(./../image/homemade-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .homemade__container {
   align-items: center;
@@ -5211,11 +5211,10 @@ table th,
   margin-bottom: 8px;
   position: relative;
 }
-.homemade__content--image img {
-  height: auto;
-  width: 100%;
+.homemade__content--image div {
+  position: relative;
 }
-.homemade__content--image::before {
+.homemade__content--image div:before {
   background-color: #145AB1;
   content: "\e90d";
   font-size: 12px;
@@ -5226,6 +5225,13 @@ table th,
   transform: translate(-50%, -50%);
   top: 50%;
   width: 24px;
+}
+.homemade__content--image img {
+  height: auto;
+  width: 100%;
+}
+.homemade__content--text {
+  font-family: "Poppins";
 }
 .homemade__content--text h2 {
   margin-bottom: 14px;
@@ -5272,13 +5278,20 @@ table th,
   .homemade__logo {
     margin-bottom: 25px;
   }
+  .homemade__logo img {
+    height: auto;
+    width: 140px;
+  }
   .homemade__content {
     display: flex;
     flex-direction: row-reverse;
   }
   .homemade__content--image {
-    margin-top: 10px;
-    width: 62%;
+    margin-top: -6px;
+    width: 57%;
+  }
+  .homemade__content--text {
+    margin-top: -1.8rem;
   }
   .homemade__content--text h2 {
     font-size: 20px;
@@ -5296,13 +5309,11 @@ table th,
   }
   .homemade__button {
     justify-content: flex-start;
-    padding-bottom: 10px;
+    margin-top: 0.3rem;
+    padding-bottom: 0px;
   }
   .homemade__button a {
-    border: solid 1px #FF742B;
-    color: #FF742B;
-    padding: 8px;
-    width: fit-content;
+    padding: 5px 13px;
   }
 }
 @media (min-width: 1024px) {
