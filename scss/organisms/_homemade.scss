@@ -129,52 +129,47 @@
 }
 @include mq-min(xl){
     .homemade{
-        &__content{
-            &--text{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                .tag{
-                    margin: 0;
-                }
-            }
-        }
-    }
-}
-@include mq-min(xb){
-    .homemade{
-        padding: 43px;
+        padding: 43px 43px 45px;
         &__container{
             margin: 0 auto;
-            padding: 50px 29px 50px 37px;
+            padding: 50px 29px 36px 37px;
             position: relative;
-            width: 1056px;
         }
         &__logo{
-            position: absolute;
-            left: 131px;
-            top: 50px;
+            img{
+                width: 210px;
+            }
         }
         &__content{
             &--image{
-                width: 62%;
-            }
-            &--image::before{
-                font-size: 24px;
-                height: 44px;
-                padding: 3px 14px;
-                width: 44px;
+                margin-top: 0;
+                width: 65%;
+                div::before{
+                    font-size: 24px;
+                    height: 44px;
+                    padding: 3px 14px;
+                    width: 44px;
+                }
             }
             &--text{
-                justify-content: end;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 h2{
                     font-size: 24px;
                     line-height: 32px;
-                    margin-bottom: 36px;
+                    margin-bottom: 20px;
+                }
+                .tag{
+                    margin-bottom: 4px;
+                    padding: 3px 8px;
                 }
                 p{
                     line-height: 24px;
                 }
+            }
+            &--p{
+                margin-bottom: 7px;
             }
         }
         &__button{
@@ -182,6 +177,24 @@
             a{
                 font-size: 16px;
                 line-height: 22px;
+                padding: 5px 20px;
+            }
+        } 
+    }
+}
+@include mq-min(xb){
+    .homemade{
+        &__container{
+            width: 1056px;
+        }
+        &__logo{
+            position: absolute;
+            left: 11.6rem;
+            top: 6.7rem;
+        }
+        &__content{
+            &--text{
+                justify-content: end;
             }
         }
     }
