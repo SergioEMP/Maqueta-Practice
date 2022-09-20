@@ -4955,7 +4955,7 @@ table th,
 .seencolumns {
   background-color: #F4F4F4;
   margin-top: 50px;
-  padding: 0 0 42px;
+  padding: 0 0 40px;
   position: relative;
   z-index: 4;
 }
@@ -5024,6 +5024,7 @@ table th,
 @media (min-width: 720px) {
   .seencolumns {
     margin-top: 10px;
+    padding: 0 0 42px;
   }
   .seencolumns h2 {
     font-size: 32px;
@@ -5188,9 +5189,11 @@ table th,
   }
 }
 .homemade {
-  padding: 30px 0;
+  padding: 30px 0 33px;
   color: transparent;
   background-image: url(./../image/homemade-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .homemade__container {
   align-items: center;
@@ -5202,7 +5205,7 @@ table th,
   padding: 30px 15px;
 }
 .homemade__logo {
-  margin-bottom: 18px;
+  margin-bottom: 13px;
 }
 .homemade__content--image {
   margin-bottom: 8px;
@@ -5235,6 +5238,7 @@ table th,
 .homemade__content--text .tag {
   background-color: #609FEE;
   margin: 14px 0 8px;
+  padding: 3px 5px;
 }
 .homemade__content--p {
   margin-top: 8px;
@@ -5249,7 +5253,7 @@ table th,
   padding-bottom: 17px;
 }
 .homemade__button a {
-  padding: 8px;
+  padding: 5px 10px;
 }
 .homemade__button a:after {
   font-size: 12px;
