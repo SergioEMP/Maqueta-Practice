@@ -67,14 +67,19 @@
         padding: 40px 0 0;
         &__taghead{
             left: 47px;
-            padding: 0 24px;
+            padding: 3px 27px;
+            h2{
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
         &__taghead::before{
             left: -48px;
+            top: 15px;
             width: 47px;
         }
         &__slider{
-            padding: 52px 24PX 62px 0;
+            padding: 49px 24px 65px 7px;
             z-index: 1;
             &--item{
                 margin-left: 24px;
@@ -84,8 +89,11 @@
                     font-weight: 600;
                 }
             }
+            .slick-current{
+                background-color: wheat;
+            }
             .slick-arrow{
-                top: 42%;
+                top: 41.8%;
                 z-index: 2;
             }
             .slick-arrow::before{
@@ -93,22 +101,25 @@
                 border-radius: 100%;
                 color: #FFFFFF;
                 font-family: 'iconFont';
-                font-size: 28px;
+                font-size: 24px;
                 opacity: 1;
             }
             .slick-prev{
-                left: 20px;
+                left: 26px;
             }
             .slick-prev::before {
                 content: "\e90e";
                 padding: 6px 12px 6px 10px;
             }
             .slick-next{
-                right: 38px;
+                right: 37px;
             }
             .slick-next::before{
                 content: "\e90f";
                 padding: 6px 10px 6px 12px;
+            }
+            .slick-dots{
+                bottom: -0.6rem;
             }
         }
     }

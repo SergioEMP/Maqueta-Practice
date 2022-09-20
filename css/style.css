@@ -5445,14 +5445,19 @@ table th,
   }
   .programs__taghead {
     left: 47px;
-    padding: 0 24px;
+    padding: 3px 27px;
+  }
+  .programs__taghead h2 {
+    font-size: 20px;
+    line-height: 26px;
   }
   .programs__taghead::before {
     left: -48px;
+    top: 15px;
     width: 47px;
   }
   .programs__slider {
-    padding: 52px 24PX 62px 0;
+    padding: 49px 24px 65px 7px;
     z-index: 1;
   }
   .programs__slider--item {
@@ -5463,8 +5468,11 @@ table th,
     line-height: 22px;
     font-weight: 600;
   }
+  .programs__slider .slick-current {
+    background-color: wheat;
+  }
   .programs__slider .slick-arrow {
-    top: 42%;
+    top: 41.8%;
     z-index: 2;
   }
   .programs__slider .slick-arrow::before {
@@ -5472,22 +5480,25 @@ table th,
     border-radius: 100%;
     color: #FFFFFF;
     font-family: "iconFont";
-    font-size: 28px;
+    font-size: 24px;
     opacity: 1;
   }
   .programs__slider .slick-prev {
-    left: 20px;
+    left: 26px;
   }
   .programs__slider .slick-prev::before {
     content: "\e90e";
     padding: 6px 12px 6px 10px;
   }
   .programs__slider .slick-next {
-    right: 38px;
+    right: 37px;
   }
   .programs__slider .slick-next::before {
     content: "\e90f";
     padding: 6px 10px 6px 12px;
+  }
+  .programs__slider .slick-dots {
+    bottom: -0.6rem;
   }
 }
 @media (min-width: 1366px) {
