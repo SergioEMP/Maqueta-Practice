@@ -1,7 +1,7 @@
 .seencolumns{
     background-color: #F4F4F4;
     margin-top: 50px;
-    padding: 0 0 39px;
+    padding: 0 0 42px;
     position: relative;
     z-index: 4;
     h2{
@@ -68,41 +68,85 @@
 @include mq-min(md){
     .seencolumns{
         margin-top: 10px;
-        &__contain{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding: 0 51px;
-            h2{
-                font-size: 32px;
-                line-height: 40px;
-                span{
-                    color: #FF742B;
-                }
+        h2{
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 26px;
+            padding-top: 3.2rem;
+            span{
+                color: #FF742B;
             }
+        }
+        &__contain{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 51px;
             &--item{
-                grid-column: 1;
-                padding: 17px 24px;
+                padding: 6px 24px;
+                width: 100%;
                 p:first-child{
                     font-size: 60px;
                     line-height: 75px;
                 }
                 div{
+                    width: 88%;
+                    a{
+                        margin-bottom: 6px;
+                    }
                     p{
                         font-size: 16px;
+                        height: auto;
                         line-height: 20px;
                         font-weight: 600;
-                        width: 97%;
                     }
                     p:first-child{
                         margin-bottom: 8px;
                     }
                 }
             }
+            &--item:nth-child(2){
+                padding: 17px 24px;
+            }
+            &--item:nth-child(3){
+                padding: 17px 24px;
+            }
             &--item:nth-child(4){
-                grid-column: 1 /3;
+                padding: 8px 18px 25px;
+                width: 48%;
+               p:first-child{
+                margin-top: 24px;
+               }
+               div{
+                    p{
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 2px;
+                    }
+                    p:first-child{
+                        margin-bottom: 8px;
+                    }
+                }
             }
             &--item:nth-child(5){
-                grid-row: 5;
+                flex-basis: 47%;
+                padding: 8px 18px 25px;
+                width: 48%;
+               p:first-child{
+                margin-top: 24px;
+               }
+               div{
+                width: 77%;
+                    p{
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 2px;
+                    }
+                    p:first-child{
+                        margin-bottom: 8px;
+                    }
+                }
             }
         }
     }
@@ -114,15 +158,12 @@
         height: 156px;
         left: 0px;
         position: absolute;
-        top: -96px;
+        top: -94px;
         width: 100%;
         z-index: -1;
     }
 }
 @include mq-min(xl){
-    .seencolumns{
-        padding: 0 0 64px;
-    }
     .seencolumns::before{
         background: url(./../image/news-background-desktop.png);
         background-repeat: no-repeat;
@@ -131,8 +172,64 @@
         height: 160px;
         left: 0px;
         position: absolute;
-        top: -80px;
+        top: -62px;
         width: 100%;
         z-index: 1;
     }
 }
+ @include mq-min(xb){
+    .seencolumns{
+        margin-top: 18rem;
+        padding: 0 0 6.6rem;
+        h2{
+            font-size: 3.6rem;
+            line-height: 4.5rem;
+            padding-top: 6rem;
+        }
+        &__contain{
+            margin: 0 auto;
+            padding: 1rem 0 0;
+            width: 1056px;
+            &--item{
+                flex-basis: 49%;
+                div{
+                    width: 84%;
+                    p{
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            &--item:first-child{
+                padding: 12px 24px 35px;
+                p:first-child{
+                    margin-top: 22px;
+                }
+            }
+            &--item:nth-child(3){
+                flex-basis: 32.2%;
+                padding: 8px 18px 25px;
+                p:first-child{
+                    margin-top: 24px;
+                }
+                div{
+                width: 77%;
+                    p{
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 2px;
+                    }
+                    p:first-child{
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+            &--item:nth-child(4){
+                flex-basis: 32.2%;
+            }
+            &--item:nth-child(5){
+                flex-basis: 32.2%;
+            }
+        }
+    }
+ }
