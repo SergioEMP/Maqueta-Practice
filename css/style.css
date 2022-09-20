@@ -5388,6 +5388,7 @@ table th,
 .programs__taghead {
   border-color: #3F9891;
   left: 16px;
+  padding: 3px 18px;
 }
 .programs__taghead h2 span {
   color: #3F9891;
@@ -5404,7 +5405,7 @@ table th,
 }
 .programs__slider--item {
   background-color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   margin-left: 16px;
   padding: 8px 8px 16px 8px;
 }
@@ -5413,7 +5414,7 @@ table th,
   width: 100%;
 }
 .programs__slider--item h3 {
-  margin-top: 8px;
+  margin-top: 4px;
 }
 .programs__slider--item p {
   font-family: "Poppins";
@@ -5422,7 +5423,7 @@ table th,
   margin-top: 8px;
 }
 .programs__slider .slick-dots {
-  bottom: 13px;
+  bottom: 16px;
 }
 .programs__slider .slick-dots li {
   margin: 0 1px;
