@@ -6306,7 +6306,7 @@ table th,
 }
 .opinion {
   background-color: #F4F4F4;
-  padding: 24px 0 40px;
+  padding: 2.4rem 0 1.5rem;
   position: relative;
 }
 .opinion h2 {
@@ -6367,7 +6367,7 @@ table th,
   flex-direction: column;
 }
 .opinion .slick-dots {
-  bottom: -40px;
+  bottom: -2.6rem;
 }
 .opinion .slick-dots li {
   margin: 0 1px;
@@ -6390,7 +6390,7 @@ table th,
   height: 200px;
   left: 0px;
   position: absolute;
-  bottom: -185px;
+  bottom: -195px;
   width: 100%;
   z-index: 1;
 }
