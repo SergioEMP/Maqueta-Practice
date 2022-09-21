@@ -1,5 +1,5 @@
 .show{
-    padding: 10px 16px;
+    padding: 0 16px 10px;
     &__principal{
         &--image{
             position: relative;
@@ -17,7 +17,7 @@
             height: 26px;
             padding: 3px 8px;
             position: absolute;
-            right: 11px;
+            right: 0.5rem;
             top: 11px;
             width: 26px;
         }
@@ -29,14 +29,18 @@
         &--content{
             margin-top: 8px;
             width: 95%;
+            p{
+                margin-top: 10px;
+            }
         }
     }
     &__plus{
+        margin-top: 2.6rem;
         width: 100%;
         &--item{
             display: flex;
             flex-direction: row;
-            padding: 12px 0;
+            padding: 9px 0;
         }
         &--image{
             img{
@@ -56,12 +60,12 @@
             .icon::before{
                 content: "\e90d";
                 font-size: 8px;
-                height: 20px;
-                left: 0;
+                height: 22px;
+                left: -2px;
                 padding: 3px 6px;
                 position: absolute;
                 top: -1px;
-                width: 20px;
+                width: 22px;
             }
             h4{
                 margin-left: 24px;
@@ -70,6 +74,9 @@
         &--item:first-child{
             .tag{
                 background-color: #9518B9;
+            }
+            .icon::before{
+                background-color: #C657E6;
             }
         }
         &--item:nth-child(2){
@@ -88,10 +95,9 @@
         }
     }
     &__button{
-        margin-top: 40px;
+        margin-top: 12px;
         a{
-            border: solid 1px #FF742B;
-            color: #FF742B;
+            padding: 0 2rem;
         }
         a:after{
             font-size: 20px;

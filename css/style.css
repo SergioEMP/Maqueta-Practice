@@ -5543,7 +5543,7 @@ table th,
   }
 }
 .show {
-  padding: 10px 16px;
+  padding: 0 16px 10px;
 }
 .show__principal--image {
   position: relative;
@@ -5561,7 +5561,7 @@ table th,
   height: 26px;
   padding: 3px 8px;
   position: absolute;
-  right: 11px;
+  right: 0.5rem;
   top: 11px;
   width: 26px;
 }
@@ -5572,13 +5572,17 @@ table th,
   margin-top: 8px;
   width: 95%;
 }
+.show__principal--content p {
+  margin-top: 10px;
+}
 .show__plus {
+  margin-top: 2.6rem;
   width: 100%;
 }
 .show__plus--item {
   display: flex;
   flex-direction: row;
-  padding: 12px 0;
+  padding: 9px 0;
 }
 .show__plus--image img {
   border-radius: 4px;
@@ -5597,18 +5601,21 @@ table th,
 .show__plus--content .icon::before {
   content: "\e90d";
   font-size: 8px;
-  height: 20px;
-  left: 0;
+  height: 22px;
+  left: -2px;
   padding: 3px 6px;
   position: absolute;
   top: -1px;
-  width: 20px;
+  width: 22px;
 }
 .show__plus--content h4 {
   margin-left: 24px;
 }
 .show__plus--item:first-child .tag {
   background-color: #9518B9;
+}
+.show__plus--item:first-child .icon::before {
+  background-color: #C657E6;
 }
 .show__plus--item:nth-child(2) .icon::before {
   display: none;
@@ -5621,11 +5628,10 @@ table th,
   padding: 3px 3px 0;
 }
 .show__button {
-  margin-top: 40px;
+  margin-top: 12px;
 }
 .show__button a {
-  border: solid 1px #FF742B;
-  color: #FF742B;
+  padding: 0 2rem;
 }
 .show__button a:after {
   font-size: 20px;
