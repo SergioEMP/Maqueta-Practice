@@ -183,7 +183,7 @@
 }
 @include mq-min(xl){
     .show{
-        padding: 40px 47px;
+        padding: 8px 47px;
         &__principal{
             display: flex;
             flex-direction: row;
@@ -193,22 +193,34 @@
             &--image::before{
                 height: 58px;
                 padding: 5px 20px;
-                right: 24px;
+                right: 21px;
                 top: 24px;
                 width: 58px;
             }
             &--contain{
-                padding: 14px 39px;
-                width: 69%;
+                padding: 2.2rem 39px;
+                width: 80%;
             }
             &--tagdate{
+                align-items: flex-start;
                 margin-top: 0;
+                flex-direction: column;
+            }
+            &--date{
+                margin: 0.5rem 0 0;
+            }
+            &--content{
+                margin-top: 1.3rem;
+                width: 100%;
+                p{
+                    margin-top: 1.9rem;
+                }
             }
         }
         &__plus{
             display: flex;
             flex-direction: row;
-            margin-top: 4px;
+            margin-top: 2.5rem;
             width: 77%;
             &--item{
                 flex-direction: column;
@@ -242,7 +254,19 @@
             }
         }
         &__button{
-            margin-top: 0;
+            margin: 1rem -1.6rem 0 0;
+            a{
+            }
+        }
+    }
+}
+@include mq-min(xb){
+    .show{
+        padding: 8px 47px;
+        &__principal{
+            &--contain{
+                width: 69%;
+            }
         }
     }
 }
