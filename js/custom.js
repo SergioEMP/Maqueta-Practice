@@ -97,7 +97,8 @@ $(document).ready(function(){
       {
         breakpoint: 1023,
         settings: {
-          slidesToShow: 2.7,
+          dots: true,
+          slidesToShow: 2.66,
           slidesToScroll: 1,
         }
       },
@@ -105,7 +106,6 @@ $(document).ready(function(){
         breakpoint: 745,
         settings: {
           arrows: false,
-          dots: true,
           slidesToShow: 1.54,
           slidesToScroll: 1,
         }
