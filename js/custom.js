@@ -106,7 +106,7 @@ $(document).ready(function(){
         settings: {
           arrows: false,
           dots: true,
-          slidesToShow: 1.7,
+          slidesToShow: 1.54,
           slidesToScroll: 1,
         }
       }

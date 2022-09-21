@@ -1,12 +1,14 @@
 .gallery{
-    margin-top: 60px;
+    margin-top: 6.6rem;
     position: relative;
     h2{
+        background-color: #78BFBA;
         color: #FFFFFF;
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
         text-align: center;
+        padding-top: 3.3rem;
         position: relative;
         z-index: 3;
     }
@@ -43,7 +45,7 @@
             background-color: #FFFFFF;
             border-radius: 0px 0px 8px 8px;
             margin-top: -6px;
-            padding: 8px 8px 16px;
+            padding: 0.8rem 0.8rem 1rem;
             position: relative;
             z-index: 3;
             h3{
@@ -51,7 +53,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 22px;
-                margin-top: 20px;
+                margin-top: 1.6rem;
             }
         }
         &--tagdate{
@@ -59,11 +61,15 @@
                 background-color: #F06D6D;
             }
         }
+        &--date{
+            font-size: 1.2rem;
+            margin-left: 0.9rem;
+        }
     }
     &__principal::after{
         content: "";
         background: #78BFBA;
-        bottom: -48%;
+        bottom: -51%;
         display: block;
         height: 195px;
         left: 0;
@@ -75,7 +81,7 @@
     &__slider{
         position: relative;
         z-index: 2;
-        margin: 12px 0 0 16px;
+        margin: 1.6rem 0 0 1.6rem;
         &--item{
             margin-right: 24px;
             position: relative;
@@ -96,8 +102,7 @@
         &--content{
             background-color: #FFFFFF;
             border-bottom: 8px solid #F06D6D;
-            height: 66px;
-            padding: 0 4px 8px;
+            padding: 0 0.4rem 1rem;
             position: relative;
             p{
                 font-size: 12px;
@@ -109,23 +114,26 @@
         }
         &--content::before{
             background-color: #F06D6D;
-            border: 2px solid #FFFFFF;
-            border-radius: 50%;
-            color: #FFFFFF;
             content: "\e90c";
-            font-family: "iconFont";
             font-size: 18px;
             height: 40px;
             padding: 4px 7px;
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
-            top: -50%;
+            top: -67%;
             width: 40px;
+        }
+        &--item:nth-child(2){
+            .icon::before{
+                content: "\e90d";
+                font-size: 1.9rem;
+                padding: 0.4rem 1.3rem;
+            }
         }
     }
     .slick-dots{
-        bottom: -40px;
+        bottom: -42px;
         li{
             margin: 0 1px;
             button::before{
@@ -142,7 +150,10 @@
         }
     }
     &__button{
-        margin-top: 60px;
+        margin-top: 6.3rem;
+        a{
+            padding: 0.1rem 2.3rem;
+        }
         a::after{
             font-size: 20px;
         }

@@ -5628,7 +5628,7 @@ table th,
   padding: 3px 3px 0;
 }
 .show__button {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 .show__button a {
   padding: 0 2rem;
@@ -5786,15 +5786,17 @@ table th,
   }
 }
 .gallery {
-  margin-top: 60px;
+  margin-top: 6.6rem;
   position: relative;
 }
 .gallery h2 {
+  background-color: #78BFBA;
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   text-align: center;
+  padding-top: 3.3rem;
   position: relative;
   z-index: 3;
 }
@@ -5832,7 +5834,7 @@ table th,
   background-color: #FFFFFF;
   border-radius: 0px 0px 8px 8px;
   margin-top: -6px;
-  padding: 8px 8px 16px;
+  padding: 0.8rem 0.8rem 1rem;
   position: relative;
   z-index: 3;
 }
@@ -5841,15 +5843,19 @@ table th,
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-  margin-top: 20px;
+  margin-top: 1.6rem;
 }
 .gallery__principal--tagdate .tag {
   background-color: #F06D6D;
 }
+.gallery__principal--date {
+  font-size: 1.2rem;
+  margin-left: 0.9rem;
+}
 .gallery__principal::after {
   content: "";
   background: #78BFBA;
-  bottom: -48%;
+  bottom: -51%;
   display: block;
   height: 195px;
   left: 0;
@@ -5861,7 +5867,7 @@ table th,
 .gallery__slider {
   position: relative;
   z-index: 2;
-  margin: 12px 0 0 16px;
+  margin: 1.6rem 0 0 1.6rem;
 }
 .gallery__slider--item {
   margin-right: 24px;
@@ -5883,8 +5889,7 @@ table th,
 .gallery__slider--content {
   background-color: #FFFFFF;
   border-bottom: 8px solid #F06D6D;
-  height: 66px;
-  padding: 0 4px 8px;
+  padding: 0 0.4rem 1rem;
   position: relative;
 }
 .gallery__slider--content p {
@@ -5896,22 +5901,23 @@ table th,
 }
 .gallery__slider--content::before {
   background-color: #F06D6D;
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
-  color: #FFFFFF;
   content: "\e90c";
-  font-family: "iconFont";
   font-size: 18px;
   height: 40px;
   padding: 4px 7px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: -50%;
+  top: -67%;
   width: 40px;
 }
+.gallery__slider--item:nth-child(2) .icon::before {
+  content: "\e90d";
+  font-size: 1.9rem;
+  padding: 0.4rem 1.3rem;
+}
 .gallery .slick-dots {
-  bottom: -40px;
+  bottom: -42px;
 }
 .gallery .slick-dots li {
   margin: 0 1px;
@@ -5926,7 +5932,10 @@ table th,
   font-size: 14px;
 }
 .gallery__button {
-  margin-top: 60px;
+  margin-top: 6.3rem;
+}
+.gallery__button a {
+  padding: 0.1rem 2.3rem;
 }
 .gallery__button a::after {
   font-size: 20px;
