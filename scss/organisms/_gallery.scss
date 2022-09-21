@@ -297,7 +297,12 @@
 }
 @include mq-min(xl){
     .gallery{
+        margin-top: 10.2rem;
+        h2{
+            padding-top: 2rem;
+        }
         &__principal{
+            margin-top: -0.2rem;
             &--image::before{
                 font-size: 26px;
                 height: 50px;
@@ -327,14 +332,14 @@
             bottom: -95px;
         }
         &__button{
-            margin-top: 40px;
+            margin-top: 3.2rem;
         }
     }
     .gallery::before{
         background: url(./../image/gallery-background-desktop.png) no-repeat;
         background-size: contain;
         height: 234px;
-        top: -80px;
+        top: -87px;
     }
 }
 @include mq-min(xb){
@@ -346,10 +351,23 @@
         }
         &__principal{
             margin: 0 auto;
-            padding: 32px 11.3%;
+            padding: 2.7rem 11.3% 2.4rem;
+            &--content{
+                width: 66%;
+                h3{
+                    margin-top: 1.8rem;
+                }
+            }
+            &--tagdate{
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            &--date{
+                margin: 5px 0 0;
+            }
         }
         &__principal::after{
-            bottom: -120px;
+            bottom: -10.4rem;
         }
         &__slider{
             margin: 0 auto;
