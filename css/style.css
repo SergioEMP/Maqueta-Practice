@@ -6470,20 +6470,26 @@ table th,
 }
 @media (min-width: 1024px) {
   .opinion {
-    padding: 32px 0 80px;
+    padding: 32px 0;
   }
   .opinion h2 {
     font-size: 36px;
     line-height: 45px;
   }
   .opinion__slider {
-    margin: 42px 10px;
+    margin: 5.6rem 10px;
   }
   .opinion__slider .slick-arrow {
-    top: 25%;
+    top: 38.4%;
+  }
+  .opinion__slider .slick-prev {
+    left: 3.3rem;
+  }
+  .opinion__slider .slick-next {
+    right: 5.2rem;
   }
   .opinion .slick-dots {
-    bottom: -48px;
+    bottom: -6rem;
   }
   .opinion::before {
     background: url(./../image/opinion-background-desktop.png);
