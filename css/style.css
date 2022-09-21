@@ -5498,7 +5498,7 @@ table th,
     padding: 6px 10px 6px 12px;
   }
   .programs__slider .slick-dots {
-    bottom: -1.4rem;
+    bottom: 0.9rem;
   }
 }
 @media (min-width: 1024px) {
@@ -5640,7 +5640,7 @@ table th,
 
 @media (min-width: 720px) {
   .show {
-    padding: 20px 23px;
+    padding: 1rem 23px 2rem;
   }
   .show__principal--image img {
     border-radius: 8px;
@@ -5655,7 +5655,10 @@ table th,
     width: 55px;
   }
   .show__principal--tagdate {
-    margin-left: 0;
+    margin: 9px 0 0;
+  }
+  .show__principal--date {
+    font-size: 14px;
   }
   .show__principal--content {
     margin-left: 0;
@@ -5665,13 +5668,16 @@ table th,
     color: #FFFFFF;
     padding: 0 5px;
   }
+  .show__principal--content p {
+    margin-top: 7px;
+  }
   .show__plus {
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 3.8rem;
     width: 50%;
   }
   .show__plus--item {
-    margin: 14px 0;
+    padding: 0.9rem 0 1.8rem;
   }
   .show__plus--item:first-child .icon::before {
     background-color: #C657E6;
@@ -5681,6 +5687,21 @@ table th,
   }
   .show__plus--item:nth-child(2) h4 {
     margin-left: 24px;
+  }
+  .show__button {
+    margin: 3.9rem 0.4rem 0 0;
+  }
+  .show__button a {
+    font-size: 1.6rem;
+    padding: 0.6rem 4.8rem;
+    position: relative;
+  }
+  .show__button a::after {
+    font-size: 30px;
+    font-weight: 100;
+    position: absolute;
+    right: 16px;
+    top: -6px;
   }
 }
 @media (min-width: 1024px) {
