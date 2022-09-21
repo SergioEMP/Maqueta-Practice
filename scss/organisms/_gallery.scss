@@ -383,6 +383,15 @@
     }
 }
 @include mq-min(xxl){
+    .gallery{
+        &__slider{
+            &--content{
+                p{
+                    height: 3.6rem;
+                }
+            }
+        }
+    }
     .gallery::before{
         height: 240px;
         top: -120px;
