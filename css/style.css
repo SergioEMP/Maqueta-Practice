@@ -6235,10 +6235,12 @@ table th,
 
 @media (min-width: 720px) {
   .bussiness {
-    padding: 20px 0 40px;
+    margin-top: 2.6rem;
+    padding: 1.5rem 0 5.2rem;
   }
   .bussiness__taghead {
     left: 42px;
+    padding: 0.3rem 1.9rem;
   }
   .bussiness__taghead h2 {
     font-size: 24px;
@@ -6270,6 +6272,9 @@ table th,
   .bussiness__slider--item p {
     margin-left: 90px;
     text-align: left;
+  }
+  .bussiness__slider .slick-dots {
+    bottom: -4.3rem;
   }
 }
 @media (min-width: 1024px) {
