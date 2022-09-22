@@ -18,8 +18,16 @@
         left: -17px;
         width: 16px;
     }
-    .fb-page{
-        margin-top: 10px;
+    &__facebook{
+        height: 424px;
+        .fb-page{
+            margin-top: 10px;
+            span{
+                iframe{
+                    height: 422px !important;
+                }
+            }
+        }
     }
 }
 @include mq-min(md){
