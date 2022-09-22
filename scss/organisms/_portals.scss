@@ -82,13 +82,19 @@
     }
 }
 @include mq-min(xl){
+    .portalnet{
+        display: flex;
+        flex-direction: row;
+        margin-top: -4rem;
+        height: 462px;
+    }
     .portals{
         margin-top: 15rem;
-        padding: 60px 18px 40px;
+        padding: 6.2rem 5.5rem 40rem 4.8rem;
         width: 65%;
         &__taghead{
             left: 48px;
-            padding: 0.5rem 3rem;
+            padding: 0.4rem 3.1rem;
             h2{
                 padding: 2px 12px;
             }
@@ -106,5 +112,10 @@
                 margin-top: 12px;
             }
         }
+    }
+}
+@include mq-min(xb){
+    .portalnet{
+        margin-top: 0;
     }
 }

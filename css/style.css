@@ -6583,14 +6583,20 @@ table th,
   }
 }
 @media (min-width: 1024px) {
+  .portalnet {
+    display: flex;
+    flex-direction: row;
+    margin-top: -4rem;
+    height: 462px;
+  }
   .portals {
     margin-top: 15rem;
-    padding: 60px 18px 40px;
+    padding: 6.2rem 5.5rem 40rem 4.8rem;
     width: 65%;
   }
   .portals__taghead {
     left: 48px;
-    padding: 0.5rem 3rem;
+    padding: 0.4rem 3.1rem;
   }
   .portals__taghead h2 {
     padding: 2px 12px;
@@ -6605,6 +6611,11 @@ table th,
   }
   .portals__item p {
     margin-top: 12px;
+  }
+}
+@media (min-width: 1366px) {
+  .portalnet {
+    margin-top: 0;
   }
 }
 .networks {
@@ -6665,6 +6676,54 @@ table th,
     border-radius: 0.8rem;
     height: 244px !important;
     padding: 1rem 0.8rem 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .networks {
+    margin: 15rem 0 0;
+    padding: 4rem 0;
+    width: 38%;
+  }
+  .networks__taghead {
+    padding: 0.6rem 2.2rem;
+    right: 48px;
+  }
+  .networks__taghead::before {
+    top: 2rem;
+  }
+  .networks__facebook {
+    width: 350px;
+  }
+  .networks__facebook .fb-page {
+    height: 214px;
+    margin: 0.6rem 0 0 -1rem;
+  }
+  .networks__facebook .fb-page span {
+    height: 214px !important;
+  }
+  .networks__facebook .fb-page span iframe {
+    height: 196px !important;
+    width: 378px !important;
+  }
+}
+@media (min-width: 1366px) {
+  .networks__facebook {
+    width: 460px;
+  }
+  .networks__facebook .fb-page {
+    margin: 0.6rem 0 0 4.8rem;
+  }
+  .networks__facebook .fb-page span iframe {
+    width: 430px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .networks__facebook {
+    margin-left: 5rem;
+    width: 500px;
+  }
+  .networks__facebook .fb-page {
+    margin-left: 8rem;
   }
 }
 
