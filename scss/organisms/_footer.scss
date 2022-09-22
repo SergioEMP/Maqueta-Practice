@@ -89,25 +89,26 @@
         p:nth-child(2){
             margin-top: 20px;
         }
-        .icon-icon-pencil{
+        &--report{
             bottom: 123px;
             color: transparent;
             margin-top: -30px;
             position: fixed;
             right: 2.5rem;
-            z-index: 99;
+            z-index: 999;
         }
-        .icon-icon-pencil:before{
+        &--report::before{
             background-color: #98B438;
             box-shadow: 0px 4px 4px rgba(32, 51, 78, 0.26);
             content: "\e910";
             font-size: 24px;
             height: 45px;
-            padding: 9px;
+            padding: 0.3rem 0.8rem;
             position: absolute;
-            right: -11px;
-            top: 22px;
+            right: -0.6rem;
+            top: 2.9rem;
             width: 45px;
+            z-index: 999;
         }
     }
 }
@@ -130,16 +131,17 @@
         &__logos{
             flex-direction: row;
             justify-content: center;
-            margin-bottom: 20px;
+            margin: -2.5rem 0 2.4rem;
             picture{
-                margin-right: 28px;
+                margin-left: 1.4rem;
             }
-            .icon::before{
-                margin: 0 8px;
-                font-size: 24px;
-            }
-            .icon-Facebook::before{
-                font-size: 26px;
+            &--icons{
+                margin: 0.7rem 0 0 3.3rem;
+                .icon::before{
+                    font-size: 32px;
+                    font-weight: 200;
+                    margin: 0 1.1rem 0 0.4rem
+                }
             }
         }
         &__menu{
@@ -158,12 +160,15 @@
                     display: block;
                     list-style: none;
                     margin-left: 0;
-                    a{
-                        color: #FFFFFF;
-                        font-family: 'Poppins';
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 14px;
+                    li{
+                        padding-bottom: 0.6rem;
+                        a{
+                            color: #FFFFFF;
+                            font-family: 'Poppins';
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 14px;
+                        }
                     }
                 }
             }
@@ -184,48 +189,47 @@
             order: 4;
         }
         &__button{
-            margin: -50px 0 80px -50px;
+            margin: -4.5rem 0 9rem -50px;
             .tag{
                 font-size: 16px;
                 line-height: 22px;
-                padding: 8px 16px;
+                padding: 8px 15px;
             }
         }
         &__copyright{
+            padding-top: 1.2rem;
+            margin-bottom: 2.4rem;
             p{
                 font-size: 11px;
                 line-height: 14px;
             }
             p:nth-child(2){
-                margin-top: 12px;
+                margin-top: 1.4rem;
             }
-            .icon-icon-pencil{
-                bottom: 76px;
-                right: 48px;
-                a{
-                    background-color: #98B438;
-                    color: #FFFFFF;
-                    font-family: 'Poppins';
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 22px;
-                    margin-top: -30px;
-                    padding: 6px 20px 6px 32px;
-                    position: absolute;
-                    right: -34px;
-                    top: -40px;
-                    width: 140px;
-                    z-index: 1;
-                }
+            &--report{
+                background-color: #98B438;
+                bottom: 9rem;
+                color: #FFFFFF;
+                font-family: 'Poppins';
+                font-size: 14px;
+                font-weight: 500;
+                height: 5.6rem;
+                line-height: 22px;
+                margin-top: -30px;
+                padding: 6px 20px 6px 36px;
+                position: absolute;
+                right: -34px;
+                top: -3.8rem;
+                width: 14.6rem;
+    
             }
-            .icon-icon-pencil:before{
+            &--report:before{
                 font-size: 30px;
                 height: 56px;
-                padding: 11px;
-                right: 82px;
-                top: -70px;
+                padding: 1.4rem 1.1rem;
+                right: 11.8rem;
+                top: 0;
                 width: 56px;
-                z-index: 2;
             }
         }
     }

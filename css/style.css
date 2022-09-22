@@ -2800,25 +2800,26 @@ table th,
 .footer__copyright p:nth-child(2) {
   margin-top: 20px;
 }
-.footer__copyright .icon-icon-pencil {
+.footer__copyright--report {
   bottom: 123px;
   color: transparent;
   margin-top: -30px;
   position: fixed;
   right: 2.5rem;
-  z-index: 99;
+  z-index: 999;
 }
-.footer__copyright .icon-icon-pencil:before {
+.footer__copyright--report::before {
   background-color: #98B438;
   box-shadow: 0px 4px 4px rgba(32, 51, 78, 0.26);
   content: "\e910";
   font-size: 24px;
   height: 45px;
-  padding: 9px;
+  padding: 0.3rem 0.8rem;
   position: absolute;
-  right: -11px;
-  top: 22px;
+  right: -0.6rem;
+  top: 2.9rem;
   width: 45px;
+  z-index: 999;
 }
 
 .footer::before {
@@ -2842,17 +2843,18 @@ table th,
   .footer__logos {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: -2.5rem 0 2.4rem;
   }
   .footer__logos picture {
-    margin-right: 28px;
+    margin-left: 1.4rem;
   }
-  .footer__logos .icon::before {
-    margin: 0 8px;
-    font-size: 24px;
+  .footer__logos--icons {
+    margin: 0.7rem 0 0 3.3rem;
   }
-  .footer__logos .icon-Facebook::before {
-    font-size: 26px;
+  .footer__logos--icons .icon::before {
+    font-size: 32px;
+    font-weight: 200;
+    margin: 0 1.1rem 0 0.4rem;
   }
   .footer__menu {
     border-top: none;
@@ -2873,7 +2875,10 @@ table th,
     list-style: none;
     margin-left: 0;
   }
-  .footer__menu--styles ul a {
+  .footer__menu--styles ul li {
+    padding-bottom: 0.6rem;
+  }
+  .footer__menu--styles ul li a {
     color: #FFFFFF;
     font-family: "Poppins";
     font-size: 14px;
@@ -2896,47 +2901,47 @@ table th,
     order: 4;
   }
   .footer__button {
-    margin: -50px 0 80px -50px;
+    margin: -4.5rem 0 9rem -50px;
   }
   .footer__button .tag {
     font-size: 16px;
     line-height: 22px;
-    padding: 8px 16px;
+    padding: 8px 15px;
+  }
+  .footer__copyright {
+    padding-top: 1.2rem;
+    margin-bottom: 2.4rem;
   }
   .footer__copyright p {
     font-size: 11px;
     line-height: 14px;
   }
   .footer__copyright p:nth-child(2) {
-    margin-top: 12px;
+    margin-top: 1.4rem;
   }
-  .footer__copyright .icon-icon-pencil {
-    bottom: 76px;
-    right: 48px;
-  }
-  .footer__copyright .icon-icon-pencil a {
+  .footer__copyright--report {
     background-color: #98B438;
+    bottom: 9rem;
     color: #FFFFFF;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: 500;
+    height: 5.6rem;
     line-height: 22px;
     margin-top: -30px;
-    padding: 6px 20px 6px 32px;
+    padding: 6px 20px 6px 36px;
     position: absolute;
     right: -34px;
-    top: -40px;
-    width: 140px;
-    z-index: 1;
+    top: -3.8rem;
+    width: 14.6rem;
   }
-  .footer__copyright .icon-icon-pencil:before {
+  .footer__copyright--report:before {
     font-size: 30px;
     height: 56px;
-    padding: 11px;
-    right: 82px;
-    top: -70px;
+    padding: 1.4rem 1.1rem;
+    right: 11.8rem;
+    top: 0;
     width: 56px;
-    z-index: 2;
   }
   .footer::before {
     background: url(./../image/footer-background-tablet.png);
@@ -3115,7 +3120,7 @@ table th,
   overflow-x: hidden;
   padding: 0 16px;
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 .lasthour__content--secondtain div:first-of-type p {
   font-weight: 600;
@@ -4961,7 +4966,7 @@ table th,
   margin-top: 50px;
   padding: 0 0 40px;
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 .seencolumns h2 {
   font-size: 24px;
@@ -5800,13 +5805,13 @@ table th,
   font-weight: 700;
   line-height: 32px;
   text-align: center;
-  padding-top: 3.3rem;
+  padding: 3.4rem 0 1.5rem;
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 .gallery__principal {
-  border-radius: 4px;
   background-color: #78BFBA;
+  margin-top: -1.4rem;
   padding: 32px 16px;
   position: relative;
   z-index: 2;
@@ -6673,6 +6678,9 @@ table th,
     left: inherit;
     right: -50px;
     width: 49px;
+  }
+  .networks__facebook {
+    height: 25.6rem;
   }
   .networks__facebook .fb-page {
     display: flex;
