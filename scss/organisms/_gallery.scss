@@ -190,7 +190,7 @@
             flex-direction: row-reverse;
             padding: 34px 22px;
             position: relative;
-            z-index: 3;
+            z-index: 2;
             &--image{
                 width: 100%;
                 img{
@@ -243,7 +243,7 @@
         }
         &__slider{
             margin: 14px 0 0 22px;
-            z-index: 3;
+            z-index: 2;
             &--content{
                 p{
                     font-size: 14px;
