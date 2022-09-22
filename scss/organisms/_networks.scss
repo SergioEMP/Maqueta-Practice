@@ -1,13 +1,11 @@
 .networks{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
+    margin: 0.8rem 0 6.4rem;
     position: relative;
     padding: 40px 13px 80px 19px;
     &__taghead{
         border-color: #609FEE;
         left: 16px;
+        padding: 0.3rem 1.8rem;
         h2{
             color: #20334E;
             span{
@@ -26,11 +24,12 @@
 }
 @include mq-min(md){
     .networks{
-        margin-top: 40px;
+        margin-top: 1.1rem;
         position: relative;
-        padding: 40px 13px 80px 19px;
+        padding: 40px 0 80px;
         &__taghead{
             left: inherit;
+            padding: 0.3rem 2.8rem;
             right: 49px;
             h2{
                 font-size: 24px;
@@ -44,11 +43,19 @@
             right: -50px;
             width: 49px;
         }
-        .fb-page{
-            margin-top: 10px;
-            span{
-                iframe{
-                    width: 511px;
+        &__facebook{
+            .fb-page{
+                display: flex;
+                height: 254px;
+                justify-content: center;
+                margin-top: 1.6rem;
+                span{
+                    iframe{
+                        border: solid 1px #D8D8D8 !important;
+                        border-radius: 0.8rem; 
+                        height: 244px !important;
+                        padding: 1rem 0.8rem 1.2rem;
+                    }
                 }
             }
         }

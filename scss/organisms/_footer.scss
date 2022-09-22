@@ -122,6 +122,7 @@
 }
 @include mq-min(md){
     .footer{
+        margin-top: 8rem;
         padding: 20px 34px 0;
         &__logos{
             flex-direction: row;
