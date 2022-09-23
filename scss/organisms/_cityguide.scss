@@ -21,7 +21,7 @@
         width: 100%;
         z-index: 1;
     }
-    h2{
+    .heading__two{
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 0.06rem;
@@ -272,7 +272,7 @@
         &__image::before{ 
             top: 62px;
         }
-        h2{
+        .heading__two{
             margin-top: -32px;
         }
     }
@@ -293,7 +293,7 @@
         &__image::before{
             display: none;
         }
-        h2{
+        .heading__two{
             font-size: 32px;
             line-height: 40px;
             margin: 0 18px 0 32px;
@@ -553,7 +553,7 @@
         &__image{
             width: 40%;
         }
-        h2{
+        .heading__two{
             font-size: 36px;
             line-height: 45px;
             margin: 0 0 24px 55px;

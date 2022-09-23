@@ -16,10 +16,14 @@ p{
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 15px; 
     padding: 4px 9px;
     text-align: center;
     width: fit-content;
+}
+.tag:hover{
+    background-color: red;
+    color: black;
 }
 
 .taghead{
@@ -33,7 +37,7 @@ p{
     position: absolute;
     top: -20px;
     width: fit-content;
-    h2{
+    .heading__two{
         span{
             color: #FF742B;
         }
@@ -52,11 +56,6 @@ p{
     .taghead{
         left: 46px;
         padding: 3px 24px;
-        h2{
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 32px;
-        }
     }
     .taghead::before{
         left: -47px;

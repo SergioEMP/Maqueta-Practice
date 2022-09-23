@@ -41,23 +41,31 @@
     &__menu{
         border-top: 0.5px dashed #EBEBEB;
         &--styles{
-            position: relative;
             border-bottom: 0.5px dashed #EBEBEB;
+            height: 46px;
             padding: 1.15rem 0;
-            p{
-                color: #FFFFFF;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 22px;
+            position: relative;
+            .icon__menu{
+                background-color: transparent;
+                background: none;
+                border: none;
+                margin: 0;
+                padding: 0;
             }
-            p::after{
+            .icon__menu::after{
                 content: "\e911";
                 color: #fff;
                 font-family: 'iconFont';
                 font-size: 6px;
                 position: absolute;
-                right: 0;
-                top: 12px;
+                right: 0.2rem;
+                top: 2.1rem;
+            }
+            p{
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
             }
             ul{
                 display: none;

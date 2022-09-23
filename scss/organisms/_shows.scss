@@ -67,7 +67,7 @@
                 top: -1px;
                 width: 22px;
             }
-            h4{
+            .heading__four{
                 margin-left: 24px;
             }
         }
@@ -83,7 +83,7 @@
             .icon::before{
                 display: none;
             }
-            h4{
+            .heading__four{
                 margin-left: 0;
             }
         }
@@ -131,7 +131,7 @@
             }
             &--content{
                 margin-left: 0;
-                h3{
+                .heading__three{
                     span{
                         background-color: #78BFBA;
                         color: #FFFFFF;
@@ -159,7 +159,7 @@
                 .icon::before{
                     display: block;
                 }
-                h4{
+                .heading__four{
                     margin-left: 24px;
                 }
             }
@@ -240,7 +240,7 @@
                 .icon::before{
                     display: none;
                 }
-                h4{
+                .heading__four{
                     margin-left: 0;
                 }
             }
@@ -248,7 +248,7 @@
                 .icon::before{
                     display: none;
                 }
-                h4{
+                .heading__four{
                     margin-left: 0;
                 }
             }

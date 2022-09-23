@@ -24,6 +24,12 @@
             margin: -0.1rem 1.2rem;
         }
     }
+    &__live:hover{
+        background-color: red;
+        p{
+            color: black;
+        }
+    }
     &__site{
         position: relative;
         background: linear-gradient(to right,  #20334EFF 20%, #20334E00), url(./../image/header-background.png), no-repeat;
@@ -140,6 +146,12 @@
                 a{    
                     color: #20334E;
                     font-size: 12px;
+                }
+                a:hover{
+                    color: #609FEE;
+                }
+                a:focus{
+                    color: #609FEE;
                 }
             }
             li:first-child{

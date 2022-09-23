@@ -1520,72 +1520,72 @@ input[type=button].btn__tab.active {
     max-width: 1140px;
   }
 }
-h1 {
+h1, .heading__one {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  h1 {
+  h1, .heading__one {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
   }
 }
 @media (min-width: 1024px) {
-  h1 {
+  h1, .heading__one {
     font-size: 32px;
     line-height: 40px;
     font-weight: 700;
   }
 }
 
-h2 {
+h2, .heading__two {
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  h2 {
+  h2, .heading__two {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
   }
 }
 
-h3 {
+h3, .heading__three {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
 }
 @media (min-width: 720px) {
-  h3 {
+  h3, .heading__three {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
   }
 }
 @media (min-width: 1024px) {
-  h3 {
+  h3, .heading__three {
     font-size: 32px;
     line-height: 40px;
     font-weight: 700;
   }
 }
 
-h4 {
+h4, .heading__four {
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
 }
 
-h5 {
+h5, .heading__five {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
 }
 
-h6 {
+h6, .heading__six {
   font-size: 10px;
   line-height: 22px;
   font-weight: 300;
@@ -2184,6 +2184,11 @@ p {
   width: fit-content;
 }
 
+.tag:hover {
+  background-color: red;
+  color: black;
+}
+
 .taghead {
   align-items: center;
   border: 1px solid #FF742B;
@@ -2196,7 +2201,7 @@ p {
   top: -20px;
   width: fit-content;
 }
-.taghead h2 span {
+.taghead .heading__two span {
   color: #FF742B;
 }
 
@@ -2214,11 +2219,6 @@ p {
   .taghead {
     left: 46px;
     padding: 3px 24px;
-  }
-  .taghead h2 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
   }
   .taghead::before {
     left: -47px;
@@ -2444,6 +2444,12 @@ table th,
   font-size: 2.8rem;
   margin: -0.1rem 1.2rem;
 }
+.header__live:hover {
+  background-color: red;
+}
+.header__live:hover p {
+  color: black;
+}
 .header__site {
   position: relative;
   background: linear-gradient(to right, #20334e 20%, rgba(32, 51, 78, 0)), url(./../image/header-background.png), no-repeat;
@@ -2561,6 +2567,12 @@ table th,
 .header__links--list li a {
   color: #20334E;
   font-size: 12px;
+}
+.header__links--list li a:hover {
+  color: #609FEE;
+}
+.header__links--list li a:focus {
+  color: #609FEE;
 }
 .header__links--list li:first-child {
   font-weight: 600;
@@ -2752,24 +2764,32 @@ table th,
   border-top: 0.5px dashed #EBEBEB;
 }
 .footer__menu--styles {
-  position: relative;
   border-bottom: 0.5px dashed #EBEBEB;
+  height: 46px;
   padding: 1.15rem 0;
+  position: relative;
+}
+.footer__menu--styles .icon__menu {
+  background-color: transparent;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__menu--styles .icon__menu::after {
+  content: "\e911";
+  color: #fff;
+  font-family: "iconFont";
+  font-size: 6px;
+  position: absolute;
+  right: 0.2rem;
+  top: 2.1rem;
 }
 .footer__menu--styles p {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-}
-.footer__menu--styles p::after {
-  content: "\e911";
-  color: #fff;
-  font-family: "iconFont";
-  font-size: 6px;
-  position: absolute;
-  right: 0;
-  top: 12px;
 }
 .footer__menu--styles ul {
   display: none;
@@ -3079,7 +3099,7 @@ table th,
 .lasthour__content--firstpart {
   padding: 22px 16px 0;
 }
-.lasthour__content--firstpart h1 {
+.lasthour__content--firstpart .heading__one {
   letter-spacing: 0.03rem;
   margin-bottom: 18px;
   width: 90%;
@@ -3105,7 +3125,7 @@ table th,
   top: 0;
   width: 100%;
 }
-.lasthour__content--secondpart h2 {
+.lasthour__content--secondpart .heading__two {
   color: #EF0000;
   font-size: 14px;
   line-height: 20px;
@@ -3205,7 +3225,7 @@ table th,
   .lasthour__content--firstpart {
     padding: 1.7rem 2.8rem 0;
   }
-  .lasthour__content--firstpart h1 {
+  .lasthour__content--firstpart .heading__one {
     margin-bottom: 1.5rem;
   }
   .lasthour__content--firstpart p {
@@ -3225,7 +3245,7 @@ table th,
     padding-bottom: 8px;
     position: relative;
   }
-  .lasthour__content--secondpart h2 {
+  .lasthour__content--secondpart .heading__two {
     font-size: 20px;
     text-align: left;
     margin: 3rem 0 0 1.2rem;
@@ -3287,7 +3307,7 @@ table th,
     position: relative;
     width: 81%;
   }
-  .lasthour__content--secondpart h2 {
+  .lasthour__content--secondpart .heading__two {
     margin-top: 11.2rem;
   }
   .lasthour__content--secondtain {
@@ -3331,7 +3351,7 @@ table th,
     margin: 4rem 3.6rem 0;
     padding-bottom: 0.6rem;
   }
-  .lasthour__content--firstpart h1 {
+  .lasthour__content--firstpart .heading__one {
     letter-spacing: 0.1rem;
     width: 98%;
   }
@@ -3347,7 +3367,7 @@ table th,
     margin-right: 40px;
     width: 57%;
   }
-  .lasthour__content--secondpart h2 {
+  .lasthour__content--secondpart .heading__two {
     margin: 10.2rem 0 2.6rem 1.2rem;
   }
   .lasthour__content--secondtain {
@@ -3382,7 +3402,7 @@ table th,
   .lasthour__content--secondpart {
     justify-content: center;
   }
-  .lasthour__content--secondpart h2 {
+  .lasthour__content--secondpart .heading__two {
     margin-top: 4rem;
   }
   .lasthour__content--secondtain {
@@ -3414,10 +3434,10 @@ table th,
 .recent__principal--content {
   margin-top: 8px;
 }
-.recent__principal--content h3 {
+.recent__principal--content .heading__three {
   letter-spacing: 0.03rem;
 }
-.recent__principal--content h3 span {
+.recent__principal--content .heading__three span {
   background-color: #FCC690;
 }
 .recent__principal--content p {
@@ -3444,7 +3464,7 @@ table th,
   top: -0.2rem;
   width: 22px;
 }
-.recent__plus--item h4 {
+.recent__plus--item .heading__four {
   margin: 0.8rem 0 0.8rem 2.5rem;
   position: relative;
 }
@@ -3460,7 +3480,7 @@ table th,
 .recent__plus--item:first-child .icon::before {
   display: none;
 }
-.recent__plus--item:first-child h4 {
+.recent__plus--item:first-child .heading__four {
   margin-left: 0;
 }
 .recent__plus--item:nth-child(3) {
@@ -3493,7 +3513,7 @@ table th,
   .recent__principal--content {
     margin-left: 16px;
   }
-  .recent__principal--content h3 {
+  .recent__principal--content .heading__three {
     letter-spacing: 0.1rem;
   }
   .recent__principal--content p {
@@ -3521,7 +3541,7 @@ table th,
   .recent__plus--item .icon::before {
     display: none;
   }
-  .recent__plus--item h4 {
+  .recent__plus--item .heading__four {
     margin-left: 0;
   }
   .recent__plus--tagdate p {
@@ -3579,7 +3599,7 @@ table th,
     margin-right: 42px;
     padding: 1rem 0 0 0;
   }
-  .recent__plus--content h4 {
+  .recent__plus--content .heading__four {
     margin-right: 52px;
     width: 150px;
   }
@@ -3594,7 +3614,7 @@ table th,
   .recent__plus {
     width: 100%;
   }
-  .recent__plus--content h4 {
+  .recent__plus--content .heading__four {
     width: 196px;
   }
 }
@@ -3808,7 +3828,7 @@ table th,
   width: 100%;
   z-index: 1;
 }
-.cityguide h2 {
+.cityguide .heading__two {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.06rem;
@@ -3818,7 +3838,7 @@ table th,
   text-align: center;
   z-index: 2;
 }
-.cityguide h2 span {
+.cityguide .heading__two span {
   color: #FF742B;
 }
 .cityguide__itemcont {
@@ -4047,7 +4067,7 @@ table th,
   .cityguide__image::before {
     top: 62px;
   }
-  .cityguide h2 {
+  .cityguide .heading__two {
     margin-top: -32px;
   }
   .cityguide::before {
@@ -4068,7 +4088,7 @@ table th,
   .cityguide__image::before {
     display: none;
   }
-  .cityguide h2 {
+  .cityguide .heading__two {
     font-size: 32px;
     line-height: 40px;
     margin: 0 18px 0 32px;
@@ -4321,7 +4341,7 @@ table th,
   .cityguide__image {
     width: 40%;
   }
-  .cityguide h2 {
+  .cityguide .heading__two {
     font-size: 36px;
     line-height: 45px;
     margin: 0 0 24px 55px;
@@ -4516,7 +4536,7 @@ table th,
   top: 0px;
   width: 18px;
 }
-.news__plus--item:nth-child(2) h4 {
+.news__plus--item:nth-child(2) .heading__four {
   margin-left: 24px;
 }
 .news__plus--image img {
@@ -4566,7 +4586,7 @@ table th,
   bottom: 50px;
   left: 16px;
 }
-.news__slider--content h3 {
+.news__slider--content .heading__three {
   color: #FFFFFF;
   font-family: "Poppins";
   font-weight: 700;
@@ -4651,7 +4671,7 @@ table th,
   .news__principal--content {
     margin-left: 0;
   }
-  .news__principal--content h3 span {
+  .news__principal--content .heading__three span {
     background-color: #FCC690;
   }
   .news__principal--content p {
@@ -4668,7 +4688,7 @@ table th,
     margin-right: 24px;
     width: 48%;
   }
-  .news__plus--item h3 {
+  .news__plus--item .heading__three {
     margin: 2px 0;
     width: 220px;
   }
@@ -4701,7 +4721,7 @@ table th,
   .news__plus--item:nth-child(2) span::before {
     display: none;
   }
-  .news__plus--item:nth-child(2) h4 {
+  .news__plus--item:nth-child(2) .heading__four {
     margin-left: 0;
   }
   .news__plus--item:nth-child(3) {
@@ -4743,7 +4763,7 @@ table th,
     bottom: 31px;
     left: 8px;
   }
-  .news__slider--content h3 {
+  .news__slider--content .heading__three {
     font-size: 12px;
     line-height: 15px;
     width: 90%;
@@ -4819,7 +4839,7 @@ table th,
   .news__principal--content {
     margin-top: -1px;
   }
-  .news__principal--content h3 {
+  .news__principal--content .heading__three {
     font-size: 24px;
     line-height: 32px;
     margin-top: 8px;
@@ -4897,7 +4917,7 @@ table th,
     bottom: 36px;
     left: 19px;
   }
-  .news__slider--content h3 {
+  .news__slider--content .heading__three {
     font-size: 16px;
     line-height: 24px;
   }
@@ -4944,7 +4964,7 @@ table th,
     height: auto;
     width: 61px;
   }
-  .news__slider--content h3 {
+  .news__slider--content .heading__three {
     font-size: 16px;
     line-height: 24px;
   }
@@ -4969,7 +4989,7 @@ table th,
   position: relative;
   z-index: 2;
 }
-.seencolumns h2 {
+.seencolumns .heading__two {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -4979,7 +4999,7 @@ table th,
   text-align: center;
   z-index: 2;
 }
-.seencolumns h2 span {
+.seencolumns .heading__two span {
   color: #FF742B;
 }
 .seencolumns__contain {
@@ -5036,13 +5056,13 @@ table th,
     margin-top: 10px;
     padding: 0 0 42px;
   }
-  .seencolumns h2 {
+  .seencolumns .heading__two {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 26px;
     padding-top: 3.2rem;
   }
-  .seencolumns h2 span {
+  .seencolumns .heading__two span {
     color: #FF742B;
   }
   .seencolumns__contain {
@@ -5147,7 +5167,7 @@ table th,
     margin-top: 18rem;
     padding: 0 0 6.6rem;
   }
-  .seencolumns h2 {
+  .seencolumns .heading__two {
     font-size: 3.6rem;
     line-height: 4.5rem;
     padding-top: 6rem;
@@ -5243,11 +5263,11 @@ table th,
 .homemade__content--text {
   font-family: "Poppins";
 }
-.homemade__content--text h2 {
+.homemade__content--text .heading__two {
   margin-bottom: 14px;
   text-align: center;
 }
-.homemade__content--text h2 span {
+.homemade__content--text .heading__two span {
   background-color: #FCC690;
   padding: 0 8px 0 2px;
 }
@@ -5303,7 +5323,7 @@ table th,
   .homemade__content--text {
     margin-top: -1.8rem;
   }
-  .homemade__content--text h2 {
+  .homemade__content--text .heading__two {
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
@@ -5353,7 +5373,7 @@ table th,
     flex-direction: column;
     justify-content: center;
   }
-  .homemade__content--text h2 {
+  .homemade__content--text .heading__two {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 20px;
@@ -5400,7 +5420,7 @@ table th,
   left: 16px;
   padding: 3px 18px;
 }
-.programs__taghead h2 span {
+.programs__taghead .heading__two span {
   color: #3F9891;
 }
 .programs__taghead::before {
@@ -5423,7 +5443,7 @@ table th,
   height: auto;
   width: 100%;
 }
-.programs__slider--item h3 {
+.programs__slider--item .heading__three {
   margin-top: 4px;
 }
 .programs__slider--item p {
@@ -5457,7 +5477,7 @@ table th,
     left: 47px;
     padding: 3px 27px;
   }
-  .programs__taghead h2 {
+  .programs__taghead .heading__two {
     font-size: 20px;
     line-height: 26px;
   }
@@ -5473,7 +5493,7 @@ table th,
   .programs__slider--item {
     margin-left: 24px;
   }
-  .programs__slider--item h3 {
+  .programs__slider--item .heading__three {
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
@@ -5523,7 +5543,7 @@ table th,
   .programs__taghead {
     padding: 8px 29px;
   }
-  .programs__taghead h2 {
+  .programs__taghead .heading__two {
     font-size: 24px;
     font-weight: 700;
   }
@@ -5618,7 +5638,7 @@ table th,
   top: -1px;
   width: 22px;
 }
-.show__plus--content h4 {
+.show__plus--content .heading__four {
   margin-left: 24px;
 }
 .show__plus--item:first-child .tag {
@@ -5630,7 +5650,7 @@ table th,
 .show__plus--item:nth-child(2) .icon::before {
   display: none;
 }
-.show__plus--item:nth-child(2) h4 {
+.show__plus--item:nth-child(2) .heading__four {
   margin-left: 0;
 }
 .show__plus--item:nth-child(3) .icon::before {
@@ -5673,7 +5693,7 @@ table th,
   .show__principal--content {
     margin-left: 0;
   }
-  .show__principal--content h3 span {
+  .show__principal--content .heading__three span {
     background-color: #78BFBA;
     color: #FFFFFF;
     padding: 0 5px;
@@ -5695,7 +5715,7 @@ table th,
   .show__plus--item:nth-child(2) .icon::before {
     display: block;
   }
-  .show__plus--item:nth-child(2) h4 {
+  .show__plus--item:nth-child(2) .heading__four {
     margin-left: 24px;
   }
   .show__button {
@@ -5774,13 +5794,13 @@ table th,
   .show__plus--content .icon::before {
     display: none;
   }
-  .show__plus--content h4 {
+  .show__plus--content .heading__four {
     margin-left: 0;
   }
   .show__plus--item:nth-child(2) .icon::before {
     display: none;
   }
-  .show__plus--item:nth-child(2) h4 {
+  .show__plus--item:nth-child(2) .heading__four {
     margin-left: 0;
   }
   .show__button {
@@ -5799,7 +5819,7 @@ table th,
   margin-top: 6.6rem;
   position: relative;
 }
-.gallery h2 {
+.gallery .heading__two {
   background-color: #78BFBA;
   color: #FFFFFF;
   font-size: 24px;
@@ -5848,11 +5868,7 @@ table th,
   position: relative;
   z-index: 3;
 }
-.gallery__principal--content h3 {
-  color: #20334E;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
+.gallery__principal--content .heading__three {
   margin-top: 1.6rem;
 }
 .gallery__principal--tagdate .tag {
@@ -5974,7 +5990,7 @@ table th,
   .gallery {
     margin-top: 8.2rem;
   }
-  .gallery h2 {
+  .gallery .heading__two {
     font-size: 32px;
     line-height: 40px;
     padding-top: 2.4rem;
@@ -6009,14 +6025,11 @@ table th,
     padding: 27px 12px 27px 20px;
     z-index: 0;
   }
-  .gallery__principal--content h3 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
+  .gallery__principal--content .heading__three {
     margin-top: 0;
     width: 240px;
   }
-  .gallery__principal--content h3 span {
+  .gallery__principal--content .heading__three span {
     background-color: #78BFBA;
     color: #FFFFFF;
     margin-left: -6px;
@@ -6086,7 +6099,7 @@ table th,
   .gallery {
     margin-top: 10.2rem;
   }
-  .gallery h2 {
+  .gallery .heading__two {
     padding-top: 2rem;
   }
   .gallery__principal {
@@ -6103,9 +6116,7 @@ table th,
   .gallery__principal--content {
     padding: 70px 21px 70px 24px;
   }
-  .gallery__principal--content h3 {
-    font-size: 32px;
-    line-height: 40px;
+  .gallery__principal--content .heading__three {
     width: 370px;
   }
   .gallery__principal--tagdate {
@@ -6130,10 +6141,9 @@ table th,
   }
 }
 @media (min-width: 1366px) {
-  .gallery h2 {
+  .gallery .heading__two {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 10px;
   }
   .gallery__principal {
     margin: 0 auto;
@@ -6142,7 +6152,7 @@ table th,
   .gallery__principal--content {
     width: 66%;
   }
-  .gallery__principal--content h3 {
+  .gallery__principal--content .heading__three {
     margin-top: 1.8rem;
   }
   .gallery__principal--tagdate {
@@ -6184,11 +6194,10 @@ table th,
   left: 16px;
   padding: 0.3rem 1.7rem;
 }
-.bussiness__taghead h2 {
-  color: #20334E;
+.bussiness__taghead .heading__two {
   font-size: 20px;
 }
-.bussiness__taghead h2 span {
+.bussiness__taghead .heading__two span {
   color: #98B438;
 }
 .bussiness__taghead::before {
@@ -6213,8 +6222,7 @@ table th,
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-.bussiness__slider--item h3 {
-  color: #20334E;
+.bussiness__slider--item .heading__three {
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
@@ -6252,7 +6260,7 @@ table th,
     left: 42px;
     padding: 0.3rem 1.9rem;
   }
-  .bussiness__taghead h2 {
+  .bussiness__taghead .heading__two {
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
@@ -6275,7 +6283,7 @@ table th,
     top: 15px;
     transform: translate(0, 0);
   }
-  .bussiness__slider--item h3 {
+  .bussiness__slider--item .heading__three {
     margin: 24px 0 5px 90px;
     text-align: left;
   }
@@ -6295,7 +6303,7 @@ table th,
     left: 47px;
     padding: 0.3rem 3.2rem;
   }
-  .bussiness__taghead h2 {
+  .bussiness__taghead .heading__two {
     padding: 4px 10px;
   }
   .bussiness__taghead::before {
@@ -6319,15 +6327,11 @@ table th,
   padding: 2.4rem 0 1.5rem;
   position: relative;
 }
-.opinion h2 {
-  color: #20334E;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
+.opinion .heading__two {
   text-align: center;
   margin-bottom: 20px;
 }
-.opinion h2 span {
+.opinion .heading__two span {
   color: #F06D6D;
 }
 .opinion__slider {
@@ -6336,8 +6340,7 @@ table th,
 .opinion__slider--item span {
   display: none;
 }
-.opinion__slider--item h3 {
-  color: #20334E;
+.opinion__slider--item .heading__three {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -6409,9 +6412,8 @@ table th,
   .opinion {
     padding: 32px 0 40px;
   }
-  .opinion h2 {
+  .opinion .heading__two {
     font-size: 32px;
-    font-weight: 700;
     line-height: 40px;
   }
   .opinion__slider {
@@ -6428,7 +6430,7 @@ table th,
     line-height: 75px;
     margin: 0.9rem 0 -20px;
   }
-  .opinion__slider--item h3 {
+  .opinion__slider--item .heading__three {
     margin-top: 0;
   }
   .opinion__slider--item p {
@@ -6482,7 +6484,7 @@ table th,
   .opinion {
     padding: 32px 0;
   }
-  .opinion h2 {
+  .opinion .heading__two {
     font-size: 36px;
     line-height: 45px;
   }
@@ -6519,10 +6521,7 @@ table th,
   left: 16px;
   padding: 0.3rem 1.8rem;
 }
-.portals__taghead h2 {
-  color: #20334E;
-}
-.portals__taghead h2 span {
+.portals__taghead .heading__two span {
   color: #609FEE;
 }
 .portals__taghead::before {
@@ -6553,7 +6552,7 @@ table th,
     left: 42px;
     padding: 0.3rem 2.9rem;
   }
-  .portals__taghead h2 {
+  .portals__taghead .heading__two {
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
@@ -6607,7 +6606,7 @@ table th,
     left: 48px;
     padding: 0.4rem 3.1rem;
   }
-  .portals__taghead h2 {
+  .portals__taghead .heading__two {
     padding: 2px 12px;
   }
   .portals__taghead::before {
@@ -6637,10 +6636,7 @@ table th,
   left: 16px;
   padding: 0.3rem 1.8rem;
 }
-.networks__taghead h2 {
-  color: #20334E;
-}
-.networks__taghead h2 span {
+.networks__taghead .heading__two span {
   color: #609FEE;
 }
 .networks__taghead::before {
@@ -6668,11 +6664,6 @@ table th,
     left: inherit;
     padding: 0.3rem 2.8rem;
     right: 49px;
-  }
-  .networks__taghead h2 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
   }
   .networks__taghead::before {
     background-color: #609FEE;

@@ -1,7 +1,7 @@
 .gallery{
     margin-top: 6.6rem;
     position: relative;
-    h2{
+    .heading__two{
         background-color: #78BFBA;
         color: #FFFFFF;
         font-size: 24px;
@@ -48,11 +48,7 @@
             padding: 0.8rem 0.8rem 1rem;
             position: relative;
             z-index: 3;
-            h3{
-                color: #20334E;
-                font-size: 16px;
-                font-weight: 600;
-                line-height: 22px;
+            .heading__three{
                 margin-top: 1.6rem;
             }
         }
@@ -180,7 +176,7 @@
 @include mq-min(md){
     .gallery{
         margin-top: 8.2rem;
-        h2{
+        .heading__two{
             font-size: 32px;
             line-height: 40px;
             padding-top: 2.4rem;
@@ -213,10 +209,7 @@
                 margin-top: 0;
                 padding: 27px 12px 27px 20px;
                 z-index: 0;
-                h3{
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 32px;
+                .heading__three{
                     margin-top: 0;
                     width: 240px;
                     span{
@@ -298,7 +291,7 @@
 @include mq-min(xl){
     .gallery{
         margin-top: 10.2rem;
-        h2{
+        .heading__two{
             padding-top: 2rem;
         }
         &__principal{
@@ -313,9 +306,7 @@
             }
             &--content{
                 padding: 70px 21px 70px 24px;
-                h3{
-                    font-size: 32px;
-                    line-height: 40px;
+                .heading__three{
                     width: 370px;
                 }
             }
@@ -344,17 +335,16 @@
 }
 @include mq-min(xb){
     .gallery{
-        h2{
+        .heading__two{
             font-size: 36px;
             line-height: 45px;
-            margin-bottom: 10px;
         }
         &__principal{
             margin: 0 auto;
             padding: 2.7rem 11.3% 2.4rem;
             &--content{
                 width: 66%;
-                h3{
+                .heading__three{
                     margin-top: 1.8rem;
                 }
             }

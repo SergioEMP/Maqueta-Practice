@@ -22,7 +22,7 @@
         }
         &--content{
             margin-top: 8px;
-            h3{
+            .heading__three{
                 letter-spacing: 0.03rem;
                 span{
                     background-color: #FCC690;
@@ -52,7 +52,7 @@
                 top: -0.2rem;
                 width: 22px;
             }
-            h4{
+            .heading__four{
                 margin: 0.8rem 0 0.8rem 2.5rem;
                 position: relative;
             }
@@ -68,7 +68,7 @@
             .icon::before{
                 display: none;
             }
-            h4{
+            .heading__four{
                 margin-left: 0;
             }
         }
@@ -100,7 +100,7 @@
             }
             &--content{
                 margin-left: 16px;
-                h3{
+                .heading__three{
                     letter-spacing: 0.1rem;
                 }
                 p{
@@ -128,7 +128,7 @@
                 .icon::before{
                     display: none;
                 }
-                h4{
+                .heading__four{
                     margin-left: 0;
                 }
             }
@@ -194,7 +194,7 @@
                 padding: 1rem 0 0 0;
             }
             &--content{
-                h4{
+                .heading__four{
                     margin-right: 52px;
                     width: 150px;
                 }
@@ -215,7 +215,7 @@
         &__plus{
             width: 100%;
             &--content{
-                h4{
+                .heading__four{
                     width: 196px;
                 }
             }

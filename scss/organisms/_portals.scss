@@ -6,8 +6,7 @@
         border-color: #609FEE;
         left: 16px;
         padding: 0.3rem 1.8rem;
-        h2{
-            color: #20334E;
+        .heading__two{
             span{
                 color: #609FEE;
             }
@@ -39,7 +38,7 @@
         &__taghead{
             left: 42px;
             padding: 0.3rem 2.9rem;
-            h2{
+            .heading__two{
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 32px;
@@ -95,7 +94,7 @@
         &__taghead{
             left: 48px;
             padding: 0.4rem 3.1rem;
-            h2{
+            .heading__two{
                 padding: 2px 12px;
             }
         }
