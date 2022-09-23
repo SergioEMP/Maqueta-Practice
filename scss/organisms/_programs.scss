@@ -1,11 +1,11 @@
 .programs{
-    margin-top: 60px;
+    margin-top: 6rem;
     position: relative;
-    padding: 30px 0 0;
+    padding: 3rem 0 0;
     &__taghead{
         border-color: #3F9891;
-        left: 16px;
-        padding: 3px 18px;
+        left: 1.6rem;
+        padding: 0.3rem 1.8rem;
         .heading__two{
             span{
                 color: #3F9891;
@@ -14,18 +14,18 @@
     }
     &__taghead::before{
         background-color: #3F9891;
-        left: -17px;
-        width: 16px;
+        left: -1.7rem;
+        width: 1.6rem;
     }
     &__slider{
         background-color: #F4F4F4;
-        margin-left: -8px;
-        padding: 16px 0 53px 0;
+        margin-left: -0.8rem;
+        padding: 1.6rem 0 5.3rem 0;
         &--item{
             background-color: #FFFFFF;
-            border-radius: 0 0 8px 8px;
-            margin-left: 16px;
-            padding: 8px 8px 16px 8px;
+            border-radius: 0 0 0.8rem 0.8rem;
+            margin-left: 1.6rem;
+            padding: 0.8rem 0.8rem 1.6rem 0.8rem;
             picture{
                 img{
                     height: auto;
@@ -33,29 +33,29 @@
                 } 
             }
             .heading__three{
-                margin-top: 4px;
+                margin-top: 0.4rem;
             }
             p{
                 font-family: $font-secondary;
-                font-size: 12px;
-                line-height: 17px;
-                margin-top: 8px;
+                font-size: 1.2rem;
+                line-height: 1.7rem;
+                margin-top: 0.8rem;
             }
         }
         .slick-dots{
-            bottom: 16px;
+            bottom: 1.6rem;
             li{
-                margin: 0 1px;
+                margin: 0 0.1rem;
                 button::before{
                     color: #D8D8D8;
-                    font-size: 10px;
+                    font-size: 1rem;
                     opacity: 1;
                 }
             }
             .slick-active{
                 button::before{
                     color: #9518B9;
-                    font-size: 14px;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -63,29 +63,29 @@
 }
 @include mq-min(md){
     .programs{
-        margin-top: 50px;
-        padding: 40px 0 0;
+        margin-top: 5rem;
+        padding: 4rem 0 0;
         &__taghead{
-            left: 47px;
-            padding: 3px 27px;
+            left: 4.7rem;
+            padding: 0.3rem 2.7rem;
             .heading__two{
-                font-size: 20px;
-                line-height: 26px;
+                font-size: 2rem;
+                line-height: 2.6rem;
             }
         }
         &__taghead::before{
-            left: -48px;
-            top: 15px;
-            width: 47px;
+            left: -4.8rem;
+            top: 1.5rem;
+            width: 4.7rem;
         }
         &__slider{
-            padding: 49px 24px 80px 7px;
+            padding: 4.9rem 2.4rem 8rem 0.7rem;
             z-index: 1;
             &--item{
-                margin-left: 24px;
+                margin-left: 2.4rem;
                 .heading__three{
-                    font-size: 16px;
-                    line-height: 22px;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
                     font-weight: 600;
                 }
             }
@@ -101,22 +101,22 @@
                 border-radius: 100%;
                 color: #FFFFFF;
                 font-family: 'iconFont';
-                font-size: 24px;
+                font-size: 2.4rem;
                 opacity: 1;
             }
             .slick-prev{
-                left: 26px;
+                left: 2.6rem;
             }
             .slick-prev::before {
                 content: "\e90e";
-                padding: 6px 12px 6px 10px;
+                padding: 0.6rem 1.2rem 0.6rem 1rem;
             }
             .slick-next{
-                right: 37px;
+                right: 3.7rem;
             }
             .slick-next::before{
                 content: "\e90f";
-                padding: 6px 10px 6px 12px;
+                padding: 0.6rem 1rem 0.6rem 1.2rem;
             }
             .slick-dots{
                 bottom: 0.9rem;
@@ -136,36 +136,36 @@
 }
 @include mq-min(xb){
     .programs{
-        padding: 30px 0 0;
+        padding: 3rem 0 0;
         &__taghead{
-            padding: 8px 29px;
+            padding: 0.8rem 2.9rem;
             .heading__two{
-                font-size: 24px;
+                font-size: 2.4rem;
                 font-weight: 700;
             }
         }
         &__taghead::before{
-            top: 19px;
+            top: 1.9rem;
         }
         &__container{
             background-color: #F4F4F4;
-            margin-top: 10px;
+            margin-top: 1rem;
         }
         &__slider{
-            padding: 50px 94px 94px 70px;
+            padding: 5rem 9.4rem 9.4rem 7rem;
             margin: 0 auto;
-            width: 1280px;
+            width: 128rem;
             &--item{
-                margin-left: 14px;
+                margin-left: 1.4rem;
             }
             .slick-prev{
-                left: 36px;
+                left: 3.6rem;
             }
             .slick-next{
-                right: 45px;
+                right: 4.5rem;
             }
             .slick-dots{
-                bottom: 18px;
+                bottom: 1.8rem;
             }
         }
     }

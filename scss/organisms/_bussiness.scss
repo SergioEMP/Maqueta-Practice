@@ -1,13 +1,13 @@
 .bussiness{
-    margin-top: 40px;
+    margin-top: 4rem;
     padding: 3.2rem 0 4.8rem;
     position: relative;
     &__taghead{
         border-color: #98B438;
-        left: 16px;
+        left: 1.6rem;
         padding: 0.3rem 1.7rem;
         .heading__two{
-            font-size: 20px;
+            font-size: 2rem;
             span{
                 color: #98B438;
             }
@@ -15,16 +15,16 @@
     }
     &__taghead::before{
         background-color: #98B438;
-        left: -17px;
-        width: 16px;
+        left: -1.7rem;
+        width: 1.6rem;
     }
     &__slider{
-        margin: 0 45px 10px;
+        margin: 0 4.5rem 1rem;
         &--item{
             background-color: #F4F4F4;
-            border-radius: 4px;
+            border-radius: 0.4rem;
             height: 100px;
-            margin-top: 40px;
+            margin-top: 4rem;
             position: relative;
             picture{
                 img{
@@ -36,34 +36,34 @@
                 }
             }
             .heading__three{
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: 700;
-                line-height: 22px;
-                margin: 40px 52px 8px 52px;
+                line-height: 2.2rem;
+                margin: 4rem 5.2rem 0.8rem 5.2rem;
                 text-align: center;
             }
             p{
-                font-size: 12px;
+                font-size: 1.2rem;
                 font-weight: 400;
                 text-align: center;
-                line-height: 17px;
+                line-height: 1.7rem;
             }
         }
     }
     .slick-dots{
         bottom: -4.6rem;
         li{
-            margin: 0 1px;
+            margin: 0 0.1rem;
             button::before{
                 color: #939EAD;
-                font-size: 8px;
+                font-size: 0.8rem;
                 opacity: 1;
             }
         }
         .slick-active{
             button::before{
                 color: #98B438;
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -73,38 +73,38 @@
         margin-top: 2.6rem;
         padding: 1.5rem 0 5.2rem;
         &__taghead{
-            left: 42px;
+            left: 4.2rem;
             padding: 0.3rem 1.9rem;
             .heading__two{
-                font-size: 24px;
+                font-size: 2.4rem;
                 font-weight: 700;
-                line-height: 32px;
-                padding: 0 8px;
+                line-height: 3.2rem;
+                padding: 0 0.8rem;
             }
         }
         &__taghead::before{
-            left: -43px;
-            width: 42px;
+            left: -4.3rem;
+            width: 4.2rem;
         }
         &__slider{
-            margin: 0 0 10px;
+            margin: 0 0 1rem;
             &--item{
-                border-radius: 50px 0 0 50px;
-                height: 90px;
-                margin: 30px 0 0 24px;
+                border-radius: 5rem 0 0 5rem;
+                height: 9rem;
+                margin: 3rem 0 0 2.4rem;
                 picture{
                     img{
-                        left: 15px;
-                        top: 15px;
+                        left: 1.5rem;
+                        top: 1.5rem;
                         transform: translate(0, 0);
                     }
                 }
                 .heading__three{
-                    margin: 24px 0 5px 90px;
+                    margin: 2.4rem 0 0.5rem 9rem;
                     text-align: left;
                 }
                 p{
-                    margin-left: 90px;
+                    margin-left: 9rem;
                     text-align: left;
                 }
             }
@@ -118,26 +118,26 @@
     .bussiness{
         padding: 2rem 0 5.5rem;
         &__taghead{
-            left: 47px;
+            left: 4.7rem;
             padding: 0.3rem 3.2rem;
             .heading__two{
-                padding: 4px 10px;
+                padding: 0.4rem 1rem;
             }
         }
         &__taghead::before{
-            left: -48px;
-            width: 47px;
+            left: -4.8rem;
+            width: 4.7rem;
         }
         &__slider{
-            margin-left: 30px;
+            margin-left: 3rem;
             &--item{
-                border-radius: 50px 0 0 50px;
-                height: 90px;
-                margin: 30px 0 0 17px;
+                border-radius: 5rem 0 0 5rem;
+                height: 9rem;
+                margin: 3rem 0 0 1.7rem;
             }
         }
         .slick-dots{
-            bottom: -48px;
+            bottom: -4.8rem;
         }
     }
 }

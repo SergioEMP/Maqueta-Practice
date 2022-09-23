@@ -16,7 +16,7 @@
             display: flex;
             font-family: $font-primary;
             font-size: 1.2rem;
-            margin:2px 0 0 -1.2rem;
+            margin: 0.2rem 0 0 -1.2rem;
         }
         p:before{
             content: "•";
@@ -75,9 +75,9 @@
                     a{
                         cursor: pointer;
                         display: block;
-                        font-size: 12px;
+                        font-size: 1.2rem;
                         font-weight: 600;
-                        padding: 4px 10px;
+                        padding: 0.4rem 1rem;
                         text-decoration: none;
                     }   
                     a:hover{
@@ -114,24 +114,24 @@
         &--logo{
             align-items: center;
             display: flex;
-            height: 56px;
+            height: 5.6rem;
             justify-content: center;
         }
         &--search:before{
             background: url(./../../image/icon-search.png) no-repeat;
             content: "";
-            height: 23px;
+            height: 2.3rem;
             position: absolute;
-            right: 25px;
-            top: 18px;
-            width: 21px;
+            right: 2.5rem;
+            top: 1.8rem;
+            width: 2.1rem;
         }
     }
     &__links{
-        box-shadow: 0px 5px 5px #E7E7E7;
+        box-shadow: 0 0.5rem 0.5rem #E7E7E7;
         display: flex;
         flex-direction: row;
-        height: 32px;
+        height: 3.2rem;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
@@ -140,12 +140,12 @@
             li{
                 align-items: center;
                 display: flex;
-                font-size: 20px;
+                font-size: 2rem;
                 list-style: none;
                 padding-bottom: 0;
                 a{    
                     color: #20334E;
-                    font-size: 12px;
+                    font-size: 1.2rem;
                 }
                 a:hover{
                     color: #609FEE;
@@ -160,7 +160,7 @@
             li:not(:first-child)::before{
                 align-items: center;
                 content: "•";
-                margin: 0 10px;
+                margin: 0 1rem;
             }
             li:nth-child(2)::before{
                 content:"|";
@@ -171,7 +171,7 @@
             list-style: none;
             display: flex;
             display: none;
-            margin-left: 30px;
+            margin-left: 3rem;
             li{
                 padding-bottom: 0;
             }
@@ -181,8 +181,8 @@
             background-color: transparent;
             color: #FF742B;
             display: flex;
-            font-size: 16px;
-            margin: 2px 6px;
+            font-size: 1.6rem;
+            margin: 0.2rem 0.6rem;
         }
         &--insta::before{
             content: "\e903";
@@ -199,7 +199,7 @@
         &--date{
             align-items: center;
             display: flex;
-            font-size: 12px;
+            font-size: 1.2rem;
             padding: 0 1.1rem;
         }
     }
@@ -208,8 +208,8 @@
     .header{
         position: relative;
         &__live{
-            border-radius: 4px;
-            height: 23px;
+            border-radius: 0.4rem;
+            height: 2.3rem;
             left: 9.7rem;
             position: absolute;
             padding: 0 1.2rem;
@@ -217,7 +217,7 @@
             z-index: 2;
             p{
                 font-size: 1.1rem;
-                margin-left: -8px;
+                margin-left: -0.8rem;
             }
             p:before{
                 margin: 0 0.7rem 0 0.6rem;
@@ -225,10 +225,10 @@
         }
         &__site{
             &--logo{
-                height: 68px;
+                height: 6.8rem;
                 img{
                     height: auto;
-                    width: 116px;
+                    width: 11.6rem;
                 }
             }
             &--search:before{
@@ -255,18 +255,18 @@
             }
         }
         &__links{
-            height: 40px;
+            height: 4rem;
             &--list{
                 li{
                     letter-spacing: 0.05rem;
                     a{    
                         color: #20334E;
-                        font-size: 14px;
+                        font-size: 1.4rem;
                     }
                 }
             }
             &--date{
-                font-size: 11px;
+                font-size: 1.1rem;
             }
         }
     }

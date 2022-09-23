@@ -4,9 +4,9 @@
     .heading__two{
         background-color: #78BFBA;
         color: #FFFFFF;
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
-        line-height: 32px;
+        line-height: 3.2rem;
         text-align: center;
         padding: 3.4rem 0 1.5rem;
         position: relative;
@@ -15,36 +15,36 @@
     &__principal{
         background-color: #78BFBA;
         margin-top: -1.4rem;
-        padding: 32px 16px;
+        padding: 3.2rem 1.6rem;
         position: relative;
         z-index: 2;
         &--image{
             position: relative;
             img{
-                border-radius: 4px;
+                border-radius: 0.4rem;
                 height: auto;
                 width: 100%;
             }
         }
         &--image::before{
             background-color: #F06D6D;
-            border: 2px solid #FFFFFF;
+            border: 0.2rem solid #FFFFFF;
             border-radius: 50%;
             color: #FFFFFF;
             content: "\e90c";
             font-family: "iconFont";
-            font-size: 10px;
-            height: 24px;
-            padding: 3px 4px;
+            font-size: 1rem;
+            height: 2.4rem;
+            padding: 0.3rem 0.4rem;
             position: absolute;
-            right: 10px;
-            top: 10px;
-            width: 24px;
+            right: 1rem;
+            top: 1rem;
+            width: 2.4rem;
         }
         &--content{
             background-color: #FFFFFF;
-            border-radius: 0px 0px 8px 8px;
-            margin-top: -6px;
+            border-radius: 0 0 0.8rem 0.8rem;
+            margin-top: -0.6rem;
             padding: 0.8rem 0.8rem 1rem;
             position: relative;
             z-index: 3;
@@ -67,7 +67,7 @@
         background: #78BFBA;
         bottom: -51%;
         display: block;
-        height: 195px;
+        height: 19.5rem;
         left: 0;
         position: absolute;
         transform: translate(0%, -50%);
@@ -79,46 +79,46 @@
         z-index: 2;
         margin: 1.6rem 0 0 1.6rem;
         &--item{
-            margin-right: 24px;
+            margin-right: 2.4rem;
             position: relative;
         }
         &--image{
-            border-radius: 4px;
+            border-radius: 0.4rem;
             img{
                 height: auto;
                 width: 100%;
             }
             .tag{
                 background-color: #F06D6D;
-                left: 8px;
+                left: 0.8rem;
                 position: absolute;
-                top: 8px;
+                top: 0.8rem;
             }
         }
         &--content{
             background-color: #FFFFFF;
-            border-bottom: 8px solid #F06D6D;
+            border-bottom: 0.8rem solid #F06D6D;
             padding: 0 0.4rem 1rem;
             position: relative;
             p{
-                font-size: 12px;
+                font-size: 1.2rem;
                 font-weight: 500;
-                line-height: 15px;
-                margin-top: 28px;
+                line-height: 1.5rem;
+                margin-top: 2.8rem;
                 text-align: center;
             }
         }
         &--content::before{
             background-color: #F06D6D;
             content: "\e90c";
-            font-size: 18px;
-            height: 40px;
-            padding: 4px 7px;
+            font-size: 1.8rem;
+            height: 4rem;
+            padding: 0.4rem 0.7rem;
             position: absolute;
             transform: translate(-50%, -50%);
             left: 50%;
             top: -67%;
-            width: 40px;
+            width: 4rem;
         }
         &--item:nth-child(2){
             .icon::before{
@@ -129,19 +129,19 @@
         }
     }
     .slick-dots{
-        bottom: -42px;
+        bottom: -4.2rem;
         li{
-            margin: 0 1px;
+            margin: 0 0.1rem;
             button::before{
                 color: #939EAD;
-                font-size: 8px;
+                font-size: 0.8rem;
                 opacity: 1;
             }
         }
         .slick-active{
             button::before{
                 color: #F06D6D;
-                font-size: 14px;
+                font-size: 1.4rem;
             }
         }
     }
@@ -151,7 +151,7 @@
             padding: 0.1rem 2.3rem;
         }
         a::after{
-            font-size: 20px;
+            font-size: 2rem;
         }
     }
 }
@@ -160,95 +160,95 @@
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
-    height: 200px;
-    left: 0px;
+    height: 20rem;
+    left: 0;
     position: absolute;
-    top: -80px;
+    top: -8rem;
     width: 100%;
     z-index: 1;
 }
 @include mq-min(sm){
     .gallery::before{
-        height: 230px;
-        top: -120px;
+        height: 23rem;
+        top: -12rem;
     }
 }
 @include mq-min(md){
     .gallery{
         margin-top: 8.2rem;
         .heading__two{
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 3.2rem;
+            line-height: 4rem;
             padding-top: 2.4rem;
         }
         &__principal{
             display: flex;
             flex-direction: row-reverse;
-            padding: 34px 22px;
+            padding: 3.4rem 2.2rem;
             position: relative;
             z-index: 2;
             &--image{
                 width: 100%;
                 img{
-                    border-radius: 0px 4px 4px 0px;
+                    border-radius: 0 0.4rem 0.4rem 0;
                 }
             }
             &--image::before{
-                font-size: 16px;
-                height: 34px;
-                padding: 3px 5px;
-                right: 14px;
-                top: 14px;
-                width: 34px;
+                font-size: 1.6rem;
+                height: 3.4rem;
+                padding: 0.3rem 0.5rem;
+                right: 1.4rem;
+                top: 1.4rem;
+                width: 3.4rem;
             }
             &--content{
-                border-radius: 8px 0px 0px 8px;
+                border-radius: 0.8rem 0 0 0.8rem;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: flex-end;
                 margin-top: 0;
-                padding: 27px 12px 27px 20px;
+                padding: 2.7rem 1.2rem 2.7rem 2rem;
                 z-index: 0;
                 .heading__three{
                     margin-top: 0;
-                    width: 240px;
+                    width: 24rem;
                     span{
                         background-color: #78BFBA;
                         color: #FFFFFF;
-                        margin-left: -6px;
-                        padding: 0 6px;
+                        margin-left: -0.6rem;
+                        padding: 0 0.6rem;
                     }
                 }
             }
             &--tagdate{
-                margin: 1.8rem 0 0 -6px;
+                margin: 1.8rem 0 0 -0.6rem;
             }
             &--date{
                 display: none;
             }
         }
         &__principal::after{
-            bottom: -114px;
-            height: 195px;
+            bottom: -11.4rem;
+            height: 19.5rem;
             transform: translate(0, 0);
             width: 100%;
             z-index: -1;
         }
         &__slider{
-            margin: 14px 0 0 22px;
+            margin: 1.4rem 0 0 2.2rem;
             z-index: 2;
             &--content{
                 p{
-                    font-size: 14px;
-                    line-height: 18px;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
                 }
             }
             &--content::before{
-                font-size: 22px;
-                height: 49px;
-                padding: 6px 9px;
+                font-size: 2.2rem;
+                height: 4.9rem;
+                padding: 0.6rem 0.9rem;
                 top: -63%;
-                width: 49px;
+                width: 4.9rem;
             }
             &--item:nth-child(2){
                 .icon::before{
@@ -259,33 +259,33 @@
             }
         }
         .slick-dots{
-            bottom: -45px;
+            bottom: -4.5rem;
         }
         &__button{
-            margin-top: 76px;
+            margin-top: 7.6rem;
             a{
-                font-size: 16px;
+                font-size: 1.6rem;
             }
         }
     }
     .gallery::before{
         background: url(./../image/gallery-background-tablet.png) no-repeat;
         background-size: contain;
-        height: 205px;
-        top: -90px;
+        height: 20.5rem;
+        top: -9rem;
     }
 }
 @include mq-min(lg){
     .gallery{
         &__principal::after{
-            bottom: -118px;
+            bottom: -11.8rem;
         }
     }
     .gallery::before{
         background: url(./../image/gallery-background-tablet.png) no-repeat;
         background-size: contain;
-        height: 234px;
-        top: -100px;
+        height: 23.4rem;
+        top: -10rem;
     }
 }
 @include mq-min(xl){
@@ -297,17 +297,17 @@
         &__principal{
             margin-top: -0.2rem;
             &--image::before{
-                font-size: 26px;
-                height: 50px;
-                padding: 5px 7px;
-                right: 20px;
-                top: 20px;
-                width: 50px;
+                font-size: 2.6rem;
+                height: 5rem;
+                padding: 0.5rem 0.7rem;
+                right: 2rem;
+                top: 2rem;
+                width: 5rem;
             }
             &--content{
-                padding: 70px 21px 70px 24px;
+                padding: 7rem 2.1rem 7rem 2.4rem;
                 .heading__three{
-                    width: 370px;
+                    width: 37rem;
                 }
             }
             &--tagdate{
@@ -315,12 +315,12 @@
             }
             &--date{
                 display: block;
-                font-size: 12px;
+                font-size: 1.2rem;
                 font-weight: 400;
             }
         }
         &__principal::after{
-            bottom: -95px;
+            bottom: -9.5rem;
         }
         &__button{
             margin-top: 3.2rem;
@@ -329,15 +329,15 @@
     .gallery::before{
         background: url(./../image/gallery-background-desktop.png) no-repeat;
         background-size: contain;
-        height: 234px;
-        top: -87px;
+        height: 23.4rem;
+        top: -8.7rem;
     }
 }
 @include mq-min(xb){
     .gallery{
         .heading__two{
-            font-size: 36px;
-            line-height: 45px;
+            font-size: 3.6rem;
+            line-height: 4.5rem;
         }
         &__principal{
             margin: 0 auto;
@@ -353,7 +353,7 @@
                 flex-direction: column;
             }
             &--date{
-                margin: 5px 0 0;
+                margin: 0.5rem 0 0;
             }
         }
         &__principal::after{
@@ -361,12 +361,12 @@
         }
         &__slider{
             margin: 0 auto;
-            margin-left: 15px;
+            margin-left: 1.5rem;
             padding: 0 10%;
             &--content{
                 p{
-                    font-size: 14px;
-                    line-height: 18px;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
                 }
             }
         }
@@ -383,7 +383,7 @@
         }
     }
     .gallery::before{
-        height: 240px;
-        top: -120px;
+        height: 24rem;
+        top: -12rem;
     }
 }

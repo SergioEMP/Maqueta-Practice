@@ -1,12 +1,12 @@
 .news{
     align-items: center;
-    margin: 32px 0 60px;
-    padding: 10px 16px 40px;
+    margin: 3.2rem 0 6rem;
+    padding: 1rem 1.6rem 4rem;
     position: relative;
     &__taghead{
-        left: 16px;
-        top: 6px;
-        padding: 3px 17px;
+        left: 1.6rem;
+        top: 0.6rem;
+        padding: 0.3rem 1.7rem;
         p{
             span{
                 color: #FF742B;
@@ -16,14 +16,14 @@
     &__taghead::before{
         background-color: #FF742B;
         content: "";
-        height: 1px;
-        left: -17px;
+        height: 0.1rem;
+        left: -1.7rem;
         position: absolute;
-        top: 16px;
-        width: 16px;
+        top: 1.6rem;
+        width: 1.6rem;
     }
     &__principal{
-        margin: 48px 0 10px;
+        margin: 4.8rem 0 1rem;
         &--image{
             position: relative;
             img{
@@ -34,23 +34,23 @@
         &--image:before{
             content: "\e90c";
             font-family: "iconFont";
-            font-size: 10px;
-            height: 24px;
-            padding: 4px 4px;
+            font-size: 1rem;
+            height: 2.4rem;
+            padding: 0.4rem 0.4rem;
             position: absolute;
-            right: 5px;
-            top: 9px;
-            width: 24px;
+            right: 0.5rem;
+            top: 0.9rem;
+            width: 2.4rem;
         }
         &--date{
-            margin-top: -6px;
+            margin-top: -0.6rem;
         }
         &--content{ 
-            margin-top: 8px;
+            margin-top: 0.8rem;
             width: 95%;
             p{
                 font-family: $font-secondary;
-                margin-top: 10px;
+                margin-top: 1rem;
             }
         }
     }
@@ -60,114 +60,114 @@
         &--item{
             display: flex;
             flex-direction: row;
-            margin-bottom: -5px;
-            padding: 12px 0;
+            margin-bottom: -0.5rem;
+            padding: 1.2rem 0;
         }
         &--item:nth-child(2){
             span::before{
                 border: none;
                 content: "\e90d";
-                font-size: 8px;
-                height: 18px;
+                font-size: 0.8rem;
+                height: 1.8rem;
                 left: 0;
-                padding: 4px 7px;
+                padding: 0.4rem 0.7rem;
                 position: absolute;
-                top: 0px;
-                width: 18px;
+                top: 0;
+                width: 1.8rem;
             }
             .heading__four{
-                margin-left: 24px;
+                margin-left: 2.4rem;
             }
         }
         &--image{
             img{
-                border-radius: 4px;
+                border-radius: 0.4rem;
                 object-fit: cover;
             }
         }
         &--info{
-            margin-left: 8px;
+            margin-left: 0.8rem;
         }
         &--tagdate{
             margin-top: 0;
         }
         &--content{
-            margin-top: 8px;
+            margin-top: 0.8rem;
             position: relative;
         }
     }
     &__button{
-        margin-top: 11px;
+        margin-top: 1.1rem;
         a{
             padding: 0.02rem 2.2rem;
         }
     }
     &__slider{
         margin: 0 auto;
-        width: 302px;
+        width: 30.2rem;
         &--item{
             position: relative;
             .tag{
                 background-color: #609FEE;
-                font-size: 14px;
+                font-size: 1.4rem;
                 font-weight: 500;
-                left: 16px;
-                padding: 8px 9px;
+                left: 1.6rem;
+                padding: 0.8rem 0.9rem;
                 position: absolute;
-                top:16px
+                top:1.6rem
             }
         }
         &--background{
-            border-radius: 4px;
+            border-radius: 0.4rem;
             height: auto;
             width: 100%;
         }
         &--content{
             position: absolute;
-            bottom: 50px;
-            left: 16px;
+            bottom: 5rem;
+            left: 1.6rem;
             .heading__three{
                 color: #FFFFFF;
                 font-family: $font-secondary;
                 font-weight: 700;
-                line-height: 24px;
-                margin-top: 8px;
+                line-height: 2.4rem;
+                margin-top: 0.8rem;
             }
             div{
                 display: flex;
                 flex-direction: row;
-                margin-top: 8px;
+                margin-top: 0.8rem;
                 p{
                     color: #FFFFFF;
-                    font-size: 11px;
+                    font-size: 1.1rem;
                     font-weight: 700;
-                    line-height: 15px;
+                    line-height: 1.5rem;
                 }
                 p:nth-child(2){
                     color: #FFFFFF;
                     font-family: $font-secondary;
                     font-weight: 400;
-                    margin-left: 5px;
+                    margin-left: 0.5rem;
                 }
             }
         }
         .slick-dots{
-            bottom: 4px;
+            bottom: 0.4rem;
             li{
-                margin: 0 1px;
+                margin: 0 0.1rem;
                 button{
                     color: #FFFFFF;
                 }
                 button::before{
                     color: #FFFFFF;
-                    font-size: 8px;
+                    font-size: 0.8rem;
                     opacity: 1;
                 }
             }
             .slick-active{
                 button::before{
                     color: #FF9D00;
-                    font-size: 12px;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -176,39 +176,39 @@
 @include mq-min(md){
     .news{
         margin-top: 12.4rem;
-        padding: 1px 26px 20px;
+        padding: 0.1rem 2.6rem 2rem;
         position: relative;
         &__taghead{
-            left: 48px;
-            padding: 3px 38px;
+            left: 4.8rem;
+            padding: 0.3rem 3.8rem;
             p{
-                font-size: 24px;
+                font-size: 2.4rem;
                 font-weight: 700;
-                line-height: 32px;
+                line-height: 3.2rem;
             }
         }
         &__taghead::before{
-            left: -49px;
-            top: 18px;
-            width: 48px;
+            left: -4.9rem;
+            top: 1.8rem;
+            width: 4.8rem;
         }
         &__principal{
-            margin-bottom: 5px;
-            padding-top: 37px;
+            margin-bottom: 0.5rem;
+            padding-top: 3.7rem;
             &--image:before{
-                font-size: 26px;
-                height: 55px;
-                padding: 8px 10px;
-                right: 17px;
-                top: 22px;
-                width: 55px;
+                font-size: 2.6rem;
+                height: 5.5rem;
+                padding: 0.8rem 1rem;
+                right: 1.7rem;
+                top: 2.2rem;
+                width: 5.5rem;
             }
             &--tagdate{
                 align-items: center;
                 margin-left: 0;
             }
             &--date{
-                font-size: 14px;
+                font-size: 1.4rem;
             }
             &--content{
                 margin-left: 0;
@@ -218,43 +218,43 @@
                     }
                 }
                 p{
-                    margin-top: 14px;
+                    margin-top: 1.4rem;
                 }
             }
         }
         &__plus{
             display: flex;
             flex-direction: row;
-            margin-top: 14px;
+            margin-top: 1.4rem;
             width: 77%;
             &--item{
                 flex-direction: column;
-                margin-right: 24px;
+                margin-right: 2.4rem;
                 width: 48%;
                 .heading__three{
-                    margin:2px 0;
-                    width: 220px;
+                    margin: 0.2rem 0;
+                    width: 22rem;
                 }
             }
             &--image{
                 margin-bottom: 3.5rem;
                 position: relative;
                 img{
-                    border-radius: 4px;
-                    height: calc(100% + 28px);
+                    border-radius: 0.4rem;
+                    height: calc(100% + 2.8rem);
                     object-fit: cover;
                     width: 100%;
                 }
             }
             &--image::before{
                 content: "\e90d";
-                font-size: 12px;
-                height: 24px;
-                padding: 1px 7px ;
+                font-size: 1.2rem;
+                height: 2.4rem;
+                padding: 0.1rem 0.7rem ;
                 position: absolute;
-                right: 10px;
-                top: 10px;
-                width: 24px;
+                right: 1rem;
+                top: 1rem;
+                width: 2.4rem;
             }
             &--info{
                 margin-left: 0;
@@ -275,67 +275,67 @@
             }
         }
         &__button{
-            margin: 59px 0 10px;
+            margin: 5.9remn 0 1rem;
             a{
-                font-size: 16px;
+                font-size: 1.6rem;
                 padding: 0.2rem 2.5rem;
             }
             a::after{
-                font-size: 20px;
-                margin-bottom: 2px;
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
             }
         }
         &__slider{
-            bottom: 108px;
+            bottom: 4.8rem;
             position: absolute;
-            right: 20px;
-            width: 160px;
+            right: 2rem;
+            width: 16rem;
             &--item{
                 .tag{
-                    font-size: 12px;
-                    left: 8px;
-                    padding: 4px 9px;
-                    top: 9px;
+                    font-size: 1.2rem;
+                    left: 0.8prem;
+                    padding: 0.4rem 0.9rem;
+                    top: 0.9rem;
                 }
             }
             &--background{
                 img{
-                    height: 282px;
-                    width: 160px;
+                    height: 28.2rem;
+                    width: 16rem;
                 }
             }
             &--logo{
                 img{
                     height: auto;
-                    width: 33px;
+                    width: 3.3rem;
                 }
             }
             &--content{
                 position: absolute;
-                bottom: 31px;
-                left: 8px;
+                bottom: 3.1rem;
+                left: 0.8rem;
                 .heading__three{
-                    font-size: 12px;
-                    line-height: 15px;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
                     width: 90%;
                 }
                 div{
                     flex-direction: column;
-                    margin-top: 20px;
+                    margin-top: 2rem;
                     p{
-                        font-size: 8px;
+                        font-size: 0.8rem;
                         font-weight: 700;
-                        line-height: 10px;
+                        line-height: 1rem;
                     }
                     p:nth-child(2){
                         font-family: $font-primary;
                         font-weight: 400;
-                        margin: 4px 0 0;
+                        margin: 0.4rem 0 0;
                     }
                 }
             }
             .slick-dots{
-                bottom: 1px;
+                bottom: 0.1rem;
             }
         }
     }
@@ -344,25 +344,25 @@
 @include mq-min(lg){
     .news{
         &__slider{
-            bottom: 80px;
+            bottom: 8rem;
         }
     }
 }
 @include mq-min(xl){
     .news{
-        margin-bottom: 70px;
-        padding: 2px 50px 20px;
+        margin-bottom: 7rem;
+        padding: 0.2prem 5rem 2rem;
         position: relative;
         &__taghead{
-            left: 44px;
-            padding: 8px 30px;
-            top: -32px;
+            left: 4.4rem;
+            padding: 0.08rem 3rem;
+            top: -3.2rem;
             
         }
         &__taghead::before{
-            left: -46px;
-            top: 23px;
-            width: 45px;
+            left: -4.6rem;
+            top: 2.3rem;
+            width: 4.5rem;
         }
         &__principal{
             display: flex;
@@ -372,15 +372,15 @@
                 width: 100%;
             }
             &--image:before{
-                height: 58px;
-                padding: 8px 11px;
-                right: 19px;
-                top: 22px;
-                width: 58px;
+                height: 5.8rem;
+                padding: 0.8rem 1.1rem;
+                right: 1.9rem;
+                top: 2.2rem;
+                width: 5.8rem;
             }
             &--contain{
-                margin-top: 22px;
-                padding-left: 39px;
+                margin-top: 2.2rem;
+                padding-left: 3.9rem;
                 width: 71%; 
             }
             &--tagdate{
@@ -390,22 +390,22 @@
                 margin-top: 0;
             }
             &--date{
-                margin: 6px 0 0;
+                margin: 0.6rem 0 0;
             }
             &--content{
-                margin-top: -1px;
+                margin-top: -0.01rem;
                 .heading__three{
-                    font-size: 24px;
-                    line-height: 32px;
-                    margin-top: 8px;
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                    margin-top: 0.8rem;
                 }
                 p{
-                    margin-top: 15px;
+                    margin-top: 1.5rem;
                 }
             }
         }
         &__plus{
-            margin-top: 20px;
+            margin-top: 2rem;
             position: relative;
             width: 82%;
             &--item:nth-child(3){
@@ -418,30 +418,30 @@
                 }
             }
             &--image::before{
-                font-size: 14px;
-                height: 30px;
-                padding: 3px 9px;
-                right: 8px;
-                top: 14px;
-                width: 30px;
+                font-size: 1.4rem;
+                height: 3rem;
+                padding: 0.3rem 0.9rem;
+                right: 0.8rem;
+                top: 1.4rem;
+                width: 3rem;
             }&--tagdate{
-                margin-top: 3px;
+                margin-top: 0.3rem;
             }
         }
         &__button{
-            margin-top: 21px;
+            margin-top: 2.1rem;
             width: 82%;
         }
         &__slider{
-            bottom: 28px;
-            right: 50px;
+            bottom: 2.8rem;
+            right: 5rem;
         }
     }
 }
 @include mq-min(xb){
     .news{
         margin-top: 14.4rem;
-        margin-bottom: 150px;
+        margin-bottom: 15rem;
         &__plus{
             width: 76%;
             &--item{
@@ -452,58 +452,58 @@
             width: 74%;
         }
         &__slider{
-            bottom: -111px;
-            width: 300px;
+            bottom: -11.1rem;
+            width: 30rem;
             &--item{
                 .tag{
-                    font-size: 14px;
-                    left: 18px;
-                    padding: 8px 9px;
-                    top: 16px;
+                    font-size: 1.4rem;
+                    left: 1.8rem;
+                    padding: 0.8rem 0.9rem;
+                    top: 1.6rem;
                 }
             }
             &--background{ 
                 img{
-                    height: 460px;
-                    width: 300px;
+                    height: 46rem;
+                    width: 30rem;
                 }
             }
             &--logo{
                 img{
                     height: auto;
-                    width: 61px;
+                    width: 6.1rem;
                 }
             }
             &--content{
-                bottom: 36px;
-                left: 19px;
+                bottom: 3.6rem;
+                left: 1.9rem;
                 .heading__three{
-                    font-size: 16px;
-                    line-height: 24px;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
                 }
                 div{
                     flex-direction: row;
-                    margin: 8px 0 12px;
+                    margin: 0.8rem 0 1.2rem;
                     p{
-                        font-size: 11px;
+                        font-size: 1.1rem;
                         font-weight: 700;
-                        line-height: 15px;
+                        line-height: 1.5rem;
                     }
                     p:nth-child(2){
                         font-family: $font-secondary;
-                        margin: 0 5px 0;
+                        margin: 0 0.5rem 0;
                     }
                 }
             }
             .slick-dots{
-                bottom: 4px;
+                bottom: 0.4rem;
             }
         }
     }
 }
 @include mq-min(xxl){
     .news{
-        margin-bottom: 70px;
+        margin-bottom: 7rem;
         &__plus{
             width: 83%;
             &--item{
@@ -511,42 +511,42 @@
             }
         }
         &__slider{
-            bottom: -22px;
+            bottom: -2.2rem;
             margin-bottom: 0;
             &--item{
                 .tag{
-                    font-size: 14px;
-                    padding: 8px 9px;
+                    font-size: 1.4rem;
+                    padding: 0.8rem 0.9rem;
                 }
             }
             &--background{ 
                 img{
-                    height: 460px;
-                    width: 300px;
+                    height: 46rem;
+                    width: 30rem;
                 }
             }
             &--logo{
                 img{
                     height: auto;
-                    width: 61px;
+                    width: 6.1rem;
                 }
             }
             &--content{
                 .heading__three{
-                    font-size: 16px;
-                    line-height: 24px;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
                 }
                 div{
                     flex-direction: row;
-                    margin-top: 8px;
+                    margin-top: 0.8rem;
                     p{
-                        font-size: 11px;
+                        font-size: 1.1rem;
                         font-weight: 700;
-                        line-height: 15px;
+                        line-height: 1.5rem;
                     }
                     p:nth-child(2){
                         font-family: $font-secondary;
-                        margin: 0 5px 0;
+                        margin: 0 0.5rem 0;
                     }
                 }
             }

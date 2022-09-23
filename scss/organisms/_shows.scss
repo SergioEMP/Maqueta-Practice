@@ -1,25 +1,25 @@
 .show{
-    padding: 0 16px 10px;
+    padding: 0 1.6rem 1rem;
     &__principal{
         &--image{
             position: relative;
             img{
-                border-radius: 4px;
+                border-radius: 0.4rem;
                 height: auto;
                 width: 100%;
             }
         }
         &--image::before{
             background-color: #C657E6;
-            border: 1px solid #FFFFFF;
+            border: 0.1rem solid #FFFFFF;
             content: "\e90d";
-            font-size: 14px;
-            height: 26px;
-            padding: 3px 8px;
+            font-size: 1.4rem;
+            height: 2.6rem;
+            padding: 0.3rem 0.8rem;
             position: absolute;
             right: 0.5rem;
-            top: 11px;
-            width: 26px;
+            top: 1.1rem;
+            width: 2.6rem;
         }
         &--tagdate{
             a:first-child{
@@ -27,10 +27,10 @@
             }
         }
         &--content{
-            margin-top: 8px;
+            margin-top: 0.8rem;
             width: 95%;
             p{
-                margin-top: 10px;
+                margin-top: 1rem;
             }
         }
     }
@@ -40,35 +40,35 @@
         &--item{
             display: flex;
             flex-direction: row;
-            padding: 9px 0;
+            padding: 0.9rem 0;
         }
         &--image{
             img{
-                border-radius: 4px;
+                border-radius: 0.4rem;
                 object-fit: cover;
             }
         }
         &--info{
-            margin-left: 10px;
+            margin-left: 1rem;
         }
         &--tagdate{
             margin-top: 0;
         }
         &--content{
-            margin-top: 8px;
+            margin-top: 0.8rem;
             position: relative;
             .icon::before{
                 content: "\e90d";
-                font-size: 8px;
-                height: 22px;
-                left: -2px;
-                padding: 3px 6px;
+                font-size: 0.8rem;
+                height: 2.2rem;
+                left: -0.2rem;
+                padding: 0.3rem 0.6rem;
                 position: absolute;
-                top: -1px;
-                width: 22px;
+                top: -0.1rem;
+                width: 2.2rem;
             }
             .heading__four{
-                margin-left: 24px;
+                margin-left: 2.4rem;
             }
         }
         &--item:first-child{
@@ -90,44 +90,44 @@
         &--item:nth-child(3){
             .icon::before{
                 content: "\e90c";
-                padding: 3px 3px 0;
+                padding: 0.3rem 0.3rem 0;
             }
         }
     }
     &__button{
-        margin-top: 10px;
+        margin-top: 1rem;
         a{
             padding: 0 2rem;
         }
         a:after{
-            font-size: 20px;
-            margin-bottom: 2px;
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
         }
     }
 }
 @include mq-min(md){
     .show{
-        padding: 1rem 23px 2rem;
+        padding: 1rem 2.3rem 2rem;
         &__principal{
             &--image{
                 img{
-                    border-radius: 8px;
+                    border-radius: 0.8rem;
                 }
             }
             &--image::before{
-                border: 2px solid #FFFFFF;
-                font-size: 30px;
-                height: 55px;
-                padding: 3px 18px;
-                right: 23px;
-                top: 23px;
-                width: 55px;
+                border: 0.2rem solid #FFFFFF;
+                font-size: 3rem;
+                height: 5.5rem;
+                padding: 0.3rem 1.8rem;
+                right: 2.3rem;
+                top: 2.3rem;
+                width: 5.5rem;
             }
             &--tagdate{
-               margin: 9px 0 0;
+               margin: 0.9rem 0 0;
             }
             &--date{
-                font-size: 14px;
+                font-size: 1.4rem;
             }
             &--content{
                 margin-left: 0;
@@ -135,11 +135,11 @@
                     span{
                         background-color: #78BFBA;
                         color: #FFFFFF;
-                        padding: 0 5px;
+                        padding: 0 0.5rem;
                     }
                 }
                 p{
-                    margin-top: 7px;
+                    margin-top: 0.7rem;
                 }
             }
         }
@@ -160,7 +160,7 @@
                     display: block;
                 }
                 .heading__four{
-                    margin-left: 24px;
+                    margin-left: 2.4rem;
                 }
             }
         }
@@ -172,18 +172,18 @@
                 position: relative;
             }
             a::after{
-                font-size: 30px;
+                font-size: 3rem;
                 font-weight: 100;
                 position: absolute;
-                right: 16px;
-                top: -6px;
+                right: 1.6rem;
+                top: -0.6rem;
             }
         }
     }
 }
 @include mq-min(xl){
     .show{
-        padding: 8px 47px;
+        padding: 0.8rem 4.7rem;
         &__principal{
             display: flex;
             flex-direction: row;
@@ -191,14 +191,14 @@
                 width: 100%;
             }
             &--image::before{
-                height: 58px;
-                padding: 5px 20px;
-                right: 21px;
-                top: 24px;
-                width: 58px;
+                height: 5.8rem;
+                padding: 0.5rem 2rem;
+                right: 2.1rem;
+                top: 2.4rem;
+                width: 5.8rem;
             }
             &--contain{
-                padding: 2.2rem 39px;
+                padding: 2.2rem 3.9rem;
                 width: 80%;
             }
             &--tagdate{
@@ -224,7 +224,7 @@
             width: 77%;
             &--item{
                 flex-direction: column;
-                margin-right: 24px;
+                margin-right: 2.4rem;
             }
             &--image{
                 position: relative; 
@@ -262,7 +262,7 @@
 }
 @include mq-min(xb){
     .show{
-        padding: 8px 47px;
+        padding: 0.8rem 4.7rem;
         &__principal{
             &--contain{
                 width: 69%;

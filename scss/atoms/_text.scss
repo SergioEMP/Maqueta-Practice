@@ -1,23 +1,23 @@
 p{
     color: #20334E;
-    @include text(14px, 22px, 400);
+    @include text(1.4rem, 2.2rem, 400);
     text-align: left
 }
 @include mq-min(md){
     p{   
-        @include text(16px, 24px, 400); 
+        @include text(1.6prem, 2.4rem, 400); 
     }
 }
 
 .tag{
     background-color: #FF9D00;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     color: white;
     font-family: $font-secondary;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
-    line-height: 15px; 
-    padding: 4px 9px;
+    line-height: 1.5rem; 
+    padding: 0.4rem 0.9rem;
     text-align: center;
     width: fit-content;
 }
@@ -28,14 +28,14 @@ p{
 
 .taghead{
     align-items: center;
-    border: 1px solid #FF742B;
-    border-radius: 40px;
+    border: 0.1rem solid #FF742B;
+    border-radius: 4rem;
     display: flex;
     justify-content: center;
-    left: 8px;
-    padding: 3px 16px;
+    left: 0.8rem;
+    padding: 0.3rem 1.6rem;
     position: absolute;
-    top: -20px;
+    top: -2rem;
     width: fit-content;
     .heading__two{
         span{
@@ -46,40 +46,40 @@ p{
 .taghead::before{
     background-color: #FF742B;
     content: "";
-    height: 1px;
-    left: -9px;
+    height: 0.1rem;
+    left: -0.9rem;
     position: absolute;
-    top: 16px;
-    width: 8px;
+    top: 1.6rem;
+    width: 0.8rem;
 }
 @include mq-min(md){
     .taghead{
-        left: 46px;
-        padding: 3px 24px;
+        left: 4.6rem;
+        padding: 0.3rem 2.4rem;
     }
     .taghead::before{
-        left: -47px;
-        top: 19px;
-        width: 46px;
+        left: -4.7rem;
+        top: 1.9rem;
+        width: 4.6rem;
     }
 }
 @include mq-min(xl){
     .taghead{
-        left: 48px;
+        left: 4.8rem;
     }
     .taghead::before{
-        left: -49px;
-        width: 48px;
+        left: -4.9rem;
+        width: 4.8rem;
     }
 }
 .tagdate{
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .date{
-    font-size: 11px;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-left: 0.7rem;
 }
