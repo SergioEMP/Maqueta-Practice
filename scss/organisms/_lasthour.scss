@@ -44,7 +44,7 @@
             }
             p{
                 color: #939EAD;
-                font-family: 'Poppins';
+                font-family: $font-secondary;
                 font-size: 10px;
                 font-weight: 600;
                 margin-top: 0.6rem;
@@ -124,7 +124,7 @@
             align-items: center;
             color: #609FEE;
             display: flex;
-            font-family: 'Poppins';
+            font-family: $font-secondary;
             font-size: 12px;
             font-weight: 600;
             margin: 0.5rem 0 0 0.5rem;

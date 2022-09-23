@@ -3851,7 +3851,6 @@ table th,
 }
 .cityguide__item--tag {
   background-color: #609FEE;
-  font-family: "Poppins";
 }
 .cityguide__item--info {
   font-size: 24px;
@@ -4568,7 +4567,6 @@ table th,
 }
 .news__slider--item .tag {
   background-color: #609FEE;
-  font-family: "Poppins";
   font-size: 14px;
   font-weight: 500;
   left: 16px;
